@@ -35,7 +35,7 @@ map.on('load', function () {
             type: 'fill',
             source: {
                 type: 'geojson',
-                data: 'Data/countyResults.geojson'
+                data: 'countyResults.geojson'
             },
             layout: {
                 'visibility': 'none'
@@ -74,7 +74,7 @@ map.on('load', function () {
             type: 'fill',
             source: {
                 type: 'geojson',
-                data: 'Data/countyResults.geojson'
+                data: 'countyResults.geojson'
             },
             layout: {
                 'visibility': 'none'
@@ -113,7 +113,7 @@ map.on('load', function () {
             type: 'line',
             source: {
                 type: 'geojson',
-                data: 'Data/precinctResults.geojson',
+                data: 'precinctResults.geojson',
             },
             paint: {
                 'line-color': '#ffffff',
@@ -130,7 +130,7 @@ map.on('load', function () {
             type: 'fill',
             source: {
                 type: 'geojson',
-                data: 'Data/precinctResults.geojson',
+                data: 'precinctResults.geojson',
             },
             layout: {
                 'visibility': 'none'
@@ -169,7 +169,7 @@ map.on('load', function () {
             type: 'fill',
             source: {
                 type: 'geojson',
-                data: 'Data/precinctResults.geojson',
+                data: 'precinctResults.geojson',
             },
             layout: {
                 'visibility': 'none'
