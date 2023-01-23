@@ -29,44 +29,44 @@ map.on('load', function () {
         'waterway-label'
     );
 
-//     map.addLayer(
-//         {
-//             id: 'wa_counties_g2022_FSen',
-//             type: 'fill',
-//             source: {
-//                 type: 'geojson',
-//                 data: 'countyResults.geojson'
-//             },
-//             layout: {
-//                 'visibility': 'none'
-//             },
-//             paint: {
-//                 'fill-color': [
-//                     'match', 
-//                     ['get', 'county_g2022_FSen_Winner'],
-//                     'Democrat', '#6193c7',
-//                     'Republican', '#cf635d',
-//                     'Independent', '#fdb614',
-//                     'Other', '#88939b',
-//                     '#ffffff'
-//                 ],
-//                 'fill-outline-color': '#ffffff',
-//                 'fill-opacity': [
-//                     'step',
-//                     ['get', 'county_g2022_FSen_Winner_pct'],
-//                     0.5, 50,
-//                     0.6, 60,
-//                     0.7, 70,
-//                     0.8, 80,
-//                     0.9, 90,
-//                     1.0, 100,
-//                     0.1
-//                 ]
-//             },
-//             maxzoom: 7
-//         },
-//         'wa_counties_outlines'
-//     );
+    map.addLayer(
+        {
+            id: 'wa_counties_g2022_FSen',
+            type: 'fill',
+            source: {
+                type: 'geojson',
+                data: 'countyResults.geojson'
+            },
+            layout: {
+                'visibility': 'visible'
+            },
+            paint: {
+                'fill-color': [
+                    'match', 
+                    ['get', 'county_g2022_FSen_Winner'],
+                    'Democrat', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'Other', '#88939b',
+                    '#ffffff'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'county_g2022_FSen_Winner_pct'],
+                    0.5, 50,
+                    0.6, 60,
+                    0.7, 70,
+                    0.8, 80,
+                    0.9, 90,
+                    1.0, 100,
+                    0.1
+                ]
+            },
+            maxzoom: 7
+        },
+        'wa_counties_outlines'
+    );
 
 //     map.addLayer(
 //         {
