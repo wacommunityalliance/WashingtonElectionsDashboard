@@ -18,7 +18,7 @@ map.on('load', function () {
             type: 'line',
             source: {
                 type: 'geojson',
-                data: 'Data/countyResults.geojson'
+                data: 'countyResults.geojson'
             },
             paint: {
                 'line-color': '#ffffff',
