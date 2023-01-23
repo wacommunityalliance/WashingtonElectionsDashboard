@@ -1,8 +1,3 @@
-import { workerClass } from 'mapbox-gl';
-import workerLoader from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
-
-workerClass = workerLoader;
-
 mapboxgl.accessToken = 'pk.eyJ1IjoidGltb25lYWwiLCJhIjoiY2xjZm04YW5yMGFnYTNvcG1pZTNicGU2diJ9.eYwXLLfgApOlhZbiYYTWAA';
 var map = new mapboxgl.Map(
     {
