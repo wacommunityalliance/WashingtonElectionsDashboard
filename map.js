@@ -11,11 +11,6 @@ var map = new mapboxgl.Map(
     }
 );
 
-yarn add worker-loader;
-
-eslint-disable-next-line import/no-webpack-loader-synatx;
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
-
 map.on('load', function () {
     map.addLayer(
         {
