@@ -1,5 +1,3 @@
-yarn add worker-loader;
-
 mapboxgl.accessToken = 'pk.eyJ1IjoidGltb25lYWwiLCJhIjoiY2xjZm04YW5yMGFnYTNvcG1pZTNicGU2diJ9.eYwXLLfgApOlhZbiYYTWAA';
 var map = new mapboxgl.Map(
     {
@@ -204,10 +202,6 @@ map.on('load', function () {
         'wa_precincts_g2022_FSen'
     );
 });
-
-eslint-disable-next-line import/no-webpack-loader-syntax;
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
-
 
 toggleLayer(['wa_counties_g2022_FSen', 'wa_precincts_g2022_FSen'], 'U.S. Senate');
 toggleLayer(['wa_counties_g2022_SoS', 'wa_precincts_g2022_SoS'], 'Secretary of State')
