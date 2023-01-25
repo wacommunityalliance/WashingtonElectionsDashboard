@@ -15,44 +15,41 @@ var map = new mapboxgl.Map(
 const MINZOOM = 7;
 const MAXZOOM = 7;
 
+
 map.on('load', function () {
-    
+
     // Add County source data
-    map.addSource('results-county',
-        {
-            type: 'geojson',
-            data: 'results-county.geojson'
+    map.addSource('results-county', {
+        type: 'geojson',
+        data: 'results-county.geojson'
         }
     );
 
-     // Add Congressional District source data
-     map.addSource('results-CD',
-        {
-            type: 'geojson',
-            data: 'results-CD.geojson'
+    // Add Congressional District source data
+    map.addSource('results-CD', {
+        type: 'geojson',
+        data: 'results-CD.geojson'
         }
     );
 
     // Add Legislative District source data
-    map.addSource('results-LD',
-        {
-            type: 'geojson',
-            data: 'results-LD.geojson'
+    map.addSource('results-LD', {
+        type: 'geojson',
+        data: 'results-LD.geojson'
         }
     );
 
     // Add Precinct source data
-    map.addSource('results-precinct',
-        {
-            type: 'geojson',
-            data: 'results-precinct.geojson'
+    map.addSource('results-precinct', {
+        type: 'geojson',
+        data: 'results-precinct.geojson'
         }
     );
     
     // Washington County boundaries
     map.addLayer(
         {
-            id: 'county-outlines',
+            id: 'outlines-county',
             type: 'line',
             source: 'results-county',
             layout: {
@@ -69,7 +66,7 @@ map.on('load', function () {
     // Washington Congressional District boundaries
     map.addLayer(
         {
-            id: 'CD-outlines',
+            id: 'outlines-CD',
             type: 'line',
             source: 'results-CD',
             layout: {
@@ -86,7 +83,7 @@ map.on('load', function () {
     // Washington Legislative District boundaries
     map.addLayer(
         {
-            id: 'LD-outlines',
+            id: 'outlines-LD',
             type: 'line',
             source: 'results-LD',
             layout: {
@@ -99,8 +96,6 @@ map.on('load', function () {
         },
         'waterway-label'
     );
-
-    
 
     // 2022 General: Secretary of State, county layer
     map.addLayer(
@@ -136,7 +131,7 @@ map.on('load', function () {
             },
             maxzoom: MAXZOOM
         },
-        'county-outlines'
+        'outlines-county'
     );
     
     // 2022 General: Secretary of State, precinct layer
@@ -210,7 +205,7 @@ map.on('load', function () {
             },
             maxzoom: MAXZOOM
         },
-        'county-outlines'
+        'outlines-county'
     );
 
     // 2022 General: U.S. Senate, precinct layer
@@ -284,7 +279,7 @@ map.on('load', function () {
             },
             maxzoom: MAXZOOM
         },
-        'CD-outlines'
+        'outlines-CD'
     );
 
     // 2022 General: U.S. Representative, precinct layer
@@ -358,7 +353,7 @@ map.on('load', function () {
             },
             maxzoom: MAXZOOM
         },
-        'LD-outlines'
+        'outlines-LD'
     );
 
     // 2022 General: State Senator, precinct layer
@@ -432,7 +427,7 @@ map.on('load', function () {
             },
             maxzoom: MAXZOOM
         },
-        'LD-outlines'
+        'outlines-LD'
     );
 
     // 2022 General: State Representative Pos. 1, precinct layer
@@ -506,7 +501,7 @@ map.on('load', function () {
             },
             maxzoom: MAXZOOM
         },
-        'LD-outlines'
+        'outlines-LD'
     );
 
     // 2022 General: State Representative Pos. 2, precinct layer
@@ -551,17 +546,17 @@ map.on('load', function () {
 
 
 // Toggle layers for 2022 General Election
-toggleLayer(['county-outlines', 'g2022-SoS-county', 'g2022-SoS-precinct'], 'Secretary of State');
+toggleLayer(['outlines-county', 'g2022-SoS-county', 'g2022-SoS-precinct'], 'Secretary of State');
 
-toggleLayer(['county-outlines', 'g2022-FSen-county', 'g2022-FSen-precinct'], 'U.S. Senator');
+toggleLayer(['outlines-county', 'g2022-FSen-county', 'g2022-FSen-precinct'], 'U.S. Senator');
 
-toggleLayer(['CD-outlines', 'g2022-FRep-CD', 'g2022-FRep-precinct'], 'U.S. Representative');
+toggleLayer(['outlines-CD', 'g2022-FRep-CD', 'g2022-FRep-precinct'], 'U.S. Representative');
 
-toggleLayer(['LD-outlines', 'g2022-SSen-LD', 'g2022-SSen-precinct'], 'State Senator');
+toggleLayer(['outlines-LD', 'g2022-SSen-LD', 'g2022-SSen-precinct'], 'State Senator');
 
-toggleLayer(['LD-outlines', 'g2022-SRep1-LD', 'g2022-SRep1-precinct'], 'State Representative Pos.1');
+toggleLayer(['outlines-LD', 'g2022-SRep1-LD', 'g2022-SRep1-precinct'], 'State Representative Pos.1');
 
-toggleLayer(['LD-outlines', 'g2022-SRep2-LD', 'g2022-SRep2-precinct'], 'State Representative Pos.2');
+toggleLayer(['outlines-LD', 'g2022-SRep2-LD', 'g2022-SRep2-precinct'], 'State Representative Pos.2');
 
 
 function toggleLayer(ids, name) {
