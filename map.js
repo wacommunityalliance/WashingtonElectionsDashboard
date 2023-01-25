@@ -17,66 +17,6 @@ const MAXZOOM = 7;
 
 map.on('load', function () {
     
-    // Washington County boundaries
-    map.addLayer(
-        {
-            id: 'county-outlines',
-            type: 'line',
-            source: {
-                type: 'geojson',
-                data: 'results-county.geojson'
-            },
-            layout: {
-                'visibility': 'none'
-            },
-            paint: {
-                'line-color': '#ffffff',
-                'line-width': 1
-            }
-        },
-        'waterway-label'
-    );
-
-    // Washington Congressional District boundaries
-    map.addLayer(
-        {
-            id: 'CD-outlines',
-            type: 'line',
-            source: {
-                type: 'geojson',
-                data: 'results-CD.geojson'
-            },
-            layout: {
-                'visibility': 'none'
-            },
-            paint: {
-                'line-color': '#ffffff',
-                'line-width': 1
-            }
-        },
-        'waterway-label'
-    );
-
-    // Washington Legislative District boundaries
-    map.addLayer(
-        {
-            id: 'LD-outlines',
-            type: 'line',
-            source: {
-                type: 'geojson',
-                data: 'results-LD.geojson'
-            },
-            layout: {
-                'visibility': 'none'
-            },
-            paint: {
-                'line-color': '#ffffff',
-                'line-width': 1
-            }
-        },
-        'waterway-label'
-    );
-
     // Add County source data
     map.addSource('results-county',
         {
@@ -108,6 +48,59 @@ map.on('load', function () {
             data: 'results-precinct.geojson'
         }
     );
+    
+    // Washington County boundaries
+    map.addLayer(
+        {
+            id: 'county-outlines',
+            type: 'line',
+            source: 'results-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'line-color': '#ffffff',
+                'line-width': 1
+            }
+        },
+        'waterway-label'
+    );
+
+    // Washington Congressional District boundaries
+    map.addLayer(
+        {
+            id: 'CD-outlines',
+            type: 'line',
+            source: 'results-CD',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'line-color': '#ffffff',
+                'line-width': 1
+            }
+        },
+        'waterway-label'
+    );
+
+    // Washington Legislative District boundaries
+    map.addLayer(
+        {
+            id: 'LD-outlines',
+            type: 'line',
+            source: 'results-LD',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'line-color': '#ffffff',
+                'line-width': 1
+            }
+        },
+        'waterway-label'
+    );
+
+    
 
     // 2022 General: Secretary of State, county layer
     map.addLayer(
