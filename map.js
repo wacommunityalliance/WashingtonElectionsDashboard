@@ -77,15 +77,44 @@ map.on('load', function () {
         'waterway-label'
     );
 
+    // Add County source data
+    map.addSource('results-county',
+        {
+            type: 'geojson',
+            data: 'results-county.geojson'
+        }
+    );
+
+     // Add Congressional District source data
+     map.addSource('results-CD',
+        {
+            type: 'geojson',
+            data: 'results-CD.geojson'
+        }
+    );
+
+    // Add Legislative District source data
+    map.addSource('results-LD',
+        {
+            type: 'geojson',
+            data: 'results-LD.geojson'
+        }
+    );
+
+    // Add Precinct source data
+    map.addSource('results-precinct',
+        {
+            type: 'geojson',
+            data: 'results-precinct.geojson'
+        }
+    );
+
     // 2022 General: Secretary of State, county layer
     map.addLayer(
         {
             id: 'g2022-SoS-county',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-county.geojson'
-            },
+            source: 'results-county',
             layout: {
                 'visibility': 'none'
             },
@@ -122,10 +151,7 @@ map.on('load', function () {
         {
             id: 'g2022-SoS-precinct',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-precinct.geojson'
-            },
+            source: 'results-precinct',
             layout: {
                 'visibility': 'none'
             },
@@ -162,10 +188,7 @@ map.on('load', function () {
         {
             id: 'g2022-FSen-county',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-county.geojson'
-            },
+            source: 'results-county',
             layout: {
                 'visibility': 'none'
             },
@@ -202,10 +225,7 @@ map.on('load', function () {
         {
             id: 'g2022-FSen-precinct',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-precinct.geojson'
-            },
+            source: 'results-precinct',
             layout: {
                 'visibility': 'none'
             },
@@ -242,10 +262,7 @@ map.on('load', function () {
         {
             id: 'g2022-FRep-CD',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-CD.geojson'
-            },
+            source: 'results-CD',
             layout: {
                 'visibility': 'none'
             },
@@ -282,10 +299,7 @@ map.on('load', function () {
         {
             id: 'g2022-FRep-precinct',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-precinct.geojson'
-            },
+            source: 'results-precinct',
             layout: {
                 'visibility': 'none'
             },
@@ -322,10 +336,7 @@ map.on('load', function () {
         {
             id: 'g2022-SSen-LD',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-LD.geojson'
-            },
+            source: 'results-LD',
             layout: {
                 'visibility': 'none'
             },
@@ -362,10 +373,7 @@ map.on('load', function () {
         {
             id: 'g2022-SSen-precinct',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-precinct.geojson'
-            },
+            source: 'results-precinct',
             layout: {
                 'visibility': 'none'
             },
@@ -402,10 +410,7 @@ map.on('load', function () {
         {
             id: 'g2022-SRep1-LD',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-LD.geojson'
-            },
+            source: 'results-LD',
             layout: {
                 'visibility': 'none'
             },
@@ -442,10 +447,7 @@ map.on('load', function () {
         {
             id: 'g2022-SRep1-precinct',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-precinct.geojson'
-            },
+            source: 'results-precinct',
             layout: {
                 'visibility': 'none'
             },
@@ -482,10 +484,7 @@ map.on('load', function () {
         {
             id: 'g2022-SRep2-LD',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-LD.geojson'
-            },
+            source: 'results-LD',
             layout: {
                 'visibility': 'none'
             },
@@ -522,10 +521,7 @@ map.on('load', function () {
         {
             id: 'g2022-SRep2-precinct',
             type: 'fill',
-            source: {
-                type: 'geojson',
-                data: 'results-precinct.geojson'
-            },
+            source: 'results-precinct',
             layout: {
                 'visibility': 'none'
             },
