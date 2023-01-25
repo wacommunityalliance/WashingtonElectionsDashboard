@@ -15,39 +15,41 @@ var map = new mapboxgl.Map(
 const MINZOOM = 7;
 const MAXZOOM = 7;
 
+
+// Add County source data
+map.addSource('results-county',
+    {
+        type: 'geojson',
+        data: 'results-county.geojson'
+    }
+);
+
+ // Add Congressional District source data
+ map.addSource('results-CD',
+    {
+        type: 'geojson',
+        data: 'results-CD.geojson'
+    }
+);
+
+// Add Legislative District source data
+map.addSource('results-LD',
+    {
+        type: 'geojson',
+        data: 'results-LD.geojson'
+    }
+);
+
+// Add Precinct source data
+map.addSource('results-precinct',
+    {
+        type: 'geojson',
+        data: 'results-precinct.geojson'
+    }
+);
+
+
 map.on('load', function () {
-    
-    // Add County source data
-    map.addSource('results-county',
-        {
-            type: 'geojson',
-            data: 'results-county.geojson'
-        }
-    );
-
-     // Add Congressional District source data
-     map.addSource('results-CD',
-        {
-            type: 'geojson',
-            data: 'results-CD.geojson'
-        }
-    );
-
-    // Add Legislative District source data
-    map.addSource('results-LD',
-        {
-            type: 'geojson',
-            data: 'results-LD.geojson'
-        }
-    );
-
-    // Add Precinct source data
-    map.addSource('results-precinct',
-        {
-            type: 'geojson',
-            data: 'results-precinct.geojson'
-        }
-    );
     
     // Washington County boundaries
     map.addLayer(
