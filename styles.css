@@ -52,3 +52,26 @@ body {
 #menu a.active:hover {
     background: #3074a4;
 }
+
+
+.mapboxgl-popup-content h4 {
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.mapboxgl-popup-content h3 {
+    font-weight: 350;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    border-width: 0.5px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(80,80,80);
+}
+
+.mapboxgl-popup-content p {
+    font-weight: 300;
+    margin-top: 0.3em;
+    margin-bottom: 0em;
+}

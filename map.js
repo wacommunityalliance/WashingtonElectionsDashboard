@@ -92,7 +92,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'county_g2022_SoS_Party-1'],
+                    ['get', 'county_g2022_SoS_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -132,7 +132,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SoS_Party-1'],
+                    ['get', 'precinct_g2022_SoS_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -172,7 +172,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'county_g2022_FSen_Party-1'],
+                    ['get', 'county_g2022_FSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -212,7 +212,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_FSen_Party-1'],
+                    ['get', 'precinct_g2022_FSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -252,7 +252,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'CD_g2022_FRep_Party-1'],
+                    ['get', 'CD_g2022_FRep_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -292,7 +292,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_FRep_Party-1'],
+                    ['get', 'precinct_g2022_FRep_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -332,7 +332,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'LD_g2022_SSen_Party-1'],
+                    ['get', 'LD_g2022_SSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -372,7 +372,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SSen_Party-1'],
+                    ['get', 'precinct_g2022_SSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -412,7 +412,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'LD_g2022_SRep1_Party-1'],
+                    ['get', 'LD_g2022_SRep1_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -452,7 +452,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SRep1_Party-1'],
+                    ['get', 'precinct_g2022_SRep1_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -492,7 +492,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'LD_g2022_SRep2_Party-1'],
+                    ['get', 'LD_g2022_SRep2_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -532,7 +532,7 @@ map.on('load', function () {
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SRep2_Party-1'],
+                    ['get', 'precinct_g2022_SRep2_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -561,26 +561,18 @@ map.on('load', function () {
 })
 
 
-
 // Toggle layers for 2022 General Election
 toggleLayer(['county-outlines', 'g2022-SoS-county', 'g2022-SoS-precinct'], 'Secretary of State');
 
-toggleLayer(['county-outlines', 'g2022-FSen-county', 'g2022-FSen-precinct'], 'U.S. Senator')
+toggleLayer(['county-outlines', 'g2022-FSen-county', 'g2022-FSen-precinct'], 'U.S. Senator');
 
-toggleLayer(['CD-outlines', 'g2022-FRep-CD', 'g2022-FRep-precinct'], 'U.S. Representative')
+toggleLayer(['CD-outlines', 'g2022-FRep-CD', 'g2022-FRep-precinct'], 'U.S. Representative');
 
-toggleLayer(['LD-outlines', 'g2022-SSen-LD', 'g2022-SSen-precinct'], 'State Senator')
+toggleLayer(['LD-outlines', 'g2022-SSen-LD', 'g2022-SSen-precinct'], 'State Senator');
 
-toggleLayer(['LD-outlines', 'g2022-SRep1-LD', 'g2022-SRep1-precinct'], 'State Representative Pos.1')
+toggleLayer(['LD-outlines', 'g2022-SRep1-LD', 'g2022-SRep1-precinct'], 'State Representative Pos.1');
 
-toggleLayer(['LD-outlines', 'g2022-SRep2-LD', 'g2022-SRep2-precinct'], 'State Representative Pos.2')
-
-
-
-
-// toggleLayer(['wa_counties_g2022_FSen'], 'U.S. Senate');
-// toggleLayer(['wa_counties_g2022_SoS'], 'Secretary of State')
-// toggleLayer(['wa_cong_g2022_FRep'], 'U.S. Representative')
+toggleLayer(['LD-outlines', 'g2022-SRep2-LD', 'g2022-SRep2-precinct'], 'State Representative Pos.2');
 
 
 function toggleLayer(ids, name) {
@@ -610,35 +602,55 @@ function toggleLayer(ids, name) {
 }
 
 
+// Popup controls for 2022 General Election
 
-// var toggleableLayerIds = ['wa_counties_g2022_FSen', 'wa_counties_g2022_SoS'];
+// Create popup for county-level SoS results
+map.on('click', 'g2022-SoS-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
 
-// for (var i = 0; i < toggleableLayerIds.length; i++) {
-//     var id = toggleableLayerIds[i];
+    var nameFirst = e.features[0].properties.county_g2022_SoS_Name_1;
+    var partyFirst = e.features[0].properties.county_g2022_SoS_Party_1;
+    var votesFirst = e.features[0].properties.county_g2022_SoS_Votes_1;
+    var pctFirst = e.features[0].properties.county_g2022_SoS_Pct_1;
 
-//     var link = document.createElement('a');
-//     link.href = '#';
-//     link.className = '';
-//     link.textContent = id;
+    var nameSecond = e.features[0].properties.county_g2022_SoS_Name_2;
+    var partySecond = e.features[0].properties.county_g2022_SoS_Party_2;
+    var votesSecond = e.features[0].properties.county_g2022_SoS_Votes_2;
+    var pctSecond = e.features[0].properties.county_g2022_SoS_Pct_2;
 
-//     link.onclick = function(e) {
-//         var clickedLayer = this.textContent;
-//         e.preventDefault();
-//         e.stopPropagation();
-//         for (var j = 0; j < toggleableLayerIds.length; j++) {
-//             if (clickedLayer === toggleableLayerIds[j]) {
-//                     layers.children[j].className = 'active';
-//                     map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'visible');
-//             }
-//             else {
-//                     layers.children[j].className = '';
-//                     map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
-//             }
-//         }
-//     };
+    var nameThird = e.features[0].properties.county_g2022_SoS_Name_3;
+    var votesThird = e.features[0].properties.county_g2022_SoS_Votes_3;
+    var pctThird = e.features[0].properties.county_g2022_SoS_Pct_3;
 
-//     var layers = document.getElementById('menu');
-//     layers.appendChild(link);
-// }
+    countyName = countyName.toUpperCase();
+    votesFirst = votesFirst.toLocaleString();
+    pctFirst = pctFirst.toFixed(2);
+    votesSecond = votesSecond.toLocaleString();
+    pctSecond = pctSecond.toFixed(2);
+    votesThird = votesThird.toLocaleString();
+    pctThird = pctThird.toFixed(2);
+    
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(
+            '<h4>' + countyName + '</h4>'
+            + '<h3>' + nameFirst + ' (' + partyFirst + ')' + '</h3>'
+            + '<p>' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+            + '<h3>' + nameSecond + ' (' + partySecond + ')' + '</h3>'
+            + '<p>' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+            + '<h3>' + nameThird + '</h3>'
+            + '<p>' + pctThird + '% (' + votesThird + ' votes)</p>'
+            )
 
+        .addTo(map);
+});
 
+// Change cursor to pointer when mouse is over the counties layer
+map.on('mouseenter', 'g2022-SoS-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change cursor back to a hand when it leaves
+map.on('mouseleave', 'g2022-SoS-county', function () {
+    map.getCanvas().style.cursor = '';
+});
