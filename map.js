@@ -12,37 +12,37 @@ var map = new mapboxgl.Map(
     }
 );
 
-const MINZOOM = 8.5;
-const MAXZOOM = 8.5;
+const MINZOOM = 7;
+const MAXZOOM = 7;
 
 
 map.on('load', function () {
 
-    // Add County source data
-    map.addSource('results-county', {
+    // Add 2022 General County source data
+    map.addSource('g2022-county', {
         type: 'geojson',
-        data: 'results-county.geojson'
+        data: 'Data/g2022_county.geojson'
         }
     );
 
-    // Add Congressional District source data
-    map.addSource('results-CD', {
+    // Add 2022 General Congressional District source data
+    map.addSource('g2022-CD', {
         type: 'geojson',
-        data: 'results-CD.geojson'
+        data: 'Data/g2022_CD.geojson'
         }
     );
 
-    // Add Legislative District source data
-    map.addSource('results-LD', {
+    // Add 2022 General Legislative District source data
+    map.addSource('g2022-LD', {
         type: 'geojson',
-        data: 'results-LD.geojson'
+        data: 'Data/g2022_LD.geojson'
         }
     );
 
-    // Add Precinct source data
-    map.addSource('results-precinct', {
+    // Add 2022 General Precinct source data
+    map.addSource('g2022-precinct', {
         type: 'geojson',
-        data: 'results-precinct.geojson'
+        data: 'Data/g2022_precinct.geojson'
         }
     );
 
@@ -51,7 +51,7 @@ map.on('load', function () {
         {
             id: 'outlines-county',
             type: 'line',
-            source: 'results-county',
+            source: 'g2022-county',
             layout: {
                 'visibility': 'none'
             },
@@ -68,7 +68,7 @@ map.on('load', function () {
         {
             id: 'outlines-CD',
             type: 'line',
-            source: 'results-CD',
+            source: 'g2022-CD',
             layout: {
                 'visibility': 'none'
             },
@@ -85,7 +85,7 @@ map.on('load', function () {
         {
             id: 'outlines-LD',
             type: 'line',
-            source: 'results-LD',
+            source: 'g2022-LD',
             layout: {
                 'visibility': 'none'
             },
@@ -97,19 +97,85 @@ map.on('load', function () {
         'waterway-label'
     );
 
+    // 2022 General: Turnout, county layer
+    map.addLayer(
+        {
+            id: 'g2022-turnout-county',
+            type: 'fill',
+            source: 'g2022-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': '#179f92',
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'Total_Turnout'],
+                    0.1, 10,
+                    0.2, 20,
+                    0.3, 30,
+                    0.4, 40,
+                    0.5, 50,
+                    0.6, 60,
+                    0.7, 70,
+                    0.8, 80,
+                    0.9, 90,
+                    1.0, 100,
+                    0.1
+                ]
+            },
+            maxzoom: MAXZOOM
+        },
+        'outlines-county'
+    );
+    
+    // 2022 General: Turnout, precinct layer
+    map.addLayer(
+        {
+            id: 'g2022-turnout-precinct',
+            type: 'fill',
+            source: 'g2022-precinct',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': '#179f92',
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'Total_Turnout'],
+                    0.1, 10,
+                    0.2, 20,
+                    0.3, 30,
+                    0.4, 40,
+                    0.5, 50,
+                    0.6, 60,
+                    0.7, 70,
+                    0.8, 80,
+                    0.9, 90,
+                    1.0, 100,
+                    0.1
+                ]
+            },
+            minzoom: MINZOOM
+        },
+        'g2022-turnout-county'
+    );
+
     // 2022 General: Secretary of State, county layer
     map.addLayer(
         {
             id: 'g2022-SoS-county',
             type: 'fill',
-            source: 'results-county',
+            source: 'g2022-county',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'county_g2022_SoS_Party_1'],
+                    ['get', 'SoS_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -119,7 +185,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'county_g2022_SoS_Margin'],
+                    ['get', 'SoS_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -143,14 +209,14 @@ map.on('load', function () {
         {
             id: 'g2022-SoS-precinct',
             type: 'fill',
-            source: 'results-precinct',
+            source: 'g2022-precinct',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SoS_Party_1'],
+                    ['get', 'SoS_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -160,7 +226,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'precinct_g2022_SoS_Margin'],
+                    ['get', 'SoS_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -184,14 +250,14 @@ map.on('load', function () {
         {
             id: 'g2022-FSen-county',
             type: 'fill',
-            source: 'results-county',
+            source: 'g2022-county',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'county_g2022_FSen_Party_1'],
+                    ['get', 'FSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -201,7 +267,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'county_g2022_FSen_Margin'],
+                    ['get', 'FSen_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -225,14 +291,14 @@ map.on('load', function () {
         {
             id: 'g2022-FSen-precinct',
             type: 'fill',
-            source: 'results-precinct',
+            source: 'g2022-precinct',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_FSen_Party_1'],
+                    ['get', 'FSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -242,7 +308,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'precinct_g2022_FSen_Margin'],
+                    ['get', 'FSen_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -266,14 +332,14 @@ map.on('load', function () {
         {
             id: 'g2022-FRep-CD',
             type: 'fill',
-            source: 'results-CD',
+            source: 'g2022-CD',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'CD_g2022_FRep_Party_1'],
+                    ['get', 'FRep_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -283,7 +349,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'CD_g2022_FRep_Margin'],
+                    ['get', 'FRep_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -307,14 +373,14 @@ map.on('load', function () {
         {
             id: 'g2022-FRep-precinct',
             type: 'fill',
-            source: 'results-precinct',
+            source: 'g2022-precinct',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_FRep_Party_1'],
+                    ['get', 'FRep_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -324,7 +390,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'precinct_g2022_FRep_Margin'],
+                    ['get', 'FRep_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -348,14 +414,14 @@ map.on('load', function () {
         {
             id: 'g2022-SSen-LD',
             type: 'fill',
-            source: 'results-LD',
+            source: 'g2022-LD',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'LD_g2022_SSen_Party_1'],
+                    ['get', 'SSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -365,7 +431,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'LD_g2022_SSen_Margin'],
+                    ['get', 'SSen_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -389,14 +455,14 @@ map.on('load', function () {
         {
             id: 'g2022-SSen-precinct',
             type: 'fill',
-            source: 'results-precinct',
+            source: 'g2022-precinct',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SSen_Party_1'],
+                    ['get', 'SSen_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -406,7 +472,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'precinct_g2022_SSen_Margin'],
+                    ['get', 'SSen_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -430,14 +496,14 @@ map.on('load', function () {
         {
             id: 'g2022-SRep1-LD',
             type: 'fill',
-            source: 'results-LD',
+            source: 'g2022-LD',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'LD_g2022_SRep1_Party_1'],
+                    ['get', 'SRep1_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -447,7 +513,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'LD_g2022_SRep1_Margin'],
+                    ['get', 'SRep1_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -471,14 +537,14 @@ map.on('load', function () {
         {
             id: 'g2022-SRep1-precinct',
             type: 'fill',
-            source: 'results-precinct',
+            source: 'g2022-precinct',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SRep1_Party_1'],
+                    ['get', 'SRep1_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -488,7 +554,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'precinct_g2022_SRep1_Margin'],
+                    ['get', 'SRep1_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -512,14 +578,14 @@ map.on('load', function () {
         {
             id: 'g2022-SRep2-LD',
             type: 'fill',
-            source: 'results-LD',
+            source: 'g2022-LD',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'LD_g2022_SRep2_Party_1'],
+                    ['get', 'SRep2_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -529,7 +595,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'LD_g2022_SRep2_Margin'],
+                    ['get', 'SRep2_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -553,14 +619,14 @@ map.on('load', function () {
         {
             id: 'g2022-SRep2-precinct',
             type: 'fill',
-            source: 'results-precinct',
+            source: 'g2022-precinct',
             layout: {
                 'visibility': 'none'
             },
             paint: {
                 'fill-color': [
                     'match',
-                    ['get', 'precinct_g2022_SRep2_Party_1'],
+                    ['get', 'SRep2_Party_1'],
                     'Democratic', '#6193c7',
                     'Republican', '#cf635d',
                     'Independent', '#fdb614',
@@ -570,7 +636,7 @@ map.on('load', function () {
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
-                    ['get', 'precinct_g2022_SRep2_Margin'],
+                    ['get', 'SRep2_Margin'],
                     0.1, 2.5,
                     0.2, 5,
                     0.3, 7.5,
@@ -606,6 +672,8 @@ toggleLayer(['outlines-LD', 'g2022-SRep1-LD', 'g2022-SRep1-precinct'], 'State Re
 
 toggleLayer(['outlines-LD', 'g2022-SRep2-LD', 'g2022-SRep2-precinct'], 'State Representative Pos. 2');
 
+toggleLayer(['outlines-county', 'g2022-turnout-county', 'g2022-turnout-precinct'], 'Turnout');
+
 function toggleLayer(ids, name) {
     var link = document.createElement('a');
     link.href = '#';
@@ -633,6 +701,7 @@ function toggleLayer(ids, name) {
 }
 
 
+
 // Popup controls for 2022 General: Secretary of State, county layer
 map.on('mouseenter', 'g2022-SoS-county', function () {
     map.getCanvas().style.cursor = 'pointer';
@@ -646,18 +715,24 @@ map.on('click', 'g2022-SoS-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
     countyName = countyName.toUpperCase();
 
-    var nameFirst = e.features[0].properties.county_g2022_SoS_Name_1;
-    var votesFirst = e.features[0].properties.county_g2022_SoS_Votes_1;
-    var pctFirst = e.features[0].properties.county_g2022_SoS_Pct_1;
+    var nameFirst = e.features[0].properties.SoS_Name_1;
+    var votesFirst = e.features[0].properties.SoS_Votes_1;
+    var pctFirst = e.features[0].properties.SoS_Pct_1;
 
-    var nameSecond = e.features[0].properties.county_g2022_SoS_Name_2;
-    var votesSecond = e.features[0].properties.county_g2022_SoS_Votes_2;
-    var pctSecond = e.features[0].properties.county_g2022_SoS_Pct_2;
+    var nameSecond = e.features[0].properties.SoS_Name_2;
+    var votesSecond = e.features[0].properties.SoS_Votes_2;
+    var pctSecond = e.features[0].properties.SoS_Pct_2;
 
-    var nameThird = e.features[0].properties.county_g2022_SoS_Name_3;
-    var votesThird = e.features[0].properties.county_g2022_SoS_Votes_3;
-    var pctThird = e.features[0].properties.county_g2022_SoS_Pct_3;
+    var nameThird = e.features[0].properties.SoS_Name_3;
+    var votesThird = e.features[0].properties.SoS_Votes_3;
+    var pctThird = e.features[0].properties.SoS_Pct_3;
     
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
     let message;
 
     if (nameThird == 'None') {
@@ -665,12 +740,14 @@ map.on('click', 'g2022-SoS-county', function (e) {
         '<h>' + countyName + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + countyName + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
 
     new mapboxgl.Popup()
@@ -678,6 +755,7 @@ map.on('click', 'g2022-SoS-county', function (e) {
         .setHTML(message)
         .addTo(map);
 });
+
 
 // Popup controls for 2022 General: Secretary of State, precinct layer
 map.on('mouseenter', 'g2022-SoS-precinct', function () {
@@ -687,24 +765,32 @@ map.on('mouseenter', 'g2022-SoS-precinct', function () {
 map.on('mouseleave', 'g2022-SoS-precinct', function () {
     map.getCanvas().style.cursor = '';
 });
+
 map.on('click', 'g2022-SoS-precinct', function (e) {
-    var precinctID = e.features[0].properties.PRC_ID;
+    var precinctID = e.features[0].properties.Precinct;
 
-    var nameFirst = e.features[0].properties.precinct_g2022_SoS_Name_1;
-    var votesFirst = e.features[0].properties.precinct_g2022_SoS_Votes_1;
-    var pctFirst = e.features[0].properties.precinct_g2022_SoS_Pct_1;
+    var nameFirst = e.features[0].properties.SoS_Name_1;
+    var votesFirst = e.features[0].properties.SoS_Votes_1;
+    var pctFirst = e.features[0].properties.SoS_Pct_1;
 
-    var nameSecond = e.features[0].properties.precinct_g2022_SoS_Name_2;
-    var votesSecond = e.features[0].properties.precinct_g2022_SoS_Votes_2;
-    var pctSecond = e.features[0].properties.precinct_g2022_SoS_Pct_2;
+    var nameSecond = e.features[0].properties.SoS_Name_2;
+    var votesSecond = e.features[0].properties.SoS_Votes_2;
+    var pctSecond = e.features[0].properties.SoS_Pct_2;
 
-    var nameThird = e.features[0].properties.precinct_g2022_SoS_Name_3;
-    var votesThird = e.features[0].properties.precinct_g2022_SoS_Votes_3;
-    var pctThird = e.features[0].properties.precinct_g2022_SoS_Pct_3;
+    var nameThird = e.features[0].properties.SoS_Name_3;
+    var votesThird = e.features[0].properties.SoS_Votes_3;
+    var pctThird = e.features[0].properties.SoS_Pct_3;
 
     precinctID = precinctID.toUpperCase();
 
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
     let message;
+
     if (nameFirst == null) {
         message = 
         '<h>' + precinctID + '</h>'
@@ -715,19 +801,20 @@ map.on('click', 'g2022-SoS-precinct', function (e) {
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
         .addTo(map);
 });
-
 
 
 // Popup controls for 2022 General: U.S. Senate, county layer
@@ -743,18 +830,24 @@ map.on('click', 'g2022-FSen-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
     countyName = countyName.toUpperCase();
 
-    var nameFirst = e.features[0].properties.county_g2022_FSen_Name_1;
-    var votesFirst = e.features[0].properties.county_g2022_FSen_Votes_1;
-    var pctFirst = e.features[0].properties.county_g2022_FSen_Pct_1;
+    var nameFirst = e.features[0].properties.FSen_Name_1;
+    var votesFirst = e.features[0].properties.FSen_Votes_1;
+    var pctFirst = e.features[0].properties.FSen_Pct_1;
 
-    var nameSecond = e.features[0].properties.county_g2022_FSen_Name_2;
-    var votesSecond = e.features[0].properties.county_g2022_FSen_Votes_2;
-    var pctSecond = e.features[0].properties.county_g2022_FSen_Pct_2;
+    var nameSecond = e.features[0].properties.FSen_Name_2;
+    var votesSecond = e.features[0].properties.FSen_Votes_2;
+    var pctSecond = e.features[0].properties.FSen_Pct_2;
 
-    var nameThird = e.features[0].properties.county_g2022_FSen_Name_3;
-    var votesThird = e.features[0].properties.county_g2022_FSen_Votes_3;
-    var pctThird = e.features[0].properties.county_g2022_FSen_Pct_3;
+    var nameThird = e.features[0].properties.FSen_Name_3;
+    var votesThird = e.features[0].properties.FSen_Votes_3;
+    var pctThird = e.features[0].properties.FSen_Pct_3;
     
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
     let message;
 
     if (nameThird == 'None') {
@@ -762,12 +855,14 @@ map.on('click', 'g2022-FSen-county', function (e) {
         '<h>' + countyName + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + countyName + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
 
     new mapboxgl.Popup()
@@ -775,6 +870,7 @@ map.on('click', 'g2022-FSen-county', function (e) {
         .setHTML(message)
         .addTo(map);
 });
+
 
 // Popup controls for 2022 General: U.S. Senate, precinct layer
 map.on('mouseenter', 'g2022-FSen-precinct', function () {
@@ -784,22 +880,29 @@ map.on('mouseenter', 'g2022-FSen-precinct', function () {
 map.on('mouseleave', 'g2022-FSen-precinct', function () {
     map.getCanvas().style.cursor = '';
 });
+
 map.on('click', 'g2022-FSen-precinct', function (e) {
-    var precinctID = e.features[0].properties.PRC_ID;
+    var precinctID = e.features[0].properties.Precinct;
 
-    var nameFirst = e.features[0].properties.precinct_g2022_FSen_Name_1;
-    var votesFirst = e.features[0].properties.precinct_g2022_FSen_Votes_1;
-    var pctFirst = e.features[0].properties.precinct_g2022_FSen_Pct_1;
+    var nameFirst = e.features[0].properties.FSen_Name_1;
+    var votesFirst = e.features[0].properties.FSen_Votes_1;
+    var pctFirst = e.features[0].properties.FSen_Pct_1;
 
-    var nameSecond = e.features[0].properties.precinct_g2022_FSen_Name_2;
-    var votesSecond = e.features[0].properties.precinct_g2022_FSen_Votes_2;
-    var pctSecond = e.features[0].properties.precinct_g2022_FSen_Pct_2;
+    var nameSecond = e.features[0].properties.FSen_Name_2;
+    var votesSecond = e.features[0].properties.FSen_Votes_2;
+    var pctSecond = e.features[0].properties.FSen_Pct_2;
 
-    var nameThird = e.features[0].properties.precinct_g2022_FSen_Name_3;
-    var votesThird = e.features[0].properties.precinct_g2022_FSen_Votes_3;
-    var pctThird = e.features[0].properties.precinct_g2022_FSen_Pct_3;
+    var nameThird = e.features[0].properties.FSen_Name_3;
+    var votesThird = e.features[0].properties.FSen_Votes_3;
+    var pctThird = e.features[0].properties.FSen_Pct_3;
 
     precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
 
     let message;
     if (nameFirst == null) {
@@ -812,19 +915,20 @@ map.on('click', 'g2022-FSen-precinct', function (e) {
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
         .addTo(map);
 });
-
 
 
 // Popup controls for 2022 General: U.S. Representative, CD layer
@@ -839,17 +943,23 @@ map.on('mouseleave', 'g2022-FRep-CD', function () {
 map.on('click', 'g2022-FRep-CD', function (e) {
     var districtNumber = e.features[0].properties.DISTRICT;
 
-    var nameFirst = e.features[0].properties.CD_g2022_FRep_Name_1;
-    var votesFirst = e.features[0].properties.CD_g2022_FRep_Votes_1;
-    var pctFirst = e.features[0].properties.CD_g2022_FRep_Pct_1;
+    var nameFirst = e.features[0].properties.FRep_Name_1;
+    var votesFirst = e.features[0].properties.FRep_Votes_1;
+    var pctFirst = e.features[0].properties.FRep_Pct_1;
 
-    var nameSecond = e.features[0].properties.CD_g2022_FRep_Name_2;
-    var votesSecond = e.features[0].properties.CD_g2022_FRep_Votes_2;
-    var pctSecond = e.features[0].properties.CD_g2022_FRep_Pct_2;
+    var nameSecond = e.features[0].properties.FRep_Name_2;
+    var votesSecond = e.features[0].properties.FRep_Votes_2;
+    var pctSecond = e.features[0].properties.FRep_Pct_2;
 
-    var nameThird = e.features[0].properties.CD_g2022_FRep_Name_3;
-    var votesThird = e.features[0].properties.CD_g2022_FRep_Votes_3;
-    var pctThird = e.features[0].properties.CD_g2022_FRep_Pct_3;
+    var nameThird = e.features[0].properties.FRep_Name_3;
+    var votesThird = e.features[0].properties.FRep_Votes_3;
+    var pctThird = e.features[0].properties.FRep_Pct_3;
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
 
     let message;
 
@@ -858,12 +968,14 @@ map.on('click', 'g2022-FRep-CD', function (e) {
         '<h>CONGRESSIONAL DISTRICT ' + districtNumber + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>CONGRESSIONAL DISTRICT ' + districtNumber + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
 
     new mapboxgl.Popup()
@@ -871,6 +983,7 @@ map.on('click', 'g2022-FRep-CD', function (e) {
         .setHTML(message)
         .addTo(map);
 });
+
 
 // Popup controls for 2022 General: U.S. Representative, precinct layer
 map.on('mouseenter', 'g2022-FRep-precinct', function () {
@@ -880,22 +993,29 @@ map.on('mouseenter', 'g2022-FRep-precinct', function () {
 map.on('mouseleave', 'g2022-FRep-precinct', function () {
     map.getCanvas().style.cursor = '';
 });
+
 map.on('click', 'g2022-FRep-precinct', function (e) {
-    var precinctID = e.features[0].properties.PRC_ID;
+    var precinctID = e.features[0].properties.Precinct;
 
-    var nameFirst = e.features[0].properties.precinct_g2022_FRep_Name_1;
-    var votesFirst = e.features[0].properties.precinct_g2022_FRep_Votes_1;
-    var pctFirst = e.features[0].properties.precinct_g2022_FRep_Pct_1;
+    var nameFirst = e.features[0].properties.FRep_Name_1;
+    var votesFirst = e.features[0].properties.FRep_Votes_1;
+    var pctFirst = e.features[0].properties.FRep_Pct_1;
 
-    var nameSecond = e.features[0].properties.precinct_g2022_FRep_Name_2;
-    var votesSecond = e.features[0].properties.precinct_g2022_FRep_Votes_2;
-    var pctSecond = e.features[0].properties.precinct_g2022_FRep_Pct_2;
+    var nameSecond = e.features[0].properties.FRep_Name_2;
+    var votesSecond = e.features[0].properties.FRep_Votes_2;
+    var pctSecond = e.features[0].properties.FRep_Pct_2;
 
-    var nameThird = e.features[0].properties.precinct_g2022_FRep_Name_3;
-    var votesThird = e.features[0].properties.precinct_g2022_FRep_Votes_3;
-    var pctThird = e.features[0].properties.precinct_g2022_FRep_Pct_3;
+    var nameThird = e.features[0].properties.FRep_Name_3;
+    var votesThird = e.features[0].properties.FRep_Votes_3;
+    var pctThird = e.features[0].properties.FRep_Pct_3;
 
     precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
 
     let message;
     if (nameFirst == null) {
@@ -908,19 +1028,20 @@ map.on('click', 'g2022-FRep-precinct', function (e) {
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
         .addTo(map);
 });
-
 
 
 // Popup controls for 2022 General: State Senator, LD layer
@@ -935,17 +1056,23 @@ map.on('mouseleave', 'g2022-SSen-LD', function () {
 map.on('click', 'g2022-SSen-LD', function (e) {
     var districtNumber = e.features[0].properties.DISTRICT;
 
-    var nameFirst = e.features[0].properties.LD_g2022_SSen_Name_1;
-    var votesFirst = e.features[0].properties.LD_g2022_SSen_Votes_1;
-    var pctFirst = e.features[0].properties.LD_g2022_SSen_Pct_1;
+    var nameFirst = e.features[0].properties.SSen_Name_1;
+    var votesFirst = e.features[0].properties.LSSen_Votes_1;
+    var pctFirst = e.features[0].properties.SSen_Pct_1;
 
-    var nameSecond = e.features[0].properties.LD_g2022_SSen_Name_2;
-    var votesSecond = e.features[0].properties.LD_g2022_SSen_Votes_2;
-    var pctSecond = e.features[0].properties.LD_g2022_SSen_Pct_2;
+    var nameSecond = e.features[0].properties.SSen_Name_2;
+    var votesSecond = e.features[0].properties.SSen_Votes_2;
+    var pctSecond = e.features[0].properties.SSen_Pct_2;
 
-    var nameThird = e.features[0].properties.LD_g2022_SSen_Name_3;
-    var votesThird = e.features[0].properties.LD_g2022_SSen_Votes_3;
-    var pctThird = e.features[0].properties.LD_g2022_SSen_Pct_3;
+    var nameThird = e.features[0].properties.SSen_Name_3;
+    var votesThird = e.features[0].properties.SSen_Votes_3;
+    var pctThird = e.features[0].properties.SSen_Pct_3;
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
 
     let message;
 
@@ -959,6 +1086,7 @@ map.on('click', 'g2022-SSen-LD', function (e) {
         '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
             + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
             + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+            + '<p>Voter turnout: ' + turnout + '%</p>'
     } 
     else {
         message = 
@@ -966,6 +1094,7 @@ map.on('click', 'g2022-SSen-LD', function (e) {
             + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
             + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
             + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+            + '<p>Voter turnout: ' + turnout + '%</p>'
     }
 
     new mapboxgl.Popup()
@@ -973,6 +1102,7 @@ map.on('click', 'g2022-SSen-LD', function (e) {
         .setHTML(message)
         .addTo(map);
 });
+
 
 // Popup controls for 2022 General: U.S. Representative, precinct layer
 map.on('mouseenter', 'g2022-SSen-precinct', function () {
@@ -984,21 +1114,27 @@ map.on('mouseleave', 'g2022-SSen-precinct', function () {
 });
 
 map.on('click', 'g2022-SSen-precinct', function (e) {
-    var precinctID = e.features[0].properties.PRC_ID;
+    var precinctID = e.features[0].properties.Precinct;
 
-    var nameFirst = e.features[0].properties.precinct_g2022_SSen_Name_1;
-    var votesFirst = e.features[0].properties.precinct_g2022_SSen_Votes_1;
-    var pctFirst = e.features[0].properties.precinct_g2022_SSen_Pct_1;
+    var nameFirst = e.features[0].properties.SSen_Name_1;
+    var votesFirst = e.features[0].properties.SSen_Votes_1;
+    var pctFirst = e.features[0].properties.SSen_Pct_1;
 
-    var nameSecond = e.features[0].properties.precinct_g2022_SSen_Name_2;
-    var votesSecond = e.features[0].properties.precinct_g2022_SSen_Votes_2;
-    var pctSecond = e.features[0].properties.precinct_g2022_SSen_Pct_2;
+    var nameSecond = e.features[0].properties.SSen_Name_2;
+    var votesSecond = e.features[0].properties.SSen_Votes_2;
+    var pctSecond = e.features[0].properties.SSen_Pct_2;
 
-    var nameThird = e.features[0].properties.precinct_g2022_SSen_Name_3;
-    var votesThird = e.features[0].properties.precinct_g2022_SSen_Votes_3;
-    var pctThird = e.features[0].properties.precinct_g2022_SSen_Pct_3;
+    var nameThird = e.features[0].properties.SSen_Name_3;
+    var votesThird = e.features[0].properties.SSen_Votes_3;
+    var pctThird = e.features[0].properties.SSen_Pct_3;
 
     precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
 
     let message;
     if (nameFirst == null) {
@@ -1011,12 +1147,14 @@ map.on('click', 'g2022-SSen-precinct', function (e) {
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
@@ -1037,18 +1175,24 @@ map.on('mouseleave', 'g2022-SRep1-LD', function () {
 map.on('click', 'g2022-SRep1-LD', function (e) {
     var districtNumber = e.features[0].properties.DISTRICT;
 
-    var nameFirst = e.features[0].properties.LD_g2022_SRep1_Name_1;
-    var votesFirst = e.features[0].properties.LD_g2022_SRep1_Votes_1;
-    var pctFirst = e.features[0].properties.LD_g2022_SRep1_Pct_1;
+    var nameFirst = e.features[0].properties.SRep1_Name_1;
+    var votesFirst = e.features[0].properties.SRep1_Votes_1;
+    var pctFirst = e.features[0].properties.SRep1_Pct_1;
 
-    var nameSecond = e.features[0].properties.LD_g2022_SRep1_Name_2;
-    var votesSecond = e.features[0].properties.LD_g2022_SRep1_Votes_2;
-    var pctSecond = e.features[0].properties.LD_g2022_SRep1_Pct_2;
+    var nameSecond = e.features[0].properties.SRep1_Name_2;
+    var votesSecond = e.features[0].properties.SRep1_Votes_2;
+    var pctSecond = e.features[0].properties.SRep1_Pct_2;
 
-    var nameThird = e.features[0].properties.LD_g2022_SRep1_Name_3;
-    var votesThird = e.features[0].properties.LD_g2022_SRep1_Votes_3;
-    var pctThird = e.features[0].properties.LD_g2022_SRep1_Pct_3;
+    var nameThird = e.features[0].properties.SRep1_Name_3;
+    var votesThird = e.features[0].properties.SRep1_Votes_3;
+    var pctThird = e.features[0].properties.SRep1_Pct_3;
     
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
     let message;
 
     if (nameThird == 'None') {
@@ -1056,12 +1200,14 @@ map.on('click', 'g2022-SRep1-LD', function (e) {
         '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
             + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
             + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+            + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
             + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
             + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
             + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+            + '<p>Voter turnout: ' + turnout + '%</p>'
     }
 
     new mapboxgl.Popup()
@@ -1069,6 +1215,7 @@ map.on('click', 'g2022-SRep1-LD', function (e) {
         .setHTML(message)
         .addTo(map);
 });
+
 
 // Popup controls for 2022 General: State Representative Pos. 1, precinct layer
 map.on('mouseenter', 'g2022-SRep1-precinct', function () {
@@ -1080,23 +1227,29 @@ map.on('mouseleave', 'g2022-SRep1-precinct', function () {
 });
 
 map.on('click', 'g2022-SRep1-precinct', function (e) {
-    var precinctID = e.features[0].properties.PRC_ID;
+    var precinctID = e.features[0].properties.Precinct;
 
-    var nameFirst = e.features[0].properties.precinct_g2022_SRep1_Name_1;
-    var votesFirst = e.features[0].properties.precinct_g2022_SRep1_Votes_1;
-    var pctFirst = e.features[0].properties.precinct_g2022_SRep1_Pct_1;
+    var nameFirst = e.features[0].properties.SRep1_Name_1;
+    var votesFirst = e.features[0].properties.SRep1_Votes_1;
+    var pctFirst = e.features[0].properties.SRep1_Pct_1;
 
-    var nameSecond = e.features[0].properties.precinct_g2022_SRep1_Name_2;
-    var votesSecond = e.features[0].properties.precinct_g2022_SRep1_Votes_2;
-    var pctSecond = e.features[0].properties.precinct_g2022_SRep1_Pct_2;
+    var nameSecond = e.features[0].properties.SRep1_Name_2;
+    var votesSecond = e.features[0].properties.SRep1_Votes_2;
+    var pctSecond = e.features[0].properties.SRep1_Pct_2;
 
-    var nameThird = e.features[0].properties.precinct_g2022_SRep1_Name_3;
-    var votesThird = e.features[0].properties.precinct_g2022_SRep1_Votes_3;
-    var pctThird = e.features[0].properties.precinct_g2022_SRep1_Pct_3;
+    var nameThird = e.features[0].properties.SRep1_Name_3;
+    var votesThird = e.features[0].properties.SRep1_Votes_3;
+    var pctThird = e.features[0].properties.SRep1_Pct_3;
 
     precinctID = precinctID.toUpperCase();
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
 
     let message;
+
     if (nameFirst == null) {
         message = 
         '<h>' + precinctID + '</h>'
@@ -1107,12 +1260,14 @@ map.on('click', 'g2022-SRep1-precinct', function (e) {
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
@@ -1133,17 +1288,23 @@ map.on('mouseleave', 'g2022-SRep2-LD', function () {
 map.on('click', 'g2022-SRep2-LD', function (e) {
     var districtNumber = e.features[0].properties.DISTRICT;
 
-    var nameFirst = e.features[0].properties.LD_g2022_SRep2_Name_1;
-    var votesFirst = e.features[0].properties.LD_g2022_SRep2_Votes_1;
-    var pctFirst = e.features[0].properties.LD_g2022_SRep2_Pct_1;
+    var nameFirst = e.features[0].properties.SRep2_Name_1;
+    var votesFirst = e.features[0].properties.SRep2_Votes_1;
+    var pctFirst = e.features[0].properties.SRep2_Pct_1;
 
-    var nameSecond = e.features[0].properties.LD_g2022_SRep2_Name_2;
-    var votesSecond = e.features[0].properties.LD_g2022_SRep2_Votes_2;
-    var pctSecond = e.features[0].properties.LD_g2022_SRep2_Pct_2;
+    var nameSecond = e.features[0].properties.SRep2_Name_2;
+    var votesSecond = e.features[0].properties.SRep2_Votes_2;
+    var pctSecond = e.features[0].properties.SRep2_Pct_2;
 
-    var nameThird = e.features[0].properties.LD_g2022_SRep2_Name_3;
-    var votesThird = e.features[0].properties.LD_g2022_SRep2_Votes_3;
-    var pctThird = e.features[0].properties.LD_g2022_SRep2_Pct_3;
+    var nameThird = e.features[0].properties.SRep2_Name_3;
+    var votesThird = e.features[0].properties.SRep2_Votes_3;
+    var pctThird = e.features[0].properties.SRep2_Pct_3;
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
 
     let message;
 
@@ -1152,12 +1313,14 @@ map.on('click', 'g2022-SRep2-LD', function (e) {
         '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
             + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
             + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+            + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
             + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
             + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
             + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+            + '<p>Voter turnout: ' + turnout + '%</p>'
     }
 
     new mapboxgl.Popup()
@@ -1165,6 +1328,7 @@ map.on('click', 'g2022-SRep2-LD', function (e) {
         .setHTML(message)
         .addTo(map);
 });
+
 
 // Popup controls for 2022 General: State Representative Pos. 2, precinct layer
 map.on('mouseenter', 'g2022-SRep2-precinct', function () {
@@ -1174,24 +1338,32 @@ map.on('mouseenter', 'g2022-SRep2-precinct', function () {
 map.on('mouseleave', 'g2022-SRep2-precinct', function () {
     map.getCanvas().style.cursor = '';
 });
+
 map.on('click', 'g2022-SRep2-precinct', function (e) {
-    var precinctID = e.features[0].properties.PRC_ID;
+    var precinctID = e.features[0].properties.Precinct;
 
-    var nameFirst = e.features[0].properties.precinct_g2022_SRep2_Name_1;
-    var votesFirst = e.features[0].properties.precinct_g2022_SRep2_Votes_1;
-    var pctFirst = e.features[0].properties.precinct_g2022_SRep2_Pct_1;
+    var nameFirst = e.features[0].properties.SRep2_Name_1;
+    var votesFirst = e.features[0].properties.SRep2_Votes_1;
+    var pctFirst = e.features[0].properties.SRep2_Pct_1;
 
-    var nameSecond = e.features[0].properties.precinct_g2022_SRep2_Name_2;
-    var votesSecond = e.features[0].properties.precinct_g2022_SRep2_Votes_2;
-    var pctSecond = e.features[0].properties.precinct_g2022_SRep2_Pct_2;
+    var nameSecond = e.features[0].properties.SRep2_Name_2;
+    var votesSecond = e.features[0].properties.SRep2_Votes_2;
+    var pctSecond = e.features[0].properties.SRep2_Pct_2;
 
-    var nameThird = e.features[0].properties.precinct_g2022_SRep2_Name_3;
-    var votesThird = e.features[0].properties.precinct_g2022_SRep2_Votes_3;
-    var pctThird = e.features[0].properties.precinct_g2022_SRep2_Pct_3;
+    var nameThird = e.features[0].properties.SRep2_Name_3;
+    var votesThird = e.features[0].properties.SRep2_Votes_3;
+    var pctThird = e.features[0].properties.SRep2_Pct_3;
 
     precinctID = precinctID.toUpperCase();
 
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
     let message;
+
     if (nameFirst == null) {
         message = 
         '<h>' + precinctID + '</h>'
@@ -1202,12 +1374,14 @@ map.on('click', 'g2022-SRep2-precinct', function (e) {
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     } else {
         message = 
         '<h>' + precinctID + '</h>'
         + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
         + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
         + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
     }
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
