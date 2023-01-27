@@ -242,7 +242,7 @@ map.on('load', function () {
             },
             minzoom: MINZOOM
         },
-        'g2022-SoS-county'
+        'outlines-county'
     );
 
     // 2022 General: U.S. Senate, county layer
@@ -1466,11 +1466,6 @@ map.on('click', 'g2022-SRep2-precinct', function (e) {
         .setHTML(message)
         .addTo(map);
 });
-
-
-
-
-
 
 
 
