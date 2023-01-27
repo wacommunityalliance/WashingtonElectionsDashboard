@@ -122,7 +122,7 @@ map.on('load', function () {
                     0.8, 80,
                     0.9, 90,
                     1.0, 100,
-                    0.1
+                    0
                 ]
             },
             maxzoom: MAXZOOM
@@ -155,7 +155,7 @@ map.on('load', function () {
                     0.8, 80,
                     0.9, 90,
                     1.0, 100,
-                    0.1
+                    0
                 ]
             },
             minzoom: MINZOOM
@@ -699,6 +699,84 @@ function toggleLayer(ids, name) {
     var layers = document.getElementById('menu');
     layers.appendChild(link);
 }
+
+
+
+// Popup controls for 2022 General: Turnout, county layer
+map.on('mouseenter', 'g2022-turnout-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-turnout-county', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-turnout-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    countyName = countyName.toUpperCase();
+
+    var turnout = e.features[0].properties.Total_Turnout;
+    var turnoutYouth = e.features[0].properties.Youth_Turnout;
+    var turnoutBIPOC = e.features[0].properties.BIPOC_Turnout;
+
+    turnout = Math.round(turnout * 100) / 100;
+    turnoutYouth = Math.round(turnoutYouth * 100) / 100;
+    turnoutBIPOC = Math.round(turnoutBIPOC * 100) / 100;
+
+    message = 
+        '<h>' + countyName + '</h>'
+        + '<p>Overall turnout: ' + turnout + '%</p>'
+        + '<p>BIPOC turnout: ' + turnoutBIPOC + '%</p>'
+        + '<p>Youth turnout: ' + turnoutYouth + '%</p>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: Turnout, precinct layer
+map.on('mouseenter', 'g2022-turnout-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-turnout-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-turnout-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    precinctID = precinctID.toUpperCase();
+
+    var turnoutOverall = e.features[0].properties.Total_Turnout;
+    var turnoutYouth = e.features[0].properties.Youth_Turnout;
+    var turnoutBIPOC = e.features[0].properties.BIPOC_Turnout;
+
+    turnout = Math.round(turnoutOverall * 100) / 100;
+    turnoutYouth = Math.round(turnoutYouth * 100) / 100;
+    turnoutBIPOC = Math.round(turnoutBIPOC * 100) / 100;
+
+    let message;
+
+    if (turnoutOverall == null) {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>No data available</p>'
+    }
+    else {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>Overall turnout: ' + turnout + '%</p>'
+        + '<p>BIPOC turnout: ' + turnoutBIPOC + '%</p>'
+        + '<p>Youth turnout: ' + turnoutYouth + '%</p>'
+    }
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
 
 
 
