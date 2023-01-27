@@ -13,12 +13,14 @@ body {
 }
 
 #menu {
-    background: #fff;
+    background-color: #fff;
+    opacity: 100%;
+    border-radius: .5em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     position: absolute;
     z-index: 1;
     bottom: 30px;
     right: 30px;
-    border-radius: 3px;
     width: 200px;
     border: 2px solid rgba(0,0,0,0.4);
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +34,6 @@ body {
     color: #404040;
     display: block;
     margin: 0;
-    padding: 0;
     padding: 10px;
     text-decoration: none;
     border-bottom: 1px solid #f8f8f8 ;
@@ -40,20 +41,27 @@ body {
 }
 
 #menu a:last-child {
-    border: none;
+    border-radius: .5em;
+    border: .5em;
 }
 
 #menu a:hover {
+    border-radius: .5em;
+    border: .5em;
     background-color: #f8f8f8;
     color: #000000;
 }
 
 #menu a.active {
+    border-radius: .5em;
+    border: .5em;
     background-color: #404040;
     color: #ffffff;
 }
 
 #menu a.active:hover {
+    border-radius: .5em;
+    border: .5em;
     background: #000000;
 }
 
@@ -87,7 +95,7 @@ body {
     line-height: 2.5em;
     padding: 1em 2em 0em;
     position: absolute;
-    max-width: 25%;
+    max-width: 15%;
     margin: 1em 1em;
     z-index: 100;
     
@@ -103,14 +111,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1em;
-}
-
-.title div span {
-    border-radius: 50%;
-    display: inline-block;
-    height: 10px;
-    margin-left: 5px;
-    width: 10px;
 }
 
 .title hr {

@@ -45,7 +45,7 @@ map.on('load', function () {
         data: 'results-precinct.geojson'
         }
     );
-    
+
     // Washington County boundaries
     map.addLayer(
         {
@@ -609,7 +609,7 @@ toggleLayer(['outlines-LD', 'g2022-SRep2-LD', 'g2022-SRep2-precinct'], 'State Re
 function toggleLayer(ids, name) {
     var link = document.createElement('a');
     link.href = '#';
-    link.className = 'active';
+    link.className = '';
     link.textContent = name;
 
     link.onclick = function (e) {
