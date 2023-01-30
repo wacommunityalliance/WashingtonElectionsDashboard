@@ -116,7 +116,7 @@ map.on('load', function () {
                     0.3, 40,
                     0.45, 60,
                     0.6, 80,
-                    0.75, 100,
+                    1, 100,
                     0
                 ]
             },
@@ -144,7 +144,7 @@ map.on('load', function () {
                     0.3, 40,
                     0.45, 60,
                     0.6, 80,
-                    0.75, 100,
+                    1, 100,
                     0
                 ]
             },
@@ -609,6 +609,475 @@ map.on('load', function () {
         'g2022-SRep2-LD'
     );
         
+    // 2022 General: County Assessor, County layer
+    map.addLayer(
+        {
+            id: 'g2022-CAss-county',
+            type: 'fill',
+            source: 'g2022-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CAss_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'Other', '#9398bb',
+                    'None', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CAss_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            maxzoom: MAXZOOM
+        },
+        'outlines-county'
+    );
+
+    // 2022 General: County Assessor, precinct layer
+    map.addLayer(
+        {
+            id: 'g2022-CAss-precinct',
+            type: 'fill',
+            source: 'g2022-precinct',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CAss_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'None', '#9398bb',
+                    'Other', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CAss_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            minzoom: MINZOOM
+        },
+        'g2022-CAss-county'
+    );
+
+    // 2022 General: County Auditor, County layer
+    map.addLayer(
+        {
+            id: 'g2022-CAud-county',
+            type: 'fill',
+            source: 'g2022-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CAud_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'Other', '#9398bb',
+                    'None', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CAud_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            maxzoom: MAXZOOM
+        },
+        'outlines-county'
+    );
+
+    // 2022 General: County Auditor, precinct layer
+    map.addLayer(
+        {
+            id: 'g2022-CAud-precinct',
+            type: 'fill',
+            source: 'g2022-precinct',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CAud_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'None', '#9398bb',
+                    'Other', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CAud_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            minzoom: MINZOOM
+        },
+        'g2022-CAud-county'
+    );
+
+    // 2022 General: County Clerk, County layer
+    map.addLayer(
+        {
+            id: 'g2022-CCler-county',
+            type: 'fill',
+            source: 'g2022-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CCler_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'Other', '#9398bb',
+                    'None', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CCler_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            maxzoom: MAXZOOM
+        },
+        'outlines-county'
+    );
+
+    // 2022 General: County Clerk, precinct layer
+    map.addLayer(
+        {
+            id: 'g2022-CCler-precinct',
+            type: 'fill',
+            source: 'g2022-precinct',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CCler_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'None', '#9398bb',
+                    'Other', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CCler_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            minzoom: MINZOOM
+        },
+        'g2022-CCler-county'
+    );
+    
+    // 2022 General: County Prosecutor, County layer
+    map.addLayer(
+        {
+            id: 'g2022-CPros-county',
+            type: 'fill',
+            source: 'g2022-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CPros_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'Other', '#9398bb',
+                    'None', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CPros_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            maxzoom: MAXZOOM
+        },
+        'outlines-county'
+    );
+
+    // 2022 General: County Prosecutor, precinct layer
+    map.addLayer(
+        {
+            id: 'g2022-CPros-precinct',
+            type: 'fill',
+            source: 'g2022-precinct',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CPros_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'None', '#9398bb',
+                    'Other', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CPros_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            minzoom: MINZOOM
+        },
+        'g2022-CPros-county'
+    );
+
+    // 2022 General: County Sheriff, County layer
+    map.addLayer(
+        {
+            id: 'g2022-CSher-county',
+            type: 'fill',
+            source: 'g2022-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CSher_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'Other', '#9398bb',
+                    'None', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CSher_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            maxzoom: MAXZOOM
+        },
+        'outlines-county'
+    );
+
+    // 2022 General: County Sheriff, precinct layer
+    map.addLayer(
+        {
+            id: 'g2022-CSher-precinct',
+            type: 'fill',
+            source: 'g2022-precinct',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CSher_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'None', '#9398bb',
+                    'Other', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CSher_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 100,
+                    0
+                ]
+            },
+            minzoom: MINZOOM
+        },
+        'g2022-CSher-county'
+    );
+
+    // 2022 General: County Treasurer, County layer
+    map.addLayer(
+        {
+            id: 'g2022-CTre-county',
+            type: 'fill',
+            source: 'g2022-county',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CTre_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'Other', '#9398bb',
+                    'None', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CTre_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 25,
+                    0.8, 101,
+                    0
+                ]
+            },
+            maxzoom: MAXZOOM
+        },
+        'outlines-county'
+    );
+
+    // 2022 General: County Treasurer, precinct layer
+    map.addLayer(
+        {
+            id: 'g2022-CTre-precinct',
+            type: 'fill',
+            source: 'g2022-precinct',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'fill-color': [
+                    'match',
+                    ['get', 'CTre_Party_1'],
+                    'Democratic', '#6193c7',
+                    'Republican', '#cf635d',
+                    'Independent', '#fdb614',
+                    'None', '#9398bb',
+                    'Other', '#9398bb',
+                    '#dedede'
+                ],
+                'fill-outline-color': '#ffffff',
+                'fill-opacity': [
+                    'step',
+                    ['get', 'CTre_Margin'],
+                    0.1, 2.5,
+                    0.2, 5,
+                    0.3, 7.5,
+                    0.4, 10,
+                    0.5, 15,
+                    0.6, 20,
+                    0.7, 25,
+                    0.8, 101,
+                    0
+                ]
+            },
+            minzoom: MINZOOM
+        },
+        'g2022-CTre-county'
+    );
 
 })
 
@@ -626,7 +1095,24 @@ toggleLayer(['outlines-LD', 'g2022-SRep1-LD', 'g2022-SRep1-precinct'], 'State Re
 
 toggleLayer(['outlines-LD', 'g2022-SRep2-LD', 'g2022-SRep2-precinct'], 'State Representative Pos. 2');
 
+toggleLayer(['outlines-county', 'g2022-CAss-county', 'g2022-CAss-precinct'], 'County Assessor');
+
+toggleLayer(['outlines-county', 'g2022-CAud-county', 'g2022-CAud-precinct'], 'County Auditor');
+
+toggleLayer(['outlines-county', 'g2022-CCler-county', 'g2022-CCler-precinct'], 'County Clerk');
+
+toggleLayer(['outlines-county', 'g2022-CPros-county', 'g2022-CPros-precinct'], 'County Prosecutor');
+
+toggleLayer(['outlines-county', 'g2022-CSher-county', 'g2022-CSher-precinct'], 'County Sheriff');
+
+toggleLayer(['outlines-county', 'g2022-CTre-county', 'g2022-CTre-precinct'], 'County Treasurer');
+
 toggleLayer(['outlines-county', 'g2022-turnout-county', 'g2022-turnout-precinct'], 'Turnout');
+
+
+
+
+
 
 function toggleLayer(ids, name) {
     var link = document.createElement('a');
@@ -1422,9 +1908,689 @@ map.on('click', 'g2022-SRep2-precinct', function (e) {
 });
 
 
+// Popup controls for 2022 General: County Assessor, county layer
+map.on('mouseenter', 'g2022-CAss-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CAss-county', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CAss-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    countyName = countyName.toUpperCase();
+
+    var nameFirst = e.features[0].properties.CAss_Name_1;
+    var votesFirst = e.features[0].properties.CAss_Votes_1;
+    var pctFirst = e.features[0].properties.CAss_Pct_1;
+
+    var nameSecond = e.features[0].properties.CAss_Name_2;
+    var votesSecond = e.features[0].properties.CAss_Votes_2;
+    var pctSecond = e.features[0].properties.CAss_Pct_2;
+
+    var nameThird = e.features[0].properties.CAss_Name_3;
+    var votesThird = e.features[0].properties.CAss_Votes_3;
+    var pctThird = e.features[0].properties.CAss_Pct_3;
+    
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+
+    if (nameThird == 'None') {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: County Assessor, precinct layer
+map.on('mouseenter', 'g2022-CAss-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CAss-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CAss-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    var nameFirst = e.features[0].properties.CAss_Name_1;
+    var votesFirst = e.features[0].properties.CAss_Votes_1;
+    var pctFirst = e.features[0].properties.CAss_Pct_1;
+
+    var nameSecond = e.features[0].properties.CAss_Name_2;
+    var votesSecond = e.features[0].properties.CAss_Votes_2;
+    var pctSecond = e.features[0].properties.CAss_Pct_2;
+
+    var nameThird = e.features[0].properties.CAss_Name_3;
+    var votesThird = e.features[0].properties.CAss_Votes_3;
+    var pctThird = e.features[0].properties.CAss_Pct_3;
+
+    precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+    if (nameFirst == null) {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>No data available</p>'
+    }
+    else if (nameThird == 'None') {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
 
 
 
+// Popup controls for 2022 General: County Auditor, county layer
+map.on('mouseenter', 'g2022-CAud-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CAud-county', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CAud-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    countyName = countyName.toUpperCase();
+
+    var nameFirst = e.features[0].properties.CAud_Name_1;
+    var votesFirst = e.features[0].properties.CAud_Votes_1;
+    var pctFirst = e.features[0].properties.CAud_Pct_1;
+
+    var nameSecond = e.features[0].properties.CAud_Name_2;
+    var votesSecond = e.features[0].properties.CAud_Votes_2;
+    var pctSecond = e.features[0].properties.CAud_Pct_2;
+
+    var nameThird = e.features[0].properties.CAud_Name_3;
+    var votesThird = e.features[0].properties.CAud_Votes_3;
+    var pctThird = e.features[0].properties.CAud_Pct_3;
+    
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+
+    if (nameThird == 'None') {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: County Auditor, precinct layer
+map.on('mouseenter', 'g2022-CAud-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CAud-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CAud-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    var nameFirst = e.features[0].properties.CAud_Name_1;
+    var votesFirst = e.features[0].properties.CAud_Votes_1;
+    var pctFirst = e.features[0].properties.CAud_Pct_1;
+
+    var nameSecond = e.features[0].properties.CAud_Name_2;
+    var votesSecond = e.features[0].properties.CAud_Votes_2;
+    var pctSecond = e.features[0].properties.CAud_Pct_2;
+
+    var nameThird = e.features[0].properties.CAud_Name_3;
+    var votesThird = e.features[0].properties.CAud_Votes_3;
+    var pctThird = e.features[0].properties.CAud_Pct_3;
+
+    precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+    if (nameFirst == null) {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>No data available</p>'
+    }
+    else if (nameThird == 'None') {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
 
 
 
+// Popup controls for 2022 General: County Clerk, county layer
+map.on('mouseenter', 'g2022-CCler-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CCler-county', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CCler-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    countyName = countyName.toUpperCase();
+
+    var nameFirst = e.features[0].properties.CCler_Name_1;
+    var votesFirst = e.features[0].properties.CCler_Votes_1;
+    var pctFirst = e.features[0].properties.CCler_Pct_1;
+
+    var nameSecond = e.features[0].properties.CCler_Name_2;
+    var votesSecond = e.features[0].properties.CCler_Votes_2;
+    var pctSecond = e.features[0].properties.CCler_Pct_2;
+
+    var nameThird = e.features[0].properties.CCler_Name_3;
+    var votesThird = e.features[0].properties.CCler_Votes_3;
+    var pctThird = e.features[0].properties.CCler_Pct_3;
+    
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+
+    if (nameThird == 'None') {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: County Clerk, precinct layer
+map.on('mouseenter', 'g2022-CCler-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CCler-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CCler-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    var nameFirst = e.features[0].properties.CCler_Name_1;
+    var votesFirst = e.features[0].properties.CCler_Votes_1;
+    var pctFirst = e.features[0].properties.CCler_Pct_1;
+
+    var nameSecond = e.features[0].properties.CCler_Name_2;
+    var votesSecond = e.features[0].properties.CCler_Votes_2;
+    var pctSecond = e.features[0].properties.CCler_Pct_2;
+
+    var nameThird = e.features[0].properties.CCler_Name_3;
+    var votesThird = e.features[0].properties.CCler_Votes_3;
+    var pctThird = e.features[0].properties.CCler_Pct_3;
+
+    precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+    if (nameFirst == null) {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>No data available</p>'
+    }
+    else if (nameThird == 'None') {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+
+// Popup controls for 2022 General: County Prosecutor, county layer
+map.on('mouseenter', 'g2022-CPros-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CPros-county', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CPros-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    countyName = countyName.toUpperCase();
+
+    var nameFirst = e.features[0].properties.CPros_Name_1;
+    var votesFirst = e.features[0].properties.CPros_Votes_1;
+    var pctFirst = e.features[0].properties.CPros_Pct_1;
+
+    var nameSecond = e.features[0].properties.CPros_Name_2;
+    var votesSecond = e.features[0].properties.CPros_Votes_2;
+    var pctSecond = e.features[0].properties.CPros_Pct_2;
+
+    var nameThird = e.features[0].properties.CPros_Name_3;
+    var votesThird = e.features[0].properties.CPros_Votes_3;
+    var pctThird = e.features[0].properties.CPros_Pct_3;
+    
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+
+    if (nameThird == 'None') {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: County Prosecutor, precinct layer
+map.on('mouseenter', 'g2022-CPros-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CPros-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CPros-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    var nameFirst = e.features[0].properties.CPros_Name_1;
+    var votesFirst = e.features[0].properties.CPros_Votes_1;
+    var pctFirst = e.features[0].properties.CPros_Pct_1;
+
+    var nameSecond = e.features[0].properties.CPros_Name_2;
+    var votesSecond = e.features[0].properties.CPros_Votes_2;
+    var pctSecond = e.features[0].properties.CPros_Pct_2;
+
+    var nameThird = e.features[0].properties.CPros_Name_3;
+    var votesThird = e.features[0].properties.CPros_Votes_3;
+    var pctThird = e.features[0].properties.CPros_Pct_3;
+
+    precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+    if (nameFirst == null) {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>No data available</p>'
+    }
+    else if (nameThird == 'None') {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: County Sheriff, county layer
+map.on('mouseenter', 'g2022-CSher-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CSher-county', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CSher-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    countyName = countyName.toUpperCase();
+
+    var nameFirst = e.features[0].properties.CSher_Name_1;
+    var votesFirst = e.features[0].properties.CSher_Votes_1;
+    var pctFirst = e.features[0].properties.CSher_Pct_1;
+
+    var nameSecond = e.features[0].properties.CSher_Name_2;
+    var votesSecond = e.features[0].properties.CSher_Votes_2;
+    var pctSecond = e.features[0].properties.CSher_Pct_2;
+
+    var nameThird = e.features[0].properties.CSher_Name_3;
+    var votesThird = e.features[0].properties.CSher_Votes_3;
+    var pctThird = e.features[0].properties.CSher_Pct_3;
+    
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+
+    if (nameThird == 'None') {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: County Sheriff, precinct layer
+map.on('mouseenter', 'g2022-CSher-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CSher-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CSher-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    var nameFirst = e.features[0].properties.CSher_Name_1;
+    var votesFirst = e.features[0].properties.CSher_Votes_1;
+    var pctFirst = e.features[0].properties.CSher_Pct_1;
+
+    var nameSecond = e.features[0].properties.CSher_Name_2;
+    var votesSecond = e.features[0].properties.CSher_Votes_2;
+    var pctSecond = e.features[0].properties.CSher_Pct_2;
+
+    var nameThird = e.features[0].properties.CSher_Name_3;
+    var votesThird = e.features[0].properties.CSher_Votes_3;
+    var pctThird = e.features[0].properties.CSher_Pct_3;
+
+    precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+    if (nameFirst == null) {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>No data available</p>'
+    }
+    else if (nameThird == 'None') {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+
+// Popup controls for 2022 General: County Treasurer, county layer
+map.on('mouseenter', 'g2022-CTre-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CTre-county', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CTre-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    countyName = countyName.toUpperCase();
+
+    var nameFirst = e.features[0].properties.CTre_Name_1;
+    var votesFirst = e.features[0].properties.CTre_Votes_1;
+    var pctFirst = e.features[0].properties.CTre_Pct_1;
+
+    var nameSecond = e.features[0].properties.CTre_Name_2;
+    var votesSecond = e.features[0].properties.CTre_Votes_2;
+    var pctSecond = e.features[0].properties.CTre_Pct_2;
+
+    var nameThird = e.features[0].properties.CTre_Name_3;
+    var votesThird = e.features[0].properties.CTre_Votes_3;
+    var pctThird = e.features[0].properties.CTre_Pct_3;
+    
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+
+    if (nameThird == 'None') {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + countyName + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+// Popup controls for 2022 General: County Treasurer, precinct layer
+map.on('mouseenter', 'g2022-CTre-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-CTre-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-CTre-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    var nameFirst = e.features[0].properties.CTre_Name_1;
+    var votesFirst = e.features[0].properties.CTre_Votes_1;
+    var pctFirst = e.features[0].properties.CTre_Pct_1;
+
+    var nameSecond = e.features[0].properties.CTre_Name_2;
+    var votesSecond = e.features[0].properties.CTre_Votes_2;
+    var pctSecond = e.features[0].properties.CTre_Pct_2;
+
+    var nameThird = e.features[0].properties.CTre_Name_3;
+    var votesThird = e.features[0].properties.CTre_Votes_3;
+    var pctThird = e.features[0].properties.CTre_Pct_3;
+
+    precinctID = precinctID.toUpperCase();
+
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
+    var turnout = e.features[0].properties.Total_Turnout;
+
+    let message;
+    if (nameFirst == null) {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>No data available</p>'
+    }
+    else if (nameThird == 'None') {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } else {
+        message = 
+        '<h>' + precinctID + '</h>'
+        + '<p>' + nameFirst + ': ' + pctFirst + '% (' + votesFirst + ' votes)</p>'
+        + '<p>' + nameSecond + ': ' + pctSecond + '% (' + votesSecond + ' votes)</p>'
+        + '<p>' + nameThird + ': ' + pctThird + '% (' + votesThird + ' votes)</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
