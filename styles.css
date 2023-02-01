@@ -155,34 +155,6 @@ body {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
 }
-/* 
-.legend {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-size: 0.95em;
-    padding: 0.5em 1em 0em 1em;
-    position: relative;
-    right: 10px;
-    z-index: 100;
-    opacity: 100%;
-}
-
-.legend h4 {
-    margin: 0 0 0px;
-    opacity: 100%;
-}
-
-.legend div span {
-    border-radius: 0%;
-    display: inline-block;
-    margin-top: -5px;
-    margin-bottom: -2.5px;
-    margin-right: 5px;
-    width: 15px;
-    height: 15px;
-    padding: .1em .1em .1em .1em;
-}
- */
 
 .logo {
     width: 180px;
