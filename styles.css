@@ -108,11 +108,6 @@ body {
     overflow-x: visible;
 }
 
-.mapboxgl-popup-content br {
-    margin: 0.5em 0em;
-}
-
-
 .title {
     background-color: #fff;
     opacity: 100%;
@@ -162,5 +157,5 @@ body {
     margin: 0.5em 0em;
     display: inline-block;
     box-align: left;
-  }
+}
   
