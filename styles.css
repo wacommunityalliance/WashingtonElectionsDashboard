@@ -12,59 +12,82 @@ body {
     margin: 0 0;
 }
 
-#menu {
+.menu-federal-leg{
     background-color: #fff;
-    opacity: 100%;
     border-radius: .5em;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    position: absolute;
-    z-index: 1;
-    bottom: 30px;
-    right: 30px;
-    width: 200px;
     border: 2px solid rgba(0,0,0,0.4);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
 }
 
-#menu a {
+.menu-state-exec{
+    background-color: #fff;
+    border-radius: .5em;
+    border: 2px solid rgba(0,0,0,0.4);
+}
+
+.menu-state-leg{
+    background-color: #fff;
+    border-radius: .5em;
+    border: 2px solid rgba(0,0,0,0.4);
+}
+
+.menu-county-exec{
+    background-color: #fff;
+    border-radius: .5em;
+    border: 2px solid rgba(0,0,0,0.4);
+}
+
+.menu-boundaries{
+    background-color: #fff;
+    border-radius: .5em;
+    border: 2px solid rgba(0,0,0,0.4);
+}
+
+.menu a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: .7em;
+    line-height: .5em;
+    opacity: 100%;
     color: #404040;
     display: block;
     margin: 0;
     padding: 10px;
     text-decoration: none;
     border-bottom: 1px solid #f8f8f8 ;
-    text-align: center;
+    text-align: left;
 }
 
-#menu a:last-child {
+.menu a:last-child {
     border-radius: .5em;
     border: .5em;
 }
 
-#menu a:hover {
+.menu a:hover {
     border-radius: .5em;
     border: .5em;
-    background-color: #f8f8f8;
-    color: #000000;
+    background-color: #fbb965;
+    color: #000;
 }
 
-#menu a.active {
+.menu a.active {
     border-radius: .5em;
     border: .5em;
-    background-color: #404040;
-    color: #ffffff;
+    background-color: #f58e3e;
+    color: #000;
 }
 
-#menu a.active:hover {
+.menu a.active:hover {
     border-radius: .5em;
     border: .5em;
-    background: #000000;
+    background-color: #f58e3e;
+    color: #000;
 }
 
+.mapboxgl-popup-content {
+    padding: 10px;
+    width: 100%;
+    border-radius: .5em;
+}
 
 .mapboxgl-popup-content h {
     font-family: 'Montserrat', sans-serif;
@@ -79,47 +102,60 @@ body {
 
 .mapboxgl-popup-content p {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-size: 0.95em;
-    margin-top: 0.2em;
-    margin-bottom: 0em;
+    font-weight: 300;
+    font-size: .9em;
+    line-height: 1em;
     overflow-x: visible;
 }
+
+.mapboxgl-popup-content br {
+    margin: 0.5em 0em;
+}
+
 
 .title {
     background-color: #fff;
     opacity: 100%;
     border-radius: 1em;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    font: .8em/.9em 'Montserrat', sans-serif;
-    line-height: 2.5em;
-    padding: 1em 2em 0em;
+    padding: 1em 2em 1em;
     position: absolute;
-    max-width: 15%;
+    width: 175px;
     margin: 1em 1em;
     z-index: 100;
     
 }
 
 .title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 0.9em;
     opacity: 100%;
+}
+
+.title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: .8em;
+    opacity: 100;
 }
 
 .title p {
-    line-height: 1.5em;
-    opacity: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: .75em;
+    line-height: 1.5em;
+    opacity: 100%;
+
 }
 
 .title hr {
-    border-top: .15em dashed #404040;
-    border-bottom: 0em;
+    border-top: .1em dashed #404040;
     margin-top: 0.75em;
-    margin-bottom: 0em;
+    margin-bottom: 0.75em;
 }
-
+/* 
 .legend {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -146,4 +182,13 @@ body {
     height: 15px;
     padding: .1em .1em .1em .1em;
 }
+ */
 
+.logo {
+    width: 180px;
+    height: 75px;
+    margin: 0.5em 0em;
+    display: inline-block;
+    box-align: left;
+  }
+  

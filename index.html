@@ -11,13 +11,29 @@
 </head>
 
 <body>
-    <nav id="menu"></nav>
     <div id='map'></div>
     <div id="title" class="title">
+        <img src="Assets/wca c3 color horizontal.png" class="logo">
         <h1>Washington<br>Election Maps</h1>
-        <p>This map visualizes electoral results in Washington State, using data retrieved from sos.wa.gov/elections.</p>
+        <p>This is a project of the WCA Data Hub, using data from sos.wa.gov/elections. For best results, be sure to only select one race at a time.</p>
+
         <hr>
-        <div id="income-legend" class="legend">
+        <h2>FEDERAL LEGISLATURE</h2>
+        <nav id="menu-federal-leg" class="menu"></nav>
+        <hr>
+        <h2>STATEWIDE EXECUTIVE</h2>
+        <nav id="menu-state-exec" class="menu"></nav>
+        <hr>
+        <h2>STATEWIDE LEGISLATURE</h2>
+        <nav id="menu-state-leg" class="menu"></nav>
+        <hr>
+        <h2>COUNTYWIDE EXECUTIVE</h2>
+        <nav id="menu-county-exec" class="menu"></nav>
+        <hr>
+        <h2>TOGGLE BOUNDARIES</h2>
+        <nav id="menu-boundaries" class="menu"></nav>
+
+        <!-- <div id="income-legend" class="legend">
             <h4>Vote margin (%)</h4>
             <div><span style="background-color: rgba(97,147,199,0.8)"></span><span style="background-color: rgba(207,99,93,0.8)"></span><span style="background-color: rgba(253,182,20,0.8)"></span><span style="background-color: rgba(147,152,187,0.8)"></span> >25%</div>
             <div><span style="background-color: rgba(97,147,199,0.7)"></span><span style="background-color: rgba(207,99,93,0.7)"></span><span style="background-color: rgba(253,182,20,0.7)"></span><span style="background-color: rgba(147,152,187,0.7)"></span> 20-25%</div>
@@ -36,9 +52,7 @@
             <div><span style="background-color: rgba(23,159,146,0.45)"></span> 40-60%</div>
             <div><span style="background-color: rgba(23,159,146,0.3)"></span> 20-40%</div>
             <div><span style="background-color: rgba(23,159,146,0.15)"></span> 0-20%</div>
-
-            
-        </div>
+        </div> -->
     </div>
     <script type='text/javascript' src="map.js"></script>
 </body>
