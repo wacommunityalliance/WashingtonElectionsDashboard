@@ -155,24 +155,30 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SoS_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
-                    'step',
+                    'case',
+                    ['==', ['get', 'SoS_Margin'], null],
+                    0,
+                    ['step',
                     ['get', 'SoS_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 30,
-                    0.8
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0]
                 ]
             },
             maxzoom: MAXZOOM
@@ -193,24 +199,30 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SoS_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
-                    'step',
+                    'case',
+                    ['==', ['get', 'SoS_Margin'], null],
+                    0,
+                    ['step',
                     ['get', 'SoS_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
-                    0
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0]
                 ]
             },
             minzoom: MINZOOM
@@ -231,24 +243,30 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'FSen_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
-                    'step',
+                    'case',
+                    ['==', ['get', 'FSen_Margin'], null],
+                    0,
+                    ['step',
                     ['get', 'FSen_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 30,
-                    0.8
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0]
                 ]
             },
             maxzoom: MAXZOOM
@@ -269,24 +287,30 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'FSen_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
-                    'step',
+                    'case',
+                    ['==', ['get', 'FSen_Margin'], null],
+                    0,
+                    ['step',
                     ['get', 'FSen_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
-                    0
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0]
                 ]
             },
             minzoom: MINZOOM
@@ -307,24 +331,27 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'FRep_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
                     ['get', 'FRep_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 30,
-                    0.8
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0
                 ]
             },
             maxzoom: MAXZOOM
@@ -345,23 +372,26 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'FRep_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
                     ['get', 'FRep_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0
                 ]
             },
@@ -383,10 +413,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SSen_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -396,13 +430,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'SSen_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ],
             },
@@ -424,14 +457,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SSen_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#fdb614',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -441,14 +474,13 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'SSen_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
-                    1]
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0]
                 ]
             },
             minzoom: MINZOOM
@@ -469,24 +501,27 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SRep1_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
                     ['get', 'SRep1_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 30,
-                    0.8
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0
                 ]
             },
             maxzoom: MAXZOOM
@@ -507,27 +542,26 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SRep1_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#fdb614',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
                     ['get', 'SRep1_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0
                 ]
             },
@@ -549,24 +583,27 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SRep2_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#88939b',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
                     ['get', 'SRep2_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 30,
-                    0.8
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
+                    0
                 ]
             },
             maxzoom: MAXZOOM
@@ -587,27 +624,26 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'SRep2_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#fdb614',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
                     'step',
                     ['get', 'SRep2_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0
                 ]
             },
@@ -629,11 +665,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CAss_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#9398bb',
-                    'None', '#9398bb',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -643,13 +682,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CAss_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -671,16 +709,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CAss_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'None', '#9398bb',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#9398bb',
-                    'None2', '#4abfaa',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -690,13 +726,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CAss_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -718,11 +753,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CAud_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#9398bb',
-                    'None', '#9398bb',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -732,13 +770,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CAud_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 100,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -760,16 +797,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CAud_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'None', '#9398bb',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#9398bb',
-                    'None2', '#4abfaa',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -779,13 +814,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CAud_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -808,11 +842,14 @@ map.on('load', function () {
                     'case',
                     ['match',
                     ['get', 'CCler_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#9398bb',
-                    'None', '#9398bb',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede']
                 ],
                 'fill-outline-color': '#ffffff',
@@ -822,13 +859,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CCler_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -850,16 +886,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CCler_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'None', '#9398bb',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#9398bb',
-                    'None2', '#4abfaa',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -869,13 +903,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CCler_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -897,11 +930,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CPros_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#9398bb',
-                    'None', '#9398bb',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -911,13 +947,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CPros_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 100,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -939,16 +974,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CPros_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'None', '#9398bb',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#9398bb',
-                    'None2', '#4abfaa',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -958,13 +991,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CPros_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -986,11 +1018,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CSher_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#9398bb',
-                    'None', '#9398bb',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -1000,13 +1035,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CSher_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -1028,16 +1062,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CSher_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'None', '#9398bb',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#9398bb',
-                    'None2', '#4abfaa',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -1047,13 +1079,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CSher_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -1075,11 +1106,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CTre_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#9398bb',
-                    'None', '#9398bb',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -1089,14 +1123,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CTre_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 25,
-                    0.8, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -1118,16 +1150,14 @@ map.on('load', function () {
                 'fill-color': [
                     'match',
                     ['get', 'CTre_Party_1'],
-                    'Democratic', '#6193c7',
-                    'Republican', '#cf635d',
-                    'Independent', '#fdb614',
-                    'Other', '#4abfaa',
-                    'None', '#9398bb',
-                    'Democratic2', '#9398bb',
-                    'Republican2', '#f37021',
-                    'Independent2', '#4abfaa',
-                    'Other2', '#9398bb',
-                    'None2', '#4abfaa',
+                    'Democratic', '#6193C7',
+                    'Republican', '#CF635D',
+                    'Independent', '#FDB614',
+                    'Other', '#4ABFAA',
+                    'Democratic2', '#9398BB',
+                    'Republican2', '#f68a1f',
+                    'Independent2', '#4ABFAA',
+                    'Other2', '#FDB614',
                     '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
@@ -1137,14 +1167,12 @@ map.on('load', function () {
                     0,
                     ['step',
                     ['get', 'CTre_Margin'],
-                    0.1, 2.5,
-                    0.2, 5,
-                    0.3, 7.5,
-                    0.4, 10,
-                    0.5, 15,
-                    0.6, 20,
-                    0.7, 25,
-                    0.8, 101,
+                    0.1, 5,
+                    0.2, 10,
+                    0.3, 15,
+                    0.4, 20,
+                    0.5, 25,
+                    0.6, 101,
                     0]
                 ]
             },
@@ -1153,7 +1181,48 @@ map.on('load', function () {
         'waterway-label'
     );
 
+    // Create arrays of party IDs and colors
+    const parties = [
+        'Democratic',
+        'Democratic ',
+        'Republican',
+        'Republican ',
+        'Independent',
+        'Independent ',
+    ];
+
+    const colors = [
+        '#6193C7',
+        '#9398BB',
+        '#CF635D',
+        '#f68a1f',
+        '#FDB614',
+        '#4ABFAA'
+    ];
+
+    // create legend
+    const legend = document.getElementById('legend');
+
+    parties.forEach((party, i) => {
+        const color = colors[i];
+        const item = document.createElement('div');
+        const key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        const value = document.createElement('span');
+        value.innerHTML = `${party}`;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+    });
 })
+
+
+
+
+
+
 
 
 // Popup controls for 2022 General: Secretary of State, county layer
@@ -1167,7 +1236,8 @@ map.on('mouseleave', 'g2022-SoS-county', function () {
 
 map.on('click', 'g2022-SoS-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
-    countyName = countyName.toUpperCase();
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.SoS_Votes_total;
 
     var nameFirst = e.features[0].properties.SoS_Name_1;
     var votesFirst = e.features[0].properties.SoS_Votes_1;
@@ -1183,29 +1253,54 @@ map.on('click', 'g2022-SoS-county', function (e) {
     var votesThird = e.features[0].properties.SoS_Votes_3;
     var pctThird = e.features[0].properties.SoS_Pct_3;
     
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.SoS_Votes_total;
-
+    label = countyName.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1250,33 +1345,54 @@ map.on('click', 'g2022-SoS-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.SoS_Votes_total;
 
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
-
-    precinctID = precinctID.toUpperCase();
-
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
+    // if no race this cycle or no data available
     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1284,6 +1400,7 @@ map.on('click', 'g2022-SoS-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -1302,7 +1419,8 @@ map.on('mouseleave', 'g2022-FSen-county', function () {
 
 map.on('click', 'g2022-FSen-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
-    countyName = countyName.toUpperCase();
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.FSen_Votes_total;
 
     var nameFirst = e.features[0].properties.FSen_Name_1;
     var votesFirst = e.features[0].properties.FSen_Votes_1;
@@ -1318,29 +1436,58 @@ map.on('click', 'g2022-FSen-county', function (e) {
     var votesThird = e.features[0].properties.FSen_Votes_3;
     var pctThird = e.features[0].properties.FSen_Pct_3;
     
+    label = countyName.toUpperCase();
+    partyFirst = partyFirst.charAt(0);
+    partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.FSen_Votes_total;
-
-    partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
     let message;
 
-    if (nameThird == 'None') {
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    else if (nameThird == null & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    else if (nameThird == null & nameSecond == 'Write-In') {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    else if (votesThird == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1367,7 +1514,6 @@ map.on('mouseleave', 'g2022-FSen-precinct', function () {
 
 map.on('click', 'g2022-FSen-precinct', function (e) {
     var precinctID = e.features[0].properties.Precinct;
-    precinctID = precinctID.toUpperCase();
 
     var nameFirst = e.features[0].properties.FSen_Name_1;
     var votesFirst = e.features[0].properties.FSen_Votes_1;
@@ -1382,35 +1528,61 @@ map.on('click', 'g2022-FSen-precinct', function (e) {
     var nameThird = e.features[0].properties.FSen_Name_3;
     var votesThird = e.features[0].properties.FSen_Votes_3;
     var pctThird = e.features[0].properties.FSen_Pct_3;
-    
-    pctFirst = Math.round(pctFirst * 100) / 100;
-    pctSecond = Math.round(pctSecond * 100) / 100;
-    pctThird = Math.round(pctThird * 100) / 100;
-
+ 
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.FSen_Votes_total;
 
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
 
+    label = precinctID.toUpperCase();
+    partyFirst = partyFirst.charAt(0);
+    partySecond = partySecond.charAt(0);
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
+
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1418,6 +1590,7 @@ map.on('click', 'g2022-FSen-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -1436,6 +1609,8 @@ map.on('mouseleave', 'g2022-FRep-CD', function () {
 
 map.on('click', 'g2022-FRep-CD', function (e) {
     var districtNumber = e.features[0].properties.CD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.FRep_Votes_total;
 
     var nameFirst = e.features[0].properties.FRep_Name_1;
     var votesFirst = e.features[0].properties.FRep_Votes_1;
@@ -1451,29 +1626,54 @@ map.on('click', 'g2022-FRep-CD', function (e) {
     var votesThird = e.features[0].properties.FRep_Votes_3;
     var pctThird = e.features[0].properties.FRep_Pct_3;
 
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.FRep_Votes_total;
-
+    label = 'CONGRESSIONAL DISTRICT ' + districtNumber
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>CONGRESSIONAL DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (votesThird == 0 & nameSecond == 'Write-In') {
         message = 
-        '<h>CONGRESSIONAL DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1518,33 +1718,54 @@ map.on('click', 'g2022-FRep-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.FRep_Votes_total;
 
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
-
-    precinctID = precinctID.toUpperCase();
-
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1552,6 +1773,7 @@ map.on('click', 'g2022-FRep-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -1570,6 +1792,8 @@ map.on('mouseleave', 'g2022-SSen-LD', function () {
 
 map.on('click', 'g2022-SSen-LD', function (e) {
     var districtNumber = e.features[0].properties.LD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.SSen_Votes_total;
 
     var nameFirst = e.features[0].properties.SSen_Name_1;
     var votesFirst = e.features[0].properties.SSen_Votes_1;
@@ -1585,35 +1809,54 @@ map.on('click', 'g2022-SSen-LD', function (e) {
     var votesThird = e.features[0].properties.SSen_Votes_3;
     var pctThird = e.features[0].properties.SSen_Pct_3;
 
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    label = 'LEGISLATIVE DISTRICT ' + districtNumber
+    partyFirst = partyFirst.charAt(0);
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.SSen_Votes_total;
-
-    partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
     let message;
 
-    if (nameFirst === null) {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
-        + '<p>State Senate seat not up for re-election</p>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     } 
+    // if only one candidate, and some write-in votes
+    else if (votesThird == 0 & nameSecond == 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
     else {
         message = 
-        '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1658,31 +1901,54 @@ map.on('click', 'g2022-SSen-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.SSen_Votes_total;
 
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
+    partyFirst = partyFirst.charAt(0);
+    partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
-    partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
 
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1690,6 +1956,7 @@ map.on('click', 'g2022-SSen-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -1708,6 +1975,8 @@ map.on('mouseleave', 'g2022-SRep1-LD', function () {
 
 map.on('click', 'g2022-SRep1-LD', function (e) {
     var districtNumber = e.features[0].properties.LD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.SRep1_Votes_total;
 
     var nameFirst = e.features[0].properties.SRep1_Name_1;
     var votesFirst = e.features[0].properties.SRep1_Votes_1;
@@ -1723,29 +1992,54 @@ map.on('click', 'g2022-SRep1-LD', function (e) {
     var votesThird = e.features[0].properties.SRep1_Votes_3;
     var pctThird = e.features[0].properties.SRep1_Pct_3;
     
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    label = 'LEGISLATIVE DISTRICT ' + districtNumber
+    partyFirst = partyFirst.charAt(0);
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.SRep1_Votes_total;
-
-    partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (votesThird == 0 & nameSecond == 'Write-In') {
         message = 
-        '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1790,31 +2084,54 @@ map.on('click', 'g2022-SRep1-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.SRep1_Votes_total;
 
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
+    partyFirst = partyFirst.charAt(0);
+    partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
-    partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
 
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1822,6 +2139,7 @@ map.on('click', 'g2022-SRep1-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -1840,6 +2158,8 @@ map.on('mouseleave', 'g2022-SRep2-LD', function () {
 
 map.on('click', 'g2022-SRep2-LD', function (e) {
     var districtNumber = e.features[0].properties.LD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.SRep2_Votes_total;
 
     var nameFirst = e.features[0].properties.SRep2_Name_1;
     var votesFirst = e.features[0].properties.SRep2_Votes_1;
@@ -1855,29 +2175,54 @@ map.on('click', 'g2022-SRep2-LD', function (e) {
     var votesThird = e.features[0].properties.SRep2_Votes_3;
     var pctThird = e.features[0].properties.SRep2_Pct_3;
 
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    label = 'LEGISLATIVE DISTRICT ' + districtNumber
+    partyFirst = partyFirst.charAt(0);
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.SRep2_Votes_total;
-
-    partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (votesThird == 0 & nameSecond == 'Write-In') {
         message = 
-        '<h>LEGISLATIVE DISTRICT ' + districtNumber + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1922,31 +2267,54 @@ map.on('click', 'g2022-SRep2-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.SRep2_Votes_total;
 
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
+    partyFirst = partyFirst.charAt(0);
+    partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
-    partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
 
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -1954,6 +2322,7 @@ map.on('click', 'g2022-SRep2-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -1972,7 +2341,8 @@ map.on('mouseleave', 'g2022-CAss-county', function () {
 
 map.on('click', 'g2022-CAss-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
-    countyName = countyName.toUpperCase();
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.CAss_Votes_total;
 
     var nameFirst = e.features[0].properties.CAss_Name_1;
     var votesFirst = e.features[0].properties.CAss_Votes_1;
@@ -1988,29 +2358,54 @@ map.on('click', 'g2022-CAss-county', function (e) {
     var votesThird = e.features[0].properties.CAss_Votes_3;
     var pctThird = e.features[0].properties.CAss_Pct_3;
     
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.CAss_Votes_total;
-
+    label = countyName.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2055,33 +2450,54 @@ map.on('click', 'g2022-CAss-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.CAss_Votes_total;
 
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
-    precinctID = precinctID.toUpperCase();
-
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2089,6 +2505,7 @@ map.on('click', 'g2022-CAss-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -2108,7 +2525,8 @@ map.on('mouseleave', 'g2022-CAud-county', function () {
 
 map.on('click', 'g2022-CAud-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
-    countyName = countyName.toUpperCase();
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.CAud_Votes_total;
 
     var nameFirst = e.features[0].properties.CAud_Name_1;
     var votesFirst = e.features[0].properties.CAud_Votes_1;
@@ -2124,29 +2542,54 @@ map.on('click', 'g2022-CAud-county', function (e) {
     var votesThird = e.features[0].properties.CAud_Votes_3;
     var pctThird = e.features[0].properties.CAud_Pct_3;
     
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.CAud_Votes_total;
-
+    label = countyName.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2191,32 +2634,54 @@ map.on('click', 'g2022-CAud-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.CAud_Votes_total;
 
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
-
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2224,6 +2689,7 @@ map.on('click', 'g2022-CAud-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -2243,6 +2709,8 @@ map.on('mouseleave', 'g2022-CCler-county', function () {
 
 map.on('click', 'g2022-CCler-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.CCler_Votes_total;
 
     var nameFirst = e.features[0].properties.CCler_Name_1;
     var votesFirst = e.features[0].properties.CCler_Votes_1;
@@ -2258,29 +2726,54 @@ map.on('click', 'g2022-CCler-county', function (e) {
     var votesThird = e.features[0].properties.CCler_Votes_3;
     var pctThird = e.features[0].properties.CCler_Pct_3;
     
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.CCler_Votes_total;
-
-    countyName = countyName.toUpperCase();
+    label = countyName.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2325,7 +2818,7 @@ map.on('click', 'g2022-CCler-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.CCler_Votes_total;
 
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
@@ -2334,22 +2827,45 @@ map.on('click', 'g2022-CCler-precinct', function (e) {
 
     let message;
 
-   if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2357,6 +2873,7 @@ map.on('click', 'g2022-CCler-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -2376,6 +2893,8 @@ map.on('mouseleave', 'g2022-CPros-county', function () {
 
 map.on('click', 'g2022-CPros-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.CPros_Votes_total;
 
     var nameFirst = e.features[0].properties.CPros_Name_1;
     var votesFirst = e.features[0].properties.CPros_Votes_1;
@@ -2391,29 +2910,54 @@ map.on('click', 'g2022-CPros-county', function (e) {
     var votesThird = e.features[0].properties.CPros_Votes_3;
     var pctThird = e.features[0].properties.CPros_Pct_3;
     
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.CPros_Votes_total;
-
-    countyName = countyName.toUpperCase();
+    label = countyName.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2440,6 +2984,8 @@ map.on('mouseleave', 'g2022-CPros-precinct', function () {
 
 map.on('click', 'g2022-CPros-precinct', function (e) {
     var precinctID = e.features[0].properties.Precinct;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.CPros_Votes_total;
 
     var nameFirst = e.features[0].properties.CPros_Name_1;
     var votesFirst = e.features[0].properties.CPros_Votes_1;
@@ -2455,10 +3001,7 @@ map.on('click', 'g2022-CPros-precinct', function (e) {
     var votesThird = e.features[0].properties.CPros_Votes_3;
     var pctThird = e.features[0].properties.CPros_Pct_3;
 
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.CPros_Votes_total;
-
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
@@ -2467,22 +3010,45 @@ map.on('click', 'g2022-CPros-precinct', function (e) {
 
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2490,6 +3056,7 @@ map.on('click', 'g2022-CPros-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -2508,6 +3075,8 @@ map.on('mouseleave', 'g2022-CSher-county', function () {
 
 map.on('click', 'g2022-CSher-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.CSher_Votes_total;
 
     var nameFirst = e.features[0].properties.CSher_Name_1;
     var votesFirst = e.features[0].properties.CSher_Votes_1;
@@ -2523,29 +3092,54 @@ map.on('click', 'g2022-CSher-county', function (e) {
     var votesThird = e.features[0].properties.CSher_Votes_3;
     var pctThird = e.features[0].properties.CSher_Pct_3;
     
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.CSher_Votes_total;
-
-    countyName = countyName.toUpperCase();
+    label = countyName.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2590,7 +3184,7 @@ map.on('click', 'g2022-CSher-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.CSher_Votes_total;
 
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
@@ -2599,22 +3193,45 @@ map.on('click', 'g2022-CSher-precinct', function (e) {
 
     let message;
 
-    if (nameFirst == null) {
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2622,6 +3239,7 @@ map.on('click', 'g2022-CSher-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
@@ -2641,6 +3259,8 @@ map.on('mouseleave', 'g2022-CTre-county', function () {
 
 map.on('click', 'g2022-CTre-county', function (e) {
     var countyName = e.features[0].properties.NAMELSAD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.CTre_Votes_total;
 
     var nameFirst = e.features[0].properties.CTre_Name_1;
     var votesFirst = e.features[0].properties.CTre_Votes_1;
@@ -2656,29 +3276,54 @@ map.on('click', 'g2022-CTre-county', function (e) {
     var votesThird = e.features[0].properties.CTre_Votes_3;
     var pctThird = e.features[0].properties.CTre_Pct_3;
     
-    var turnout = e.features[0].properties.Total_Turnout;
-    var totalVotes = e.features[0].properties.CTre_Votes_total;
-
-    countyName = countyName.toUpperCase();
+    label = countyName.toUpperCase();
     partyFirst = partyFirst.charAt(0);
-    partySecond = partySecond.charAt(0);
-    pctFirst = Math.round(pctFirst * 100) / 100;
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100; 
     pctSecond = Math.round(pctSecond * 100) / 100;
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
 
-    if (nameThird == 'None') {
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + countyName + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2723,7 +3368,7 @@ map.on('click', 'g2022-CTre-precinct', function (e) {
     var turnout = e.features[0].properties.Total_Turnout;
     var totalVotes = e.features[0].properties.CTre_Votes_total;
 
-    precinctID = precinctID.toUpperCase();
+    label = precinctID.toUpperCase();
     partyFirst = partyFirst.charAt(0);
     partySecond = partySecond.charAt(0);
     pctFirst = Math.round(pctFirst * 100) / 100;
@@ -2731,23 +3376,46 @@ map.on('click', 'g2022-CTre-precinct', function (e) {
     pctThird = Math.round(pctThird * 100) / 100;
 
     let message;
-    
-    if (nameFirst == null) {
+
+     // if no race this cycle or no data available
+     if (nameFirst == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
         + '<p>No data available</p>'
     }
-    else if (nameThird == 'None') {
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p> -- </p>'
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
-    } else {
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
         message = 
-        '<h>' + precinctID + '</h>'
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
@@ -2755,6 +3423,7 @@ map.on('click', 'g2022-CTre-precinct', function (e) {
         + '<p>Total votes: ' + totalVotes + '</p>'
         + '<p>Voter turnout: ' + turnout + '%</p>'
     }
+
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(message)
