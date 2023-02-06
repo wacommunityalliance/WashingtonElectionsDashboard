@@ -78,6 +78,7 @@ map.on('load', function () {
         }
     );
 
+
     // Washington Congressional District outlines
     map.addLayer(
         {
@@ -839,8 +840,7 @@ map.on('load', function () {
             },
             paint: {
                 'fill-color': [
-                    'case',
-                    ['match',
+                    'match',
                     ['get', 'CCler_Party_1'],
                     'Democratic', '#6193C7',
                     'Republican', '#CF635D',
@@ -850,7 +850,7 @@ map.on('load', function () {
                     'Republican2', '#f68a1f',
                     'Independent2', '#4ABFAA',
                     'Other2', '#FDB614',
-                    '#dedede']
+                    '#dedede'
                 ],
                 'fill-outline-color': '#ffffff',
                 'fill-opacity': [
@@ -896,7 +896,7 @@ map.on('load', function () {
                     'Other2', '#FDB614',
                     '#dedede'
                 ],
-                'fill-outline-color': '#ffffff',
+                'fill-outline-color': '#fff',
                 'fill-opacity': [
                     'case',
                     ['==', ['get', 'CCler_Margin'], null],
@@ -1181,139 +1181,139 @@ map.on('load', function () {
         'waterway-label'
     );
 
-    // Create arrays of party IDs and colors
-    const parties = [
-        'Democratic',
-        'Democratic ',
-        'Republican',
-        'Republican ',
-        'Independent',
-        'Independent ',
-    ];
-
-    const colors = [
-        '#6193C7',
-        '#9398BB',
-        '#CF635D',
-        '#f68a1f',
-        '#FDB614',
-        '#4ABFAA'
-    ];
-
-    // create legend
-    const legend = document.getElementById('legend');
-
-    parties.forEach((party, i) => {
-        const color = colors[i];
-        const item = document.createElement('div');
-        const key = document.createElement('span');
-        key.className = 'legend-key';
-        key.style.backgroundColor = color;
-
-        const value = document.createElement('span');
-        value.innerHTML = `${party}`;
-        item.appendChild(key);
-        item.appendChild(value);
-        legend.appendChild(item);
-    });
+    
+    // 2022 General: Voter turnout (relative), precinct layer
+    map.addLayer(
+    {
+        id: 'g2022-relTurnout-precinct',
+        type: 'fill',
+        source: 'g2022-precinct',
+        layout: {
+            'visibility': 'none'
+        },
+        paint: {
+            'fill-color': [
+                'match',
+                ['get', 'Summary_Turnout'],
+                'AboveAverage', '#45b7ad',
+                'BelowAverage', '#f58e3e',
+                '#dedede'
+            ],
+            'fill-outline-color': '#ffffff',
+            'fill-opacity': [
+                'case',
+                ['==', ['get', 'Relative_Turnout_Abs'], null],
+                0,
+                ['step',
+                ['get', 'Relative_Turnout_Abs'],
+                0.1, 5,
+                0.2, 10,
+                0.3, 15,
+                0.4, 20,
+                0.5, 25,
+                0.6, 30,
+                0.7, 35,
+                0.8, 40,
+                0.9, 45,
+                1.0, 101,
+                0]
+            ]
+        }
+    },
+    'waterway-label'
+);
 })
 
 
+// Popup controls for 2022 General: Secretary of State, county layer
+map.on('mouseenter', 'g2022-SoS-county', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
 
+map.on('mouseleave', 'g2022-SoS-county', function () {
+    map.getCanvas().style.cursor = '';
+});
 
+map.on('click', 'g2022-SoS-county', function (e) {
+    var countyName = e.features[0].properties.NAMELSAD;
+    var turnout = e.features[0].properties.Total_Turnout;
+    var totalVotes = e.features[0].properties.SoS_Votes_total;
 
+    var nameFirst = e.features[0].properties.SoS_Name_1;
+    var votesFirst = e.features[0].properties.SoS_Votes_1;
+    var pctFirst = e.features[0].properties.SoS_Pct_1;
+    var partyFirst = e.features[0].properties.SoS_Party_1;
 
+    var nameSecond = e.features[0].properties.SoS_Name_2;
+    var votesSecond = e.features[0].properties.SoS_Votes_2;
+    var pctSecond = e.features[0].properties.SoS_Pct_2;
+    var partySecond = e.features[0].properties.SoS_Party_2;
 
-
-// // Popup controls for 2022 General: Secretary of State, county layer
-// map.on('mouseenter', 'g2022-SoS-county', function () {
-//     map.getCanvas().style.cursor = 'pointer';
-// });
-
-// map.on('mouseleave', 'g2022-SoS-county', function () {
-//     map.getCanvas().style.cursor = '';
-// });
-
-// map.on('click', 'g2022-SoS-county', function (e) {
-//     var countyName = e.features[0].properties.NAMELSAD;
-//     var turnout = e.features[0].properties.Total_Turnout;
-//     var totalVotes = e.features[0].properties.SoS_Votes_total;
-
-//     var nameFirst = e.features[0].properties.SoS_Name_1;
-//     var votesFirst = e.features[0].properties.SoS_Votes_1;
-//     var pctFirst = e.features[0].properties.SoS_Pct_1;
-//     var partyFirst = e.features[0].properties.SoS_Party_1;
-
-//     var nameSecond = e.features[0].properties.SoS_Name_2;
-//     var votesSecond = e.features[0].properties.SoS_Votes_2;
-//     var pctSecond = e.features[0].properties.SoS_Pct_2;
-//     var partySecond = e.features[0].properties.SoS_Party_2;
-
-//     var nameThird = e.features[0].properties.SoS_Name_3;
-//     var votesThird = e.features[0].properties.SoS_Votes_3;
-//     var pctThird = e.features[0].properties.SoS_Pct_3;
+    var nameThird = e.features[0].properties.SoS_Name_3;
+    var votesThird = e.features[0].properties.SoS_Votes_3;
+    var pctThird = e.features[0].properties.SoS_Pct_3;
     
-//     label = countyName.toUpperCase();
-//     partyFirst = partyFirst.charAt(0);
-//     if (partySecond != null) {partySecond = partySecond.charAt(0)};
-//     pctFirst = Math.round(pctFirst * 100) / 100;
-//     pctSecond = Math.round(pctSecond * 100) / 100;
-//     pctThird = Math.round(pctThird * 100) / 100;
+    label = countyName.toUpperCase();
+    partyFirst = partyFirst.charAt(0);
+    if (partySecond != null) {partySecond = partySecond.charAt(0)};
+    pctFirst = Math.round(pctFirst * 100) / 100;
+    pctSecond = Math.round(pctSecond * 100) / 100;
+    pctThird = Math.round(pctThird * 100) / 100;
 
-//     let message;
+    let message;
 
-//     // if no race this cycle or no data available
-//     if (nameFirst == null) {
-//         message = 
-//         '<h>' + label + '</h>'
-//         + '<p>No data available</p>'
-//     }
-//     // if only one candidate, and no write-in votes
-//     else if (votesSecond == 0) {
-//         message = 
-//         '<h>' + label + '</h>'
-//         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
-//         + '<p> -- </p>'
-//         + '<p>Total votes: ' + totalVotes + '</p>'
-//         + '<p>Voter turnout: ' + turnout + '%</p>'
-//     } 
-//     // if two candidates, and no write-in votes
-//     else if (votesThird == 0 & nameSecond != 'Write-In') {
-//         message = 
-//         '<h>' + label + '</h>'
-//         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
-//         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
-//         + '<p> -- </p>'
-//         + '<p>Total votes: ' + totalVotes + '</p>'
-//         + '<p>Voter turnout: ' + turnout + '%</p>'
-//     } 
-//     // if only one candidate, and some write-in votes
-//     else if (partySecond == null) {
-//         message = 
-//         '<h>' + label + '</h>'
-//         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
-//         + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
-//         + '<p> -- </p>'
-//         + '<p>Total votes: ' + totalVotes + '</p>'
-//         + '<p>Voter turnout: ' + turnout + '%</p>'
-//     }
-//     // if two candidates, and some write-in votes
-//     else {
-//         message = 
-//         '<h>' + label + '</h>'
-//         + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
-//         + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
-//         + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
-//         + '<p> -- </p>'
-//         + '<p>Total votes: ' + totalVotes + '</p>'
-//         + '<p>Voter turnout: ' + turnout + '%</p>'
-//     }
+    // if no race this cycle or no data available
+    if (nameFirst == null) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if only one candidate, and no write-in votes
+    else if (votesSecond == 0) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if two candidates, and no write-in votes
+    else if (votesThird == 0 & nameSecond != 'Write-In') {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    } 
+    // if only one candidate, and some write-in votes
+    else if (partySecond == null) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ': ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
+    // if two candidates, and some write-in votes
+    else {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>' + nameFirst + ' (' + partyFirst + '): ' + votesFirst + ' votes (' + pctFirst + '%)</p>'
+        + '<p>' + nameSecond + ' (' + partySecond + '): ' + votesSecond + ' votes (' + pctSecond + '%)</p>'
+        + '<p>' + nameThird + ': ' + votesThird + ' votes (' + pctThird + '%)</p>'
+        + '<p> -- </p>'
+        + '<p>Total votes: ' + totalVotes + '</p>'
+        + '<p>Voter turnout: ' + turnout + '%</p>'
+    }
 
-//     new mapboxgl.Popup()
-//         .setLngLat(e.lngLat)
-//         .setHTML(message)
-//         .addTo(map);
-// });
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
 
 
 // Popup controls for 2022 General: Secretary of State, precinct layer
@@ -3433,6 +3433,86 @@ map.on('click', 'g2022-CTre-precinct', function (e) {
 
 
 
+
+// Popup controls for 2022 General: Voter turnout (relative), precinct layer
+map.on('mouseenter', 'g2022-relTurnout-precinct', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+map.on('mouseleave', 'g2022-relTurnout-precinct', function () {
+    map.getCanvas().style.cursor = '';
+});
+
+map.on('click', 'g2022-relTurnout-precinct', function (e) {
+    var precinctID = e.features[0].properties.Precinct;
+
+    var totalVoters = e.features[0].properties.Total_Voters;
+    var totalVotes = e.features[0].properties.Total_Votes;
+    var totalTurnout = e.features[0].properties.Total_Turnout;
+
+    var youthVoters = e.features[0].properties.Youth_Voters;
+    var youthVotes = e.features[0].properties.Youth_Votes;
+    var youthTurnout = e.features[0].properties.Youth_Turnout;
+
+    var bipocVoters = e.features[0].properties.BIPOC_Voters;
+    var bipocVotes = e.features[0].properties.BIPOC_Votes;
+    var bipocTurnout = e.features[0].properties.BIPOC_Turnout;
+
+    label = precinctID.toUpperCase();
+    
+    totalNonvoters = totalVoters - totalVotes;
+    youthNonvoters = youthVoters - youthVotes;
+    bipocNonvoters = bipocVoters - bipocVotes;
+
+    let message;
+
+     // if no race this cycle or no data available
+     if (totalVotes == null) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>No data available</p>'
+    }
+    // if zero Youth and zero BIPOC counts
+    else if (bipocVotes == null & youthVotes == null) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>Overall turnout: ' + totalTurnout + '% (' + totalVotes + ' of ' + totalVoters + ' voted)</p>'
+    } 
+    // if nonzero Youth and zero BIPOC counts
+    else if (bipocVotes == null) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>Overall turnout: ' + totalTurnout + '% (' + totalVotes + ' of ' + totalVoters + ' voted)</p>'
+        + '<p>Youth turnout: ' + youthTurnout + '% (' + youthVotes + ' of ' + youthVoters + ' voted)</p>'
+    } 
+    // if zero Youth and nonzero BIPOC counts
+    else if (youthVotes == null) {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>Overall turnout: ' + totalTurnout + '% (' + totalVotes + ' of ' + totalVoters + ' voted)</p>'
+        + '<p>BIPOC turnout: ' + bipocTurnout + '% (' + bipocVotes + ' of ' + bipocVoters + ' voted)</p>'
+    } 
+     // if nonzero Youth and nonzero BIPOC counts
+     else {
+        message = 
+        '<h>' + label + '</h>'
+        + '<p>Overall turnout: ' + totalTurnout + '% (' + totalVotes + ' of ' + totalVoters + ' voted)</p>'
+        + '<p>BIPOC turnout: ' + bipocTurnout + '% (' + bipocVotes + ' of ' + bipocVoters + ' voted)</p>'
+        + '<p>Youth turnout: ' + youthTurnout + '% (' + youthVotes + ' of ' + youthVoters + ' voted)</p>'
+    } 
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
+});
+
+
+
+
+
+
+
+
 // Toggle layers for 2022 General Election
 toggleLayerStateExec(['outlines-county', 'g2022-SoS-county', 'g2022-SoS-precinct'], 'Secretary of State');
 
@@ -3458,15 +3538,17 @@ toggleLayerCountyExec(['outlines-county', 'g2022-CSher-county', 'g2022-CSher-pre
 
 toggleLayerCountyExec(['outlines-county', 'g2022-CTre-county', 'g2022-CTre-precinct'], 'County Treasurer');
 
-toggleLayerBoundaries(['boundaries-county'], 'Counties')
+toggleLayerExtras(['g2022-relTurnout-precinct'], 'Add Relative Turnout')
 
-toggleLayerBoundaries(['boundaries-CD'], 'Congressional Districts')
+toggleLayerExtras(['boundaries-county'], 'Add County Lines')
 
-toggleLayerBoundaries(['boundaries-LD'], 'Legislative Districts')
+toggleLayerExtras(['boundaries-CD'], 'Add Congressional Districts')
+
+toggleLayerExtras(['boundaries-LD'], 'Add Legislative Districts')
 
 
 
-function toggleLayerBoundaries(ids, name) {
+function toggleLayerExtras(ids, name) {
     var link = document.createElement('a');
     link.href = '';
     link.className = 'menu';
@@ -3488,7 +3570,7 @@ function toggleLayerBoundaries(ids, name) {
         }
     };
 
-    var layers = document.getElementById('menu-boundaries');
+    var layers = document.getElementById('menu-extras');
     layers.appendChild(link);
 }
 
