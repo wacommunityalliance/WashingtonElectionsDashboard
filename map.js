@@ -46,6 +46,13 @@ map.on('load', function () {
         }
     );
 
+    // Add Tribal Lands source data
+    map.addSource('g2022-tribalLands', {
+        type: 'geojson',
+        data: 'Data/tribalBoundaries.geojson'
+        }
+    );
+
     // Washington County outlines
     map.addLayer(
         {
@@ -77,7 +84,6 @@ map.on('load', function () {
             }
         }
     );
-
 
     // Washington Congressional District outlines
     map.addLayer(
@@ -142,6 +148,23 @@ map.on('load', function () {
             }
         }
     );
+
+    // Washington Tribal Land boundaries
+    map.addLayer(
+        {
+            id: 'boundaries-tribalLand',
+            type: 'line',
+            source: 'g2022-tribalLands',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'line-color': '#000',
+                'line-width': 1.25
+            }
+        }
+    );
+
 
     // 2022 General: Secretary of State, county layer
     map.addLayer(
@@ -3545,6 +3568,8 @@ toggleLayerExtras(['boundaries-county'], 'Add County Lines')
 toggleLayerExtras(['boundaries-CD'], 'Add Congressional Districts')
 
 toggleLayerExtras(['boundaries-LD'], 'Add Legislative Districts')
+
+toggleLayerExtras(['boundaries-tribalLand'], 'Add Tribal Lands')
 
 
 
