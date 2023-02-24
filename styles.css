@@ -55,6 +55,7 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #f8f8f8;
     text-align: left;
+    scroll-behavior: 'yes';
 }
 
 .menu a:last-child {
@@ -153,7 +154,7 @@ body {
 
 .logo {
     width: 180px;
-    height: 75px;
+    height: 65px;
     margin: 0em 0em 0em 0em;
     display: inline-block;
     box-align: left;
