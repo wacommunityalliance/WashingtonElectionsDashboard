@@ -1,41 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WA Election Maps</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" type="image/x-icon" href="Assets/wca c3 color no words.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+</head>
 
-<body>
-    <div id='map'></div>
-    <div id="title" class="title">
-        <img src="Assets/wca c4 color horizontal.png" class="logo">
-        <!-- <h1>Washington<br>Election Maps</h1> -->
-        <p>This is a project of the WCA Data Hub, using data from sos.wa.gov/elections. For best results, be sure to only select one race at a time.</p>
-        <hr>
-        <h2>FEDERAL RACES</h2>
-        <nav id="menu-federal-leg" class="menu"></nav>
-        <hr>
-        <h2>STATEWIDE RACES</h2>
-        <nav id="menu-state-exec" class="menu"></nav>
-        <nav id="menu-state-leg" class="menu"></nav>
-        <hr>
-        <h2>COUNTYWIDE RACES</h2>
-        <nav id="menu-county-exec" class="menu"></nav>
-        <hr>
-        <h2>EXTRA ADD-ONS</h2>
-        <nav id="menu-extras" class="menu"></nav>
-        <hr>
-        <h2>VOTE MARGIN (%)</h2>
-        <img src="Assets/party legend.png" class="legend">
+<body class="h-screen">
+    <div class="header">
+        <img id="logo" src="Assets/wca c4 color horizontal.png" alt="Logo">
+        <div class="title">
+            <h1>Washington Elections Dashboard</h1>
+        </div>
     </div>
-    <!-- <div class="map-overlay" id="legend"></div> -->
-    <script type='text/javascript' src="map.js"></script>
+
+    <div id="map"></div>
+
+    <div class="menu">
+        <table class="menu menu-legend">
+            <tr>
+                <th colspan="5">Democratic (D)</th>
+            </tr>
+            <tr>
+                <td bgcolor="#d7e1ec"></td>
+                <td bgcolor="#b5cade"></td>
+                <td bgcolor="#94b6d1"></td>
+                <td bgcolor="#73a3c5"></td>
+                <td bgcolor="#4f93ba"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#e1e2ed"></td>
+                <td bgcolor="#c8cadf"></td>
+                <td bgcolor="#b0b5d2"></td>
+                <td bgcolor="#9aa1c5"></td>
+                <td bgcolor="#868fba"></td>
+            </tr>
+            <tr>
+                <th colspan="5">Republican (R)</th>
+            </tr>
+            <tr>
+                <td bgcolor="#f2d9d2"></td>
+                <td bgcolor="#e8b9af"></td>
+                <td bgcolor="#df9a8f"></td>
+                <td bgcolor="#d77f74"></td>
+                <td bgcolor="#cf635d"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#fee5cf"></td>
+                <td bgcolor="#fdcea8"></td>
+                <td bgcolor="#fbb884"></td>
+                <td bgcolor="#f9a362"></td>
+                <td bgcolor="#f68f3e"></td>
+            </tr>
+            <tr>
+                <th colspan="5">Independent (I)</th>
+            </tr>
+            <tr>
+                <td bgcolor="#fef0db"></td>
+                <td bgcolor="#fde5bd"></td>
+                <td bgcolor="#fcda9f"></td>
+                <td bgcolor="#fbcf83"></td>
+                <td bgcolor="#fac566"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#d4e5e2"></td>
+                <td bgcolor="#adcfcb"></td>
+                <td bgcolor="#86bdb7"></td>
+                <td bgcolor="#5cada3"></td>
+                <td bgcolor="#119f92"></td>
+            </tr>
+            <tr>
+                <td>5%</td>
+                <td>10%</td>
+                <td>15%</td>
+                <td>20%</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <th colspan="5">Vote margin (%)</th>
+            </tr>
+          </table>
+        
+        <div class="menu menu-tree">
+            <div>
+                <h2>Data Selection</h2>
+                <div id="tree"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
