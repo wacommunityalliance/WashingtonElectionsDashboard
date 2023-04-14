@@ -158,7 +158,7 @@ function convertToJsTreeFormat(treeData) {
 }
 
 
-fetch('https://github.com/wacommunityalliance/ElectionMapsWA/tree/main/Data/data.json')
+fetch('Data/data.json')
     .then(response => response.json())
     .then(treeData => {
         _log(treeData);
