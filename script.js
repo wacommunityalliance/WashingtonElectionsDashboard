@@ -25,7 +25,6 @@ function makeDetailsPopup(meta) {
 }
 
 
-
 map.on('click', 'selectedLayer', (e) => {
     _log(e);
 
