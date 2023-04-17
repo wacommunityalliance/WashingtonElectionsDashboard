@@ -19,22 +19,6 @@ const map = new mapboxgl.Map({
     minZoom: 2
 });
 
-// Load a popup window on page load
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popupWindow").style.display = "block";
-        },
-        1000
-    )
-});
-
-// Close popup window when button is clicked
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popupWindow").style.display = "none";
-});
-
-
 function makeDetailsPopup(meta) {
     const candidateListHtml = meta.candidates.map(candidate => `<li>${candidate.name} ${candidate.votes}</li>`).join('');
     return `<h3>${meta.title}</h3><ol>${candidateListHtml}</ol>`;
