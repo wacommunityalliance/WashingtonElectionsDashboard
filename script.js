@@ -208,7 +208,7 @@ function layerSelected(path) {
 
     map.addSource('selectedLayer', {
         type: 'geojson',
-        data: path
+        data: '/ElectionMapsWA' + path
     });
 
     map.addLayer({
