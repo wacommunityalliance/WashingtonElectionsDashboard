@@ -201,39 +201,3 @@ p {
     margin: 15px 0 5px 0;
     line-height: 10px;
 }   
-
-.popupWindow {
-    background-color: white;
-    width: 450px;
-    padding: 30px 40px;
-    position: absolute;
-    transform: translocate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    border-radius: 8px;
-    display: none;
-    text-align: center;
-}
-
-.popupWindow button {
-    display: block;
-    margin: 0 0 20px auto;
-    background-color: transparent;
-    font-size: 30px;
-    color: #f37021;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-a {
-    display: block;
-    width: 150px;
-    position: relative;
-    margin: 10px auto;
-    text-align: center;
-    background-color: #0f72e5;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 0;
-}
