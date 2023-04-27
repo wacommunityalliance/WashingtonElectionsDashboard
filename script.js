@@ -35,12 +35,6 @@ $(document).ready(function() {
     $("#welcome-message").dialog("open");
 });
 
-function makeDetailsPopup(meta) {
-    const candidateListHtml = meta.candidates.map(candidate => `<li>${candidate.name} ${candidate.votes}</li>`).join('');
-    return `<h3>${meta.title}</h3><ol>${candidateListHtml}</ol>`;
-}
-
-
 
 map.on('click', 'selectedLayer', (e) => {
     _log(e);
@@ -223,7 +217,7 @@ function layerSelected(path) {
 
     map.addSource('selectedLayer', {
         type: 'geojson',
-        data: path
+        data: '/ElectionMapsWA' + path
     });
 
     map.addLayer({
