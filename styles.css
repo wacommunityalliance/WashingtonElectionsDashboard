@@ -199,5 +199,14 @@ p {
     font-size: .8em;
     display: block;
     margin: 15px 0 5px 0;
-    line-height: 10px;
+    line-height: 15px;
 }   
+
+#welcome-message {
+    display: None;
+    width: 600px;
+}
+
+a1 {
+    font-family: 'Montserrat-Bold';
+}

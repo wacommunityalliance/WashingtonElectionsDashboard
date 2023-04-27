@@ -19,21 +19,6 @@ const map = new mapboxgl.Map({
     minZoom: 2
 });
 
-// Welcome message on page load
-$(document).ready(function() {
-    $("#welcome-message").dialog({
-        autoOpen: false,
-        modal: true,
-        buttons: {
-            "OK": function() {
-                $(this).dialog("close");
-            }
-        }
-    });
-
-    // show the welcome message
-    $("#welcome-message").dialog("open");
-});
 
 
 map.on('click', 'selectedLayer', (e) => {
@@ -227,7 +212,7 @@ function layerSelected(path) {
         layout: {},
         paint: {
             'line-color': '#595959',
-            'line-width': 1.25
+            'line-width': 1.5
         }
     });
 
