@@ -19,6 +19,21 @@ const map = new mapboxgl.Map({
     minZoom: 2
 });
 
+// Welcome message on page load
+$(document).ready(function() {
+    $("#welcome-message").dialog({
+        autoOpen: false,
+        modal: true,
+        buttons: {
+            "OK": function() {
+                $(this).dialog("close");
+            }
+        }
+    });
+
+    // show the welcome message
+    $("#welcome-message").dialog("open");
+});
 
 function makeDetailsPopup(meta) {
     const candidateListHtml = meta.candidates.map(candidate => `<li>${candidate.name} ${candidate.votes}</li>`).join('');
