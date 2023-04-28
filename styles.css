@@ -30,7 +30,7 @@
     padding: 5px 5px 20px 5px;
     display: inline;
     z-index: 90;
-    height: 10%;
+    height: 80px;
     border-bottom: solid black;
 }
 
@@ -104,9 +104,9 @@ h3 {
 .menu-legend {
     position: absolute;
     right: 0;
-    top: 10%;
+    top: 80px;
     width: 25%;
-    height: 30%;
+    height: 200px;
     padding: 2px 2px 2px 2px;
     border-left: solid black; 
     border-bottom: solid black;
@@ -115,9 +115,8 @@ h3 {
 .menu-tree {
     position: absolute;
     right: 0;
-    bottom: 0px;
+    top: 280px;
     width: 25%;
-    height: 60%;
     padding: 2px 2px 2px 2px;
     border-left: solid black; 
     overflow: auto;
