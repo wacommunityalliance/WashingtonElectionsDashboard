@@ -4,18 +4,8 @@
     height: 100%;
 }
 
-#logo {
-    position: absolute;
-    height: 10%;
-    padding: 10px 0 10px 20px;
-    display: inline-block;
-    box-align: center;
-    z-index: 100;
-}
-
 #tree {
     width: 100%;
-    height: 70%;
     font-family: 'Montserrat';
     font-size: .8em;
     display: block;
@@ -93,14 +83,6 @@ h3 {
     overflow-x: visible;
 }
 
-.menu {
-    border-left: solid black; 
-    width: 25%;
-    right: 0;
-    height: 90%;
-    z-index: 100;
-}
-
 .menu-legend {
     position: absolute;
     right: 0;
@@ -116,6 +98,7 @@ h3 {
     position: absolute;
     right: 0;
     top: 280px;
+    height: calc(100% - 280px);
     width: 25%;
     padding: 2px 2px 2px 2px;
     border-left: solid black; 
