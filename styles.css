@@ -88,7 +88,7 @@ h3 {
     right: 0;
     top: 80px;
     width: 25%;
-    height: 200px;
+    height: 270px;
     padding: 2px 2px 2px 2px;
     border-left: solid black; 
     border-bottom: solid black;
@@ -97,8 +97,8 @@ h3 {
 .menu-tree {
     position: absolute;
     right: 0;
-    top: 280px;
-    height: calc(100% - 280px);
+    top: 350px;
+    height: calc(100% - 350px);
     width: 25%;
     padding: 2px 2px 2px 2px;
     border-left: solid black; 
