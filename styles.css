@@ -138,6 +138,7 @@ td {
 
 th {
     font-family: 'Montserrat';
+    font-weight: 200;
     opacity: 100%;
     font-size: .8em;
     padding: 3px;
@@ -186,7 +187,7 @@ th {
 }
 
 #margin-label {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     font-size: .7em;
     display: inline-block;
     text-align: center;
@@ -207,6 +208,6 @@ p {
     width: 600px;
 }
 
-a1 {
+#welcome-message a {
     font-family: 'Montserrat-Bold';
 }
