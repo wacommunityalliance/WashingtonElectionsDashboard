@@ -31,7 +31,7 @@
     <div id="map"></div>
 
     <div>
-        <table class="menu menu-legend">
+        <table class="menu-legend">
             <tr>
                 <th colspan="5">Democratic (D)</th>
             </tr>
@@ -109,12 +109,22 @@
             </tr>
           </table>
         
-        <div class="menu menu-tree">
-            <div>
+        <!-- <div class="menu menu-tree">
+            <div id="menu">
                 <h2>Data Selection</h2>
                 <div id="tree"></div>
             </div>
-        </div>
+        </div> -->
+
+        <div class="menu menu-tree" id="menu">
+            <h2>Data selection</h2>
+            <select class="dropdown" id="first-dropdown"></select>
+            <br>
+            <select class="dropdown" id="second-dropdown"></select>
+            <br>
+            <select class="dropdown" id="third-dropdown"></select>
+          </div>
+
     </div>
     <div id="welcome-message" title="Welcome!">
         <p>This resource is a project of the <a href="https://wacommunityalliance.org/" target="_blank">Washington Community Alliance</a> Data Hub, developed to increase accessibility and clarity of election results. All data included in this resource is publicly available from the <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.<br><br>
