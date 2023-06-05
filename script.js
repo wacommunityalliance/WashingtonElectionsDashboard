@@ -19,8 +19,6 @@ const map = new mapboxgl.Map({
     minZoom: 2
 });
 
-
-
 map.on('click', 'selectedLayer', (e) => {
     _log(e);
 
@@ -148,6 +146,7 @@ map.on('click', 'selectedLayer', (e) => {
         .setHTML(message)
         .addTo(map)
 });
+
 
 
 
@@ -320,8 +319,8 @@ function layerSelected(path) {
 
     map.addSource('selectedLayer', {
         type: 'geojson',
-        // data: '/ElectionMapsWA' + path   // uncomment to publish
-        data: '/Data/' + path + '.geojson'                          // uncomment to debug
+        data: '/ElectionMapsWA/Data/' + path + '.geojson'  // uncomment to publish
+        // data: '/Data/' + path + '.geojson'                          // uncomment to debug
     });
 
     map.addLayer({
