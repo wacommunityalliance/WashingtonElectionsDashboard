@@ -1,15 +1,7 @@
-
 #map {
-    width: 80%;
+    left: 270px;
+    width: calc(100% - 270px);
     height: 100%;
-}
-
-#tree {
-    width: 100%;
-    font-family: 'Montserrat';
-    font-size: .8em;
-    display: block;
-    line-height: 10px;
 }
 
 .header {
@@ -21,12 +13,112 @@
     z-index: 90;
     height: 80px;
     border-bottom: solid black;
-
 }
 
 .title {
     padding: 5px 5px 20px 5px;
     margin: 0 0 0 75px;
+}
+
+#logo {
+    position: absolute;
+    height: 80px;
+    padding: 10px 0 10px 20px;
+    display: inline-block;
+    box-align: center;
+    z-index: 100;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    width: 270px;
+    top: 80px;
+    height: calc(100% - 80px);
+    margin-left: 5px;
+    margin-right: 5px;
+    border-right: solid black 2px;
+}
+
+#menu-top {
+    height: 150px;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+#menu-middle {
+    height: 330px;
+    top: 550px;
+}
+
+#menu-bottom {
+    top: 880px;
+    padding-top: 25px;
+    height: 250px;
+}
+
+table.table1 {
+    width: 95%;
+    border: 1.5px solid;
+    border-collapse: separate;
+    border-radius: 10px;
+    padding: 5px 5px 5px 0px;
+}
+
+table.table1 td {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: .7em;
+    height: 5%;
+    text-align: center;
+    padding: 5px 2px 5px 0px;
+}
+
+table.table1 th {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: .8em;
+    height: 5%;
+    text-align: center;
+    padding: 5px 2px 5px 0px;
+    border-bottom: 1.5px solid black;
+}
+
+table.table2 {
+    width: 95%;
+    height: 85%;
+    border: 1.5px solid;
+    border-collapse: separate;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    table-layout: fixed;
+}
+
+table.table2 td {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: .7em;
+    height: 5%;
+    text-align: center;
+    padding: 5px 2px 5px 2px;
+}
+
+table.table2 th {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: .8em;
+    height: 5%;
+    text-align: center;
+    padding: 5px 2px 5px 2px;
+}
+
+.dropdown {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: .8em;
+    border: 1.5px solid;
+    border-collapse: separate;
+    border-radius: 5px;
 }
 
 h1 {
@@ -42,157 +134,19 @@ h1 {
 h2 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 5px 0 10px 0;
     text-align: center;
 }
 
-#logo {
-    position: absolute;
-    height: 80px;
-    padding: 10px 0 10px 20px;
-    display: inline-block;
-    box-align: center;
-    z-index: 100;
-}
-
-
-.mapboxgl-popup-content {
-    padding: 10px;
-    border-radius: .5em;
-    max-width: max-content;
-}
-
-.mapboxgl-popup-content h {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    border-width: 0px 0px 0.5px 0px;
-    border-style: solid;
-    border-color: rgb(80, 80, 80);
-}
-
-.mapboxgl-popup-content p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 2em;
-    overflow-x: visible;
-}
-
-.menu-legend {
-    position: absolute;
-    right: 0;
-    top: 80px;
-    width: 20%;
-    height: 270px;
-    padding: 2px 2px 2px 2px;
-    border-left: solid black; 
-    border-bottom: solid black;
-}
-
-.menu-tree {
-    position: absolute;
-    right: 0;
-    top: 350px;
-    height: calc(100% - 350px);
-    width: 20%;
-    padding: 2px 2px 2px 2px;
-    border-left: solid black; 
-    overflow: auto;
-}
-
-.dropdown {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: .9em;
-}
-
-table {
-    table-layout: fixed;
-    width: 100% ;
-}
-
-td {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: .8em;
-    width: 20%;
-    height: 5%;
-    text-align: center;
-}
-
-th {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-weight: 200;
-    opacity: 100%;
-    font-size: .8em;
-    padding: 3px;
-    margin: 0px;
-    text-align: center;
-}   
-
-
-
-/* 
-
-.row {
-    height: 8px;
-    width: 90%;
-    margin-left: 5%;
-} */
-
-.dem1-colors {
-   background: linear-gradient(to right, #d7e1ec, #4f93ba);
-   margin-bottom: 3px;
-}
-
-.dem2-colors {
-    background: linear-gradient(to right, #e1e2ed, #868fba);
-    margin-bottom: 3px;
-}
-
-.rep1-colors {
-    background: linear-gradient(to right, #f2d9d2, #cf635d);
-    margin-bottom: 3px;
-}
-
-.rep2-colors {
-    background: linear-gradient(to right, #fee5cf, #f68f3e);
-    margin-bottom: 3px;
-}
-
-.ind1-colors {
-    background: linear-gradient(to right, #fef0db, #fac566);
-    margin-bottom: 3px;
-}
-
-.ind2-colors {
-    background: linear-gradient(to right, #d4e4e2, #119f92);
-    margin-bottom: 3px;
-}
-
-#margin-label {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: .7em;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}  
-
 p {
     font-family: 'Montserrat';
     font-weight: 300;
-    opacity: 100%;
     font-size: .8em;
     display: block;
     margin: 15px 0 5px 0;
     line-height: 15px;
-}   
+}
 
 #welcome-message {
     display: None;

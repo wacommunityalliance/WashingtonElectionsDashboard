@@ -28,104 +28,123 @@
         </div>
     </div>
 
-    <div id="map"></div>
-
-    <div>
-        <table class="menu-legend">
-            <tr>
-                <th colspan="5">Democratic (D)</th>
-            </tr>
-            <tr>
-                <td bgcolor="#d7e1ec"></td>
-                <td bgcolor="#b5cade"></td>
-                <td bgcolor="#94b6d1"></td>
-                <td bgcolor="#73a3c5"></td>
-                <td bgcolor="#4f93ba"></td>
-            </tr>
-            <tr>
-                <td bgcolor="#e1e2ed"></td>
-                <td bgcolor="#c8cadf"></td>
-                <td bgcolor="#b0b5d2"></td>
-                <td bgcolor="#9aa1c5"></td>
-                <td bgcolor="#868fba"></td>
-            </tr>
-            <tr>
-                <td>5%</td>
-                <td>10%</td>
-                <td>15%</td>
-                <td>20%</td>
-                <td>25%</td>
-            </tr>
-            <tr>
-                <th colspan="5">Republican (R)</th>
-            </tr>
-            <tr>
-                <td bgcolor="#f2d9d2"></td>
-                <td bgcolor="#e8b9af"></td>
-                <td bgcolor="#df9a8f"></td>
-                <td bgcolor="#d77f74"></td>
-                <td bgcolor="#cf635d"></td>
-            </tr>
-            <tr>
-                <td bgcolor="#fee5cf"></td>
-                <td bgcolor="#fdcea8"></td>
-                <td bgcolor="#fbb884"></td>
-                <td bgcolor="#f9a362"></td>
-                <td bgcolor="#f68f3e"></td>
-            </tr>
-            <tr>
-                <td>5%</td>
-                <td>10%</td>
-                <td>15%</td>
-                <td>20%</td>
-                <td>25%</td>
-            </tr>
-            <tr>
-                <th colspan="5">Independent (I)</th>
-            </tr>
-            <tr>
-                <td bgcolor="#fef0db"></td>
-                <td bgcolor="#fde5bd"></td>
-                <td bgcolor="#fcda9f"></td>
-                <td bgcolor="#fbcf83"></td>
-                <td bgcolor="#fac566"></td>
-            </tr>
-            <tr>
-                <td bgcolor="#d4e5e2"></td>
-                <td bgcolor="#adcfcb"></td>
-                <td bgcolor="#86bdb7"></td>
-                <td bgcolor="#5cada3"></td>
-                <td bgcolor="#119f92"></td>
-            </tr>
-            <tr>
-                <td>5%</td>
-                <td>10%</td>
-                <td>15%</td>
-                <td>20%</td>
-                <td>25%</td>
-            </tr>
-            <tr>
-                <th colspan="5">Vote margin (%)</th>
-            </tr>
-          </table>
-        
-        <!-- <div class="menu menu-tree">
-            <div id="menu">
-                <h2>Data Selection</h2>
-                <div id="tree"></div>
-            </div>
-        </div> -->
-
-        <div class="menu menu-tree" id="menu">
-            <h2>Data selection</h2>
+    <div class="menu">
+        <div id="menu-top">
+            <h2>Data Selection</h2>
             <select class="dropdown" id="first-dropdown"></select>
             <br>
             <select class="dropdown" id="second-dropdown"></select>
             <br>
             <select class="dropdown" id="third-dropdown"></select>
-          </div>
+        </div>
 
+        <div id="menu-middle">
+            <table class="table2">
+                <tr>
+                    <th colspan="5">Democratic (D)</th>
+                </tr>
+                <tr>
+                    <td bgcolor="#d7e1ec"></td>
+                    <td bgcolor="#b5cade"></td>
+                    <td bgcolor="#94b6d1"></td>
+                    <td bgcolor="#73a3c5"></td>
+                    <td bgcolor="#4f93ba"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e1e2ed"></td>
+                    <td bgcolor="#c8cadf"></td>
+                    <td bgcolor="#b0b5d2"></td>
+                    <td bgcolor="#9aa1c5"></td>
+                    <td bgcolor="#868fba"></td>
+                </tr>
+                <tr>
+                    <td>5%</td>
+                    <td>10%</td>
+                    <td>15%</td>
+                    <td>20%</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Republican (R)</th>
+                </tr>
+                <tr>
+                    <td bgcolor="#f2d9d2"></td>
+                    <td bgcolor="#e8b9af"></td>
+                    <td bgcolor="#df9a8f"></td>
+                    <td bgcolor="#d77f74"></td>
+                    <td bgcolor="#cf635d"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#fee5cf"></td>
+                    <td bgcolor="#fdcea8"></td>
+                    <td bgcolor="#fbb884"></td>
+                    <td bgcolor="#f9a362"></td>
+                    <td bgcolor="#f68f3e"></td>
+                </tr>
+                <tr>
+                    <td>5%</td>
+                    <td>10%</td>
+                    <td>15%</td>
+                    <td>20%</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Independent (I)</th>
+                </tr>
+                <tr>
+                    <td bgcolor="#fef0db"></td>
+                    <td bgcolor="#fde5bd"></td>
+                    <td bgcolor="#fcda9f"></td>
+                    <td bgcolor="#fbcf83"></td>
+                    <td bgcolor="#fac566"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#d4e5e2"></td>
+                    <td bgcolor="#adcfcb"></td>
+                    <td bgcolor="#86bdb7"></td>
+                    <td bgcolor="#5cada3"></td>
+                    <td bgcolor="#119f92"></td>
+                </tr>
+                <tr>
+                    <td>5%</td>
+                    <td>10%</td>
+                    <td>15%</td>
+                    <td>20%</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Voter turnout (relative)</th>
+                </tr>
+                <tr>
+                    <td bgcolor="#d4e5e2"></td>
+                    <td bgcolor="#adcfcb"></td>
+                    <td bgcolor="#86bdb7"></td>
+                    <td bgcolor="#5cada3"></td>
+                    <td bgcolor="#119f92"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e1e2ed"></td>
+                    <td bgcolor="#c8cadf"></td>
+                    <td bgcolor="#b0b5d2"></td>
+                    <td bgcolor="#9aa1c5"></td>
+                    <td bgcolor="#868fba"></td>
+                </tr>
+                <tr>
+                    <td>±2.5%</td>
+                    <td>±5%</td>
+                    <td>±7.5%</td>
+                    <td>±10%</td>
+                    <td>±15%</td>
+                </tr>
+            </table>
+        </div>
+        <div id="menu-bottom">
+        </div>
     </div>
+
+
+    <div id="map"></div>
+
     <div id="welcome-message" title="Welcome!">
         <p>This resource is a project of the <a href="https://wacommunityalliance.org/" target="_blank">Washington Community Alliance</a> Data Hub, developed to increase accessibility and clarity of election results. All data included in this resource is publicly available from the <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.<br><br>
             To get started, choose an election cycle and position, then select a layer for visualization. Once data is displayed, click on any layer to see a popup of results.

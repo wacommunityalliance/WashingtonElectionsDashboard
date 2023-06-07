@@ -8,6 +8,8 @@ function _log(message) {
 // Initialize mapbox
 mapboxgl.accessToken = 'pk.eyJ1IjoidGltb25lYWwiLCJhIjoiY2xjZm04YW5yMGFnYTNvcG1pZTNicGU2diJ9.eYwXLLfgApOlhZbiYYTWAA';
 
+var clickedID = null;
+
 // Initialize the map
 const map = new mapboxgl.Map({
     container: 'map',
@@ -19,180 +21,103 @@ const map = new mapboxgl.Map({
     minZoom: 2
 });
 
+// const label = e.features[0].properties.Title;
+//         const turnout = e.features[0].properties.Turnout;
+//         const turnoutRelative = e.features[0].properties.TurnoutRelative;
+
+//         let message;
+
+//         if (candidate1 == null) {
+//             message =
+//                 '<h2>' + label + '</h2>'
+//                 + '<p>No data available</p>';
+//         } else {
+//             message =
+//                 '<h2>' + label + '</h2>'               
+//                 + '<p>Voter turnout (absolute): ' + turnout + '</p>'
+//                 + '<p>Voter turnout (relative): ' + turnoutRelative + '</p>';
+//         }
+
+//         const menuBottom = document.getElementById('menu-bottom');
+//         menuBottom.innerHTML = message;
+
+
+
 map.on('click', 'selectedLayer', (e) => {
     _log(e);
 
-    // var features = e.features[0];
-    // var coordinates = e.lngLat;
-
-    // var popupContent = '<table>';
-    // popupContent += '<tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>';
-
-    // for (var i = 0; i < features.properties.data.length; i++) {
-    //     var rowData = features.properties.data[i];
-    //     popupContent += '<tr><td>' + rowData.column1 + '</td><td>' + rowData.column2 + '</td><td>' + rowData.column3 + '</td></tr>';
-    //   }
-
-    // popupContent += '</table>';
-
-
-    const label = e.features[0].properties.Title.toUpperCase();
-    const totalVotes = e.features[0].properties.Votes_total;
-
-    const candidate1 = e.features[0].properties.Name_1;
-    const party1 = e.features[0].properties.Party_1;
-    const votes1 = e.features[0].properties.Votes_1;
-    const pct1 = Math.round(e.features[0].properties.Pct_1 * 100) / 100;
-
-    const candidate2 = e.features[0].properties.Name_2;
-    const party2 = e.features[0].properties.Party_2;
-    const votes2 = e.features[0].properties.Votes_2;
-    const pct2 = Math.round(e.features[0].properties.Pct_2 * 100) / 100;
-
-    const candidate3 = e.features[0].properties.Name_3;
-    const party3 = e.features[0].properties.Party_3;
-    const votes3 = e.features[0].properties.Votes_3;
-    const pct3 = Math.round(e.features[0].properties.Pct_3 * 100) / 100;
-
-    const candidate4 = e.features[0].properties.Name_4;
-    const party4 = e.features[0].properties.Party_4;
-    const votes4 = e.features[0].properties.Votes_4;
-    const pct4 = Math.round(e.features[0].properties.Pct_4 * 100) / 100;
-
-    const candidate5 = e.features[0].properties.Name_5;
-    const party5 = e.features[0].properties.Party_5;
-    const votes5 = e.features[0].properties.Votes_5;
-    const pct5 = Math.round(e.features[0].properties.Pct_5 * 100) / 100;
+    const label = e.features[0].properties.Title;
+    const turnout = e.features[0].properties.Turnout;
+    const turnoutRelative = e.features[0].properties.TurnoutRelative;
 
     let message;
 
-    if (candidate1 == null) {
-        message =
+    if (turnout !== undefined) {
+        message = 
             '<h2>' + label + '</h2>'
-            + '<p>No data available</p>'
-    }
+            + '<p> Voter turnout (absolute): ' + turnout + '%</p>'
+            + '<p> Voter turnout (relative): ' + turnoutRelative + '%</p>';
+    } else {
+        const totalVotes = e.features[0].properties.Votes_total;
 
-    else if (votes2 == 0) {
-        message =
-            '<h2>' + label + '</h2>'
-            + '<p>' + candidate1 + ' (' + party1.charAt(0) + '): ' + votes1 + ' votes (' + pct1 + '%)<br></p'
-            + '<p>Total votes: ' + totalVotes + '</p>'
-    }
+        const candidate1 = e.features[0].properties.Name_1;
+        const party1 = e.features[0].properties.Party_1;
+        const votes1 = e.features[0].properties.Votes_1;
+        const pct1 = Math.round(e.features[0].properties.Pct_1 * 100) / 100;
 
-    else if (votes3 == 0) {
-        if (candidate2 == 'Write-In') {
+        const candidate2 = e.features[0].properties.Name_2;
+        const party2 = e.features[0].properties.Party_2;
+        const votes2 = e.features[0].properties.Votes_2;
+        const pct2 = Math.round(e.features[0].properties.Pct_2 * 100) / 100;
+
+        const candidate3 = e.features[0].properties.Name_3;
+        const party3 = e.features[0].properties.Party_3;
+        const votes3 = e.features[0].properties.Votes_3;
+        const pct3 = Math.round(e.features[0].properties.Pct_3 * 100) / 100;
+
+        const candidate4 = e.features[0].properties.Name_4;
+        const party4 = e.features[0].properties.Party_4;
+        const votes4 = e.features[0].properties.Votes_4;
+        const pct4 = Math.round(e.features[0].properties.Pct_4 * 100) / 100;
+
+        const candidate5 = e.features[0].properties.Name_5;
+        const party5 = e.features[0].properties.Party_5;
+        const votes5 = e.features[0].properties.Votes_5;
+        const pct5 = Math.round(e.features[0].properties.Pct_5 * 100) / 100;
+
+
+        if (candidate1 == null) {
             message =
                 '<h2>' + label + '</h2>'
-                + '<p>' + candidate1 + ' (' + party1.charAt(0) + '): ' + votes1 + ' votes (' + pct1 + '%)<br></p'
-                + '<p>' + candidate2 + ': ' + votes2 + ' votes (' + pct2 + '%)<br></p'
-                + '<p>Total votes: ' + totalVotes + '</p>'
-        }
-        else {
+                + '<p>No data available</p>';
+        } else {
             message =
                 '<h2>' + label + '</h2>'
-                + '<p>' + candidate1 + ' (' + party1.charAt(0) + '): ' + votes1 + ' votes (' + pct1 + '%)<br></p'
-                + '<p>' + candidate2 + ' (' + party2.charAt(0) + '): ' + votes2 + ' votes (' + pct2 + '%)<br></p'
-                + '<p>Total votes: ' + totalVotes + '</p>'
+                + '<table class="table1">'
+                + '<tr><th>Candidate</th><th>Party</th><th>Votes</th><th>Percent</th></tr>'
+                + createTableRow(candidate1, party1, votes1, pct1)
+                + createTableRow(candidate2, party2, votes2, pct2)
+                + createTableRow(candidate3, party3, votes3, pct3)
+                + createTableRow(candidate4, party4, votes4, pct4)
+                + createTableRow(candidate5, party5, votes5, pct5)
+                + '</table>'
+                + '<p>  Total votes: ' + totalVotes + '</p>';
         }
     }
-
-    else if (votes4 == 0) {
-        if (candidate3 == 'Write-In') {
-            message =
-                '<h2>' + label + '</h2>'
-                + '<p>' + candidate1 + ' (' + party1.charAt(0) + '): ' + votes1 + ' votes (' + pct1 + '%)<br></p'
-                + '<p>' + candidate2 + ' (' + party2.charAt(0) + '): ' + votes2 + ' votes (' + pct2 + '%)<br></p'
-                + '<p>' + candidate3 + ': ' + votes3.charAt(0) + ' votes (' + pct3 + '%)<br></p'
-                + '<p>Total votes: ' + totalVotes + '</p>'
-        }
-        else {
-            message =
-                '<h2>' + label + '</h2>'
-                + '<p>' + candidate1 + ' (' + party1.charAt(0) + '): ' + votes1 + ' votes (' + pct1 + '%)<br></p'
-                + '<p>' + candidate2 + ' (' + party2.charAt(0) + '): ' + votes2 + ' votes (' + pct2 + '%)<br></p'
-                + '<p>' + candidate3 + ' (' + party3.charAt(0) + '): ' + votes3 + ' votes (' + pct3 + '%)<br></p'
-                + '<p>Total votes: ' + totalVotes + '</p>'
-        }
-    }
-
-    else if (votes4 != 0) {
-        if (candidate4 == 'Write-In') {
-            message =
-                '<h2>' + label + '</h2>'
-                + '<p>' + candidate1 + ' (' + party1.charAt(0) + '): ' + votes1 + ' votes (' + pct1 + '%)<br></p'
-                + '<p>' + candidate2 + ' (' + party2.charAt(0) + '): ' + votes2 + ' votes (' + pct2 + '%)<br></p'
-                + '<p>' + candidate3 + ' (' + party3.charAt(0) + '): ' + votes3 + ' votes (' + pct3 + '%)<br></p'
-                + '<p>' + candidate4 + ': ' + votes4.charAt(0) + ' votes (' + pct4 + '%)<br></p'
-                + '<p>Total votes: ' + totalVotes + '</p>'
-        }
-        else {
-            message =
-                '<h2>' + label + '</h2>'
-                + '<p>' + candidate1 + ' (' + party1.charAt(0) + '): ' + votes1 + ' votes (' + pct1 + '%)<br></p'
-                + '<p>' + candidate2 + ' (' + party2.charAt(0) + '): ' + votes2 + ' votes (' + pct2 + '%)<br></p'
-                + '<p>' + candidate3 + ' (' + party3.charAt(0) + '): ' + votes3 + ' votes (' + pct3 + '%)<br></p'
-                + '<p>' + candidate4 + ' (' + party4.charAt(0) + '): ' + votes4 + ' votes (' + pct4 + '%)<br></p'
-                + '<p>Total votes: ' + totalVotes + '</p>'
-        }
-    }
-
-    else {
-        message =
-            + '<p>hmm</p>'
-    }
-
-    new mapboxgl.Popup()
-        .setLngLat(e.lngLat)
-        .setHTML(message)
-        .addTo(map)
+    const menuBottom = document.getElementById('menu-bottom');
+    menuBottom.innerHTML = message;
 });
 
+function createTableRow(candidate, party, votes, percent) {
+    if (!candidate) return '';
 
-
-
-// // Convert the tree data to jstree format
-// function convertToJsTreeFormat(treeData) {
-//     if (!treeData || !treeData.items) return [];
-
-//     return treeData.items.map(item => {
-//         const children = convertToJsTreeFormat(item);
-//         return {
-//             text: item.title,
-//             data: {
-//                 path: item.path
-//             },
-//             children
-//         };
-//     });
-// }
-
-
-// fetch('Data/data.json')
-//     .then(response => response.json())
-//     .then(treeData => {
-//         _log(treeData);
-
-//         // If you don't want a tree, use treeData to populate slider, buttons, etc
-//         // Initialize the jstree
-//         $('#tree').jstree({
-//             core: {
-//                 data: convertToJsTreeFormat(treeData)
-//             }
-//         });
-
-//         // if you don't want a tree, replace this click handling with state mgmt + click handling for slider, buttons, etc
-//         // jstree event handlers
-//         $('#tree').on('select_node.jstree', function (e, data) {
-//             const node = data.node;
-//             const hasChildren = node.children && node.children.length > 0;
-
-//             if (hasChildren) {
-//                 $('#tree').jstree('toggle_node', node);
-//             } else {
-//                 layerSelected(node.data.path);
-//             }
-//         });
-//     });
+    return '<tr>'
+        + '<td>' + candidate + '</td>'
+        + '<td>' + party.charAt(0) + '</td>'
+        + '<td>' + votes + '</td>'
+        + '<td>' + percent + '%</td>'
+        + '</tr>';
+}
 
 
 // Convert the tree data to dropdown menu format
@@ -210,6 +135,7 @@ function convertToDropdownFormat(treeData) {
 
 let selectedFirstValue = '';
 let selectedSecondValue = '';
+let selectedThirdValue = '';
 
 fetch('Data/data.json')
     .then(response => response.json())
@@ -289,10 +215,9 @@ fetch('Data/data.json')
 
             // Call the layerSelected function with the selected path
             layerSelected(path);
+            return selectedThirdValue;
         });
     });
-
-
 
 
 // Function to load and display the GeoJSON file
@@ -308,7 +233,6 @@ function layerSelected(path) {
     }
 
     const layers = map.getStyle().layers;
-    // Find the index of the first symbol layer in the map style.
     let firstSymbolId;
     for (const layer of layers) {
         if (layer.type === 'symbol') {
@@ -330,40 +254,78 @@ function layerSelected(path) {
         layout: {},
         paint: {
             'line-color': '#595959',
-            'line-width': 1.5
+            'line-width': [
+                'case',
+                ['boolean', ['feature-state', 'clicked'], false],
+                2,
+                0.5
+            ]
         }
     });
 
-    map.addLayer({
-        id: 'selectedLayer',
-        type: 'fill',
-        source: 'selectedLayer',
-        layout: {},
-        paint: {
-            'fill-color': [         // fill polygon based on 1st place candidate's party
-                'match',
-                ['get', 'Party_1'],
-                'Democratic', '#4f93ba',
-                'Republican', '#cf635d',
-                'Independent', '#fac566',
-                'Democratic2', '#868fba',
-                'Republican2', '#f68f3e',
-                'Independent2', '#119f92',
-                'transparent'
-            ],
-            'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates
-                'step',
-                ['get', 'Margin'],
-                0.15, 5,
-                0.3, 10,
-                0.45, 15,
-                0.6, 20,
-                0.75, 101,
-                0
-            ]
-        }
-    },
-        firstSymbolId
-    );
-};
+    if (path.includes('Voter Turnout')) {
+        map.addLayer({
+            id: 'selectedLayer',
+            type: 'fill',
+            source: 'selectedLayer',
+            layout: {},
+            paint: {
+                'fill-color': [         
+                    'match',
+                    ['get', 'Split'],
+                    'Above', '#119f92',
+                    'Below', '#868fba',
+                    'transparent'
+                ],
+                'fill-opacity': [      
+                    'step',
+                    ['get', 'TurnoutRelative'],
+                    0.75, -101,
+                    0.6, -10,
+                    0.45, -7.5,
+                    0.3, -5,
+                    0.15, -2.5,
+                    0.15, 2.5,
+                    0.3, 5,
+                    0.45, 7.5,
+                    0.6, 10,
+                    0.75, 101,
+                    0
+                ]
+            }
+        }, firstSymbolId);
+    } else {
+        map.addLayer({
+            id: 'selectedLayer',
+            type: 'fill',
+            source: 'selectedLayer',
+            layout: {},
+            paint: {
+                'fill-color': [         // fill polygon based on 1st place candidate's party
+                    'match',
+                    ['get', 'Party_1'],
+                    'Democratic', '#4f93ba',
+                    'Republican', '#cf635d',
+                    'Independent', '#fac566',
+                    'Democratic2', '#868fba',
+                    'Republican2', '#f68f3e',
+                    'Independent2', '#119f92',
+                    'transparent'
+                ],
+                'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates
+                    'step',
+                    ['get', 'Margin'],
+                    0.15, 5,
+                    0.3, 10,
+                    0.45, 15,
+                    0.6, 20,
+                    0.75, 101,
+                    0
+                ]
+            }
+        },
+        firstSymbolId);
+    }
+    return(path)
+}
 

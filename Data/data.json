@@ -298,6 +298,27 @@
                             "items": null
                         }
                     ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2012/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2012/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
                 }
             ]
         },
@@ -477,6 +498,27 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2014/U.S. Representative/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2014/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2014/Voter Turnout/LD.geojson",
                             "items": null
                         }
                     ]
@@ -760,6 +802,27 @@
                             "items": null
                         }
                     ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2016/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2016/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
                 }
             ]
         },
@@ -960,6 +1023,27 @@
                         {
                             "title": "State",
                             "path": "/Data/2018/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2018/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2018/Voter Turnout/LD.geojson",
                             "items": null
                         }
                     ]
@@ -1253,6 +1337,27 @@
                             "items": null
                         }
                     ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2020/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2020/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
                 }
             ]
         },
@@ -1484,6 +1589,27 @@
                         {
                             "title": "State",
                             "path": "/Data/2022/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2022/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2022/Voter Turnout/LD.geojson",
                             "items": null
                         }
                     ]
