@@ -53,7 +53,7 @@ map.on('click', 'selectedLayer', (e) => {
     let message;
 
     if (turnout !== undefined) {
-        message = 
+        message =
             '<h2>' + label + '</h2>'
             + '<p> Voter turnout (absolute): ' + turnout + '%</p>'
             + '<p> Voter turnout (relative): ' + turnoutRelative + '%</p>';
@@ -244,7 +244,7 @@ function layerSelected(path) {
     map.addSource('selectedLayer', {
         type: 'geojson',
         data: '/ElectionMapsWA/Data/' + path + '.geojson'  // uncomment to publish
-        // data: '/Data/' + path + '.geojson'                          // uncomment to debug
+        //data: '/Data/' + path + '.geojson'               // uncomment to debug
     });
 
     map.addLayer({
@@ -254,12 +254,7 @@ function layerSelected(path) {
         layout: {},
         paint: {
             'line-color': '#595959',
-            'line-width': [
-                'case',
-                ['boolean', ['feature-state', 'clicked'], false],
-                2,
-                0.5
-            ]
+            'line-width': 1.25
         }
     });
 
@@ -270,14 +265,14 @@ function layerSelected(path) {
             source: 'selectedLayer',
             layout: {},
             paint: {
-                'fill-color': [         
+                'fill-color': [
                     'match',
                     ['get', 'Split'],
                     'Above', '#119f92',
                     'Below', '#868fba',
                     'transparent'
                 ],
-                'fill-opacity': [      
+                'fill-opacity': [
                     'step',
                     ['get', 'TurnoutRelative'],
                     0.75, -101,
@@ -326,6 +321,7 @@ function layerSelected(path) {
         },
         firstSymbolId);
     }
-    return(path)
 }
+
+
 
