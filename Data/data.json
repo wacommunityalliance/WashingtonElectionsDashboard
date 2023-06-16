@@ -547,6 +547,83 @@
             "path": null,
             "items": [
                 {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2015/County Assessor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2015/County Auditor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2015/County Clerk/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Executive",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2015/County Executive/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2015/County Sheriff/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2015/County Treasurer/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Mayor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2015/Mayor/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Voter Turnout",
                     "path": null,
                     "items": [
@@ -865,6 +942,83 @@
             "path": null,
             "items": [
                 {
+                    "title": "City Attorney",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2017/City Attorney/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2017/County Assessor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2017/County Clerk/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Executive",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2017/County Executive/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2017/County Sheriff/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2017/County Treasurer/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Mayor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2017/Mayor/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Voter Turnout",
                     "path": null,
                     "items": [
@@ -1105,6 +1259,83 @@
             "title": "2019",
             "path": null,
             "items": [
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2019/County Assessor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2019/County Auditor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2019/County Clerk/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Executive",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2019/County Executive/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2019/County Sheriff/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2019/County Treasurer/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Mayor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/Mayor/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
                 {
                     "title": "Voter Turnout",
                     "path": null,
@@ -1433,6 +1664,72 @@
             "title": "2021",
             "path": null,
             "items": [
+                {
+                    "title": "City Attorney",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Attorney/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2021/County Assessor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Executive",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2021/County Executive/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Prosecutor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2021/County Prosecutor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2021/County Treasurer/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Mayor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/Mayor/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
                 {
                     "title": "Voter Turnout",
                     "path": null,

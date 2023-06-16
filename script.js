@@ -244,7 +244,7 @@ function layerSelected(path) {
     map.addSource('selectedLayer', {
         type: 'geojson',
         data: '/ElectionMapsWA/Data/' + path + '.geojson'  // uncomment to publish
-        //data: '/Data/' + path + '.geojson'               // uncomment to debug
+        // data: '/Data/' + path + '.geojson'               // uncomment to debug
     });
 
     map.addLayer({
@@ -276,16 +276,20 @@ function layerSelected(path) {
                 'fill-opacity': [
                     'step',
                     ['get', 'TurnoutRelative'],
-                    0.99, -101,
-                    0.8, -10,
-                    0.6, -7.5,
-                    0.4, -5,
+                    0.8, -101,
+                    0.7, -20,
+                    0.6, -15,
+                    0.5, -10,
+                    0.4, -7.5,
+                    0.3, -5,
                     0.2, -2.5,
                     0.2, 2.5,
-                    0.4, 5,
-                    0.6, 7.5,
-                    0.8, 10,
-                    0.99, 101,
+                    0.3, 5,
+                    0.4, 7.5,
+                    0.5, 10,
+                    0.6, 15,
+                    0.7, 20,
+                    0.8, 101,
                     0
                 ]
             }
@@ -312,10 +316,12 @@ function layerSelected(path) {
                     'step',
                     ['get', 'Margin'],
                     0.2, 5,
-                    0.4, 10,
-                    0.6, 15,
-                    0.8, 20,
-                    0.99, 101,
+                    0.3, 10,
+                    0.4, 15,
+                    0.5, 20,
+                    0.6, 25,
+                    0.7, 30,
+                    0.8, 101,
                     0
                 ]
             }
