@@ -1,0 +1,1620 @@
+{
+    "items": [
+        {
+            "title": "2012",
+            "path": null,
+            "items": [
+                {
+                    "title": "Attorney General",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Attorney General/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Attorney General/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Commissioner of Public Lands",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Commissioner of Public Lands/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Commissioner of Public Lands/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Governor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Insurance Commissioner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Insurance Commissioner/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Insurance Commissioner/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Lt. Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Lt. Governor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Lt. Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "President and Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/President and Vice President/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/President and Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Secretary of State",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Secretary of State/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Secretary of State/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/State Auditor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/State Auditor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2012/State Representative Pos. 1/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/State Representative Pos. 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2012/State Representative Pos. 2/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/State Representative Pos. 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2012/State Senator/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/State Senator/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/State Treasurer/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/State Treasurer/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superintendent of Public Instruction",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Superintendent of Public Instruction/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Superintendent of Public Instruction/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Representative",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2012/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/U.S. Representative/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/U.S. Senator/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2012/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2012/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2014",
+            "path": null,
+            "items": [
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/County Assessor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/County Assessor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/County Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/County Auditor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/County Clerk/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/County Clerk/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Coroner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/County Coroner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/County Coroner/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Prosecutor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/County Prosecutor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/County Prosecutor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/County Sheriff/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/County Sheriff/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/County Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/County Treasurer/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2014/State Representative Pos. 1/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/State Representative Pos. 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2014/State Representative Pos. 2/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/State Representative Pos. 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2014/State Senator/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/State Senator/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Representative",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2014/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/U.S. Representative/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2014/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2014/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2016",
+            "path": null,
+            "items": [
+                {
+                    "title": "Attorney General",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Attorney General/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Attorney General/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Commissioner of Public Lands",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Commissioner of Public Lands/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Commissioner of Public Lands/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Governor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Insurance Commissioner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Insurance Commissioner/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Insurance Commissioner/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Lt. Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Lt. Governor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Lt. Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "President and Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/President and Vice President/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/President and Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Secretary of State",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Secretary of State/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Secretary of State/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/State Auditor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/State Auditor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2016/State Representative Pos. 1/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/State Representative Pos. 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2016/State Representative Pos. 2/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/State Representative Pos. 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2016/State Senator/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/State Senator/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/State Treasurer/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/State Treasurer/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superintendent of Public Instruction",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Superintendent of Public Instruction/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Superintendent of Public Instruction/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Representative",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2016/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/U.S. Representative/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2016/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2016/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2018",
+            "path": null,
+            "items": [
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/County Assessor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Assessor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/County Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Auditor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/County Clerk/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Clerk/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Coroner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/County Coroner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Coroner/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Prosecutor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/County Prosecutor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Prosecutor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/County Sheriff/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Sheriff/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/County Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Treasurer/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2018/State Representative Pos. 1/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/State Representative Pos. 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2018/State Representative Pos. 2/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/State Representative Pos. 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2018/State Senator/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/State Senator/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Representative",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2018/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/U.S. Representative/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/U.S. Senator/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2018/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2018/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2018/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2020",
+            "path": null,
+            "items": [
+                {
+                    "title": "Attorney General",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Attorney General/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Attorney General/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Commissioner of Public Lands",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Commissioner of Public Lands/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Commissioner of Public Lands/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Governor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Insurance Commissioner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Insurance Commissioner/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Insurance Commissioner/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Lt. Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Lt. Governor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Lt. Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "President and Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2020/President and Vice President/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2020/President and Vice President/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/President and Vice President/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/President and Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Secretary of State",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Secretary of State/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Secretary of State/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/State Auditor/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/State Auditor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2020/State Representative Pos. 1/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/State Representative Pos. 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2020/State Representative Pos. 2/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/State Representative Pos. 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2020/State Senator/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/State Senator/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/State Treasurer/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/State Treasurer/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superintendent of Public Instruction",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Superintendent of Public Instruction/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Superintendent of Public Instruction/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Representative",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2020/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/U.S. Representative/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2020/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2020/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2022",
+            "path": null,
+            "items": [
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/County Assessor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/County Assessor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/County Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/County Auditor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/County Clerk/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/County Clerk/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Coroner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/County Coroner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/County Coroner/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Prosecutor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/County Prosecutor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/County Prosecutor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/County Sheriff/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/County Sheriff/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/County Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/County Treasurer/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Secretary of State",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/Secretary of State/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2022/Secretary of State/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2022/State Representative Pos. 1/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/State Representative Pos. 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2022/State Representative Pos. 2/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/State Representative Pos. 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "LD",
+                            "path": "/Data/2022/State Senator/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/State Senator/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Representative",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2022/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/U.S. Representative/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2022/U.S. Senator/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2022/U.S. Senator/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/U.S. Senator/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2022/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Voter Turnout",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2022/Voter Turnout/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/Voter Turnout/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2022/Voter Turnout/LD.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -258,6 +258,7 @@ function layerSelected(path) {
         }
     });
 
+
     if (path.includes('Voter Turnout')) {
         map.addLayer({
             id: 'selectedLayer',
@@ -275,16 +276,16 @@ function layerSelected(path) {
                 'fill-opacity': [
                     'step',
                     ['get', 'TurnoutRelative'],
-                    0.75, -101,
-                    0.6, -10,
-                    0.45, -7.5,
-                    0.3, -5,
-                    0.15, -2.5,
-                    0.15, 2.5,
-                    0.3, 5,
-                    0.45, 7.5,
-                    0.6, 10,
-                    0.75, 101,
+                    0.99, -101,
+                    0.8, -10,
+                    0.6, -7.5,
+                    0.4, -5,
+                    0.2, -2.5,
+                    0.2, 2.5,
+                    0.4, 5,
+                    0.6, 7.5,
+                    0.8, 10,
+                    0.99, 101,
                     0
                 ]
             }
@@ -310,11 +311,11 @@ function layerSelected(path) {
                 'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates
                     'step',
                     ['get', 'Margin'],
-                    0.15, 5,
-                    0.3, 10,
-                    0.45, 15,
-                    0.6, 20,
-                    0.75, 101,
+                    0.2, 5,
+                    0.4, 10,
+                    0.6, 15,
+                    0.8, 20,
+                    0.99, 101,
                     0
                 ]
             }
