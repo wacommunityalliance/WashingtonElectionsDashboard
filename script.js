@@ -9,6 +9,7 @@ function _log(message) {
 mapboxgl.accessToken = 'pk.eyJ1IjoidGltb25lYWwiLCJhIjoiY2xjZm04YW5yMGFnYTNvcG1pZTNicGU2diJ9.eYwXLLfgApOlhZbiYYTWAA';
 
 var clickedID = null;
+let popup = null;
 
 // Initialize the map
 const map = new mapboxgl.Map({
@@ -21,30 +22,21 @@ const map = new mapboxgl.Map({
     minZoom: 2
 });
 
-// const label = e.features[0].properties.Title;
-//         const turnout = e.features[0].properties.Turnout;
-//         const turnoutRelative = e.features[0].properties.TurnoutRelative;
+map.on('mouseenter', 'selectedLayer', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
 
-//         let message;
-
-//         if (candidate1 == null) {
-//             message =
-//                 '<h2>' + label + '</h2>'
-//                 + '<p>No data available</p>';
-//         } else {
-//             message =
-//                 '<h2>' + label + '</h2>'               
-//                 + '<p>Voter turnout (absolute): ' + turnout + '</p>'
-//                 + '<p>Voter turnout (relative): ' + turnoutRelative + '</p>';
-//         }
-
-//         const menuBottom = document.getElementById('menu-bottom');
-//         menuBottom.innerHTML = message;
-
-
+map.on('mouseleave', 'selectedLayer', function () {
+    map.getCanvas().style.cursor = '';
+});
 
 map.on('click', 'selectedLayer', (e) => {
     _log(e);
+
+    if (popup !== null) {
+        popup.remove();
+        popup = null;
+    }
 
     const label = e.features[0].properties.Title;
     const turnout = e.features[0].properties.Turnout;
@@ -94,7 +86,7 @@ map.on('click', 'selectedLayer', (e) => {
             message =
                 '<h2>' + label + '</h2>'
                 + '<table class="table1">'
-                + '<tr><th>Candidate</th><th>Party</th><th>Votes</th><th>Percent</th></tr>'
+                + '<tr><th>LABEL</th><th>CANDIDATE</th><th>PARTY</th><th>VOTES</th><th>PERCENT</th></tr>'
                 + createTableRow(candidate1, party1, votes1, pct1)
                 + createTableRow(candidate2, party2, votes2, pct2)
                 + createTableRow(candidate3, party3, votes3, pct3)
@@ -104,14 +96,31 @@ map.on('click', 'selectedLayer', (e) => {
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         }
     }
-    const menuBottom = document.getElementById('menu-bottom');
-    menuBottom.innerHTML = message;
+
+    // Create popup
+    popup = new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(message)
+        .addTo(map);
 });
 
 function createTableRow(candidate, party, votes, percent) {
     if (!candidate) return '';
 
+    const partyColors = {
+        'Democratic': '#4f93ba',
+        'Democrat': '#4f93ba',
+        'Republican': '#cf635d',
+        'Independent': '#fac566',
+        'Democratic2': '#868fba',
+        'Republican2': '#f68f3e',
+        'Independent2': '#119f92'
+    };
+
+    const partyColor = partyColors[party] || '#999999'; // Default color if party is not found in the mapping
+
     return '<tr>'
+        + '<td>' + '  ' + '<div class="party-square" style="background-color:' + partyColor + '"></div>' + '</td>'
         + '<td>' + candidate + '</td>'
         + '<td>' + party.charAt(0) + '</td>'
         + '<td>' + votes + '</td>'
@@ -212,6 +221,12 @@ fetch('Data/data.json')
 
             // Generate the selected path
             const path = selectedFirstValue + '/' + selectedSecondValue + '/' + selectedThirdValue;
+
+            // Close the popup if it is open
+            if (popup !== null) {
+                popup.remove();
+                popup = null;
+            }
 
             // Call the layerSelected function with the selected path
             layerSelected(path);

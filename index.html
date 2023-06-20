@@ -20,22 +20,21 @@
 </head>
 </head>
 
-<body class="h-screen">
+<body>
+    <div id="map"></div>
+
     <div class="header">
         <img id="logo" src="Assets/wca c4 color horizontal.png" alt="Logo">
-        <div class="title">
+        <div id="title">
             <h1>Washington Elections Dashboard</h1>
         </div>
     </div>
-
-    <div class="menu">
+    
+    <nav class="menu">
         <div id="menu-top">
-            <h2>Data Selection</h2>
-            <select class="dropdown" id="first-dropdown"></select>
-            <br>
-            <select class="dropdown" id="second-dropdown"></select>
-            <br>
-            <select class="dropdown" id="third-dropdown"></select>
+            <h3>#1 <select class="dropdown" id="first-dropdown"></select></h3>
+            <h3>#2 <select class="dropdown" id="second-dropdown"></select></h3>
+            <h3>#3 <select class="dropdown" id="third-dropdown"></select></h3>
         </div>
 
         <div id="menu-middle">
@@ -71,7 +70,7 @@
                     <td>>30%</td>
                 </tr>
                 <tr>
-                    <th colspan="5">Republican (R)</th>
+                    <th colspan="7">Republican (R)</th>
                 </tr>
                 <tr>
                     <td bgcolor="#f2e1de"></td>
@@ -102,7 +101,7 @@
                     <td>>30%</td>
                 </tr>
                 <tr>
-                    <th colspan="5">Independent (I)</th>
+                    <th colspan="7">Independent (I) or None (N)</th>
                 </tr>
                 <tr>
                     <td bgcolor="#fcf5e5"></td>
@@ -132,7 +131,7 @@
                     <td>>30%</td>
                 </tr>
                 <tr>
-                    <th colspan="5">Voter turnout (relative)</th>
+                    <th colspan="7">Voter turnout (relative)</th>
                 </tr>
                 <tr>
                     <td bgcolor="#daebea"></td>
@@ -163,12 +162,10 @@
                 </tr>
             </table>
         </div>
+
         <div id="menu-bottom">
         </div>
-    </div>
-
-
-    <div id="map"></div>
+    </nav>
 
     <div id="welcome-message" title="Welcome!">
         <p>This resource is a project of the <a href="https://wacommunityalliance.org/" target="_blank">Washington Community Alliance</a> Data Hub, developed to increase accessibility and clarity of election results. All data included in this resource is publicly available from the <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.<br><br>
@@ -179,6 +176,7 @@
             Thanks for your support, and feel free to reach out to <a href="mailto:tim@wacommunityalliance.org">Tim O'Neal</a> with any questions or feedback.
         </p>
     </div>
+    
     <script type="text/javascript" src="script.js"></script>
     <script>
         // Welcome message on page load

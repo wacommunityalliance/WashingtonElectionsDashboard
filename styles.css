@@ -1,93 +1,59 @@
 #map {
-    left: 270px;
-    width: calc(100% - 270px);
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .header {
+    position: absolute;
     background-color: white;
     opacity: 100%;
-    position: absolute;
-    width: 100%;
-    display: inline;
-    z-index: 90;
-    height: 80px;
-    border-bottom: solid black;
+    width: 300px;
+    z-index: 100;
+    height: 215px;
+    border-bottom: dashed black;
+    border-right: solid black;
 }
 
-.title {
-    padding: 5px 5px 20px 5px;
-    margin: 0 0 0 75px;
+#title {
+    padding-top: 95px;
+    padding-left: 10px;
 }
 
 #logo {
     position: absolute;
-    height: 80px;
+    height: 100px;
     padding: 10px 0 10px 20px;
-    display: inline-block;
-    box-align: center;
-    z-index: 100;
 }
 
 .menu {
     position: absolute;
+    background-color: white;
     left: 0;
-    width: 270px;
-    top: 80px;
-    height: calc(100% - 80px);
-    margin-left: 5px;
-    margin-right: 5px;
-    border-right: solid black 2px;
+    width: 300px;
+    top: 215px;
+    height: 470px;
+    border-right: solid black;
 }
 
 #menu-top {
-    height: 150px;
-    padding-top: 10px;
-    overflow: auto;
+    height: 100px;
+    padding: 10px 0px 10px 2px;
 }
 
 #menu-middle {
-    height: 330px;
-    top: 550px;
-}
-
-#menu-bottom {
-    top: 880px;
-    padding-top: 25px;
-    height: 250px;
-}
-
-table.table1 {
-    width: 95%;
-    border: 1.5px solid;
-    border-collapse: separate;
-    border-radius: 10px;
-    padding: 5px 5px 5px 0px;
-}
-
-table.table1 td {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: .7em;
-    height: 5%;
-    text-align: center;
-    padding: 5px 2px 5px 0px;
-}
-
-table.table1 th {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    font-size: .8em;
-    height: 5%;
-    text-align: center;
-    padding: 5px 2px 5px 0px;
-    border-bottom: 1.5px solid black;
+    height: 370px;
+    padding-top: 10px;
+    border-bottom: solid black;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 table.table2 {
-    width: 95%;
+    width: 100%;
     height: 85%;
-    border: 1.5px solid;
+    border: 2px dashed;
     border-collapse: separate;
     border-radius: 10px;
     padding: 5px 5px 5px 5px;
@@ -115,7 +81,7 @@ table.table2 th {
 .dropdown {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: .8em;
+    font-size: 1em;
     border: 1.5px solid;
     border-collapse: separate;
     border-radius: 5px;
@@ -124,19 +90,26 @@ table.table2 th {
 h1 {
     font-family: 'Montserrat';
     font-weight: 900;
-    font-size: 3.8vw;
-    text-align: center;
-    line-height: 40px;
-    padding: 15px 20px 0 20px;
-    right: 0px;
+    font-size: 2.3em;
+    line-height: 32px;
+    text-align: left;
 }
 
 h2 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 1.2em;
-    margin: 5px 0 10px 0;
+    font-size: 2.5vw;
+    margin: 5px 0 3px 0;
     text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 5px;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
 }
 
 p {
@@ -144,7 +117,7 @@ p {
     font-weight: 300;
     font-size: .8em;
     display: block;
-    margin: 15px 0 5px 0;
+    margin: 5px 0 5px 0;
     line-height: 15px;
 }
 
@@ -156,4 +129,46 @@ p {
 #welcome-message a {
     font-family: 'Montserrat';
     font-weight: 700;
+}
+
+.mapboxgl-popup-content {
+    padding: 5px;
+    width: 400px;
+    border-radius: .5em;
+    border: solid black 1.5px;
+}
+
+.mapboxgl-popup-content p{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: .9em;
+}
+
+table.table1 {
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 10px;
+    padding: 5px 5px 5px 0px;
+}
+
+table.table1 th {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: .8em;
+    height: 5%;
+    text-align: center;
+    border-bottom: 1.5px solid black;
+}
+
+table.table1 td {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+}
+
+.party-square {
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
 }
