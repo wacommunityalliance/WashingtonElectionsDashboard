@@ -112,9 +112,12 @@ function createTableRow(candidate, party, votes, percent) {
         'Democrat': '#4f93ba',
         'Republican': '#cf635d',
         'Independent': '#fac566',
+        'None': '#fac566',
         'Democratic2': '#868fba',
         'Republican2': '#f68f3e',
-        'Independent2': '#119f92'
+        'Independent2': '#119f92',
+        'None2': '#119f92',
+        'None3': '#999999'
     };
 
     const partyColor = partyColors[party] || '#999999'; // Default color if party is not found in the mapping
@@ -322,9 +325,11 @@ function layerSelected(path) {
                     'Democratic', '#4f93ba',
                     'Republican', '#cf635d',
                     'Independent', '#fac566',
+                    'None', '#fac566',
                     'Democratic2', '#868fba',
                     'Republican2', '#f68f3e',
                     'Independent2', '#119f92',
+                    'None2', '#119f92',
                     'transparent'
                 ],
                 'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates

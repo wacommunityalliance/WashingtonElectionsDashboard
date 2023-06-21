@@ -1727,6 +1727,11 @@
                             "title": "Municipality",
                             "path": "/Data/2021/Mayor/Municipality.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/Mayor/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
