@@ -1672,6 +1672,11 @@
                             "title": "Municipality",
                             "path": "/Data/2021/City Attorney/Municipality.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Attorney/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -1682,6 +1687,11 @@
                         {
                             "title": "County",
                             "path": "/Data/2021/County Assessor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/County Assessor/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -1694,6 +1704,11 @@
                             "title": "County",
                             "path": "/Data/2021/County Executive/County.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/County Executive/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -1705,6 +1720,11 @@
                             "title": "County",
                             "path": "/Data/2021/County Prosecutor/County.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/County Prosecutor/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -1715,6 +1735,11 @@
                         {
                             "title": "County",
                             "path": "/Data/2021/County Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/County Treasurer/Precinct.geojson",
                             "items": null
                         }
                     ]

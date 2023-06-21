@@ -109,7 +109,6 @@ function createTableRow(candidate, party, votes, percent) {
 
     const partyColors = {
         'Democratic': '#4f93ba',
-        'Democrat': '#4f93ba',
         'Republican': '#cf635d',
         'Independent': '#fac566',
         'None': '#fac566',
