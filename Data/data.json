@@ -554,6 +554,11 @@
                             "title": "County",
                             "path": "/Data/2015/County Assessor/County.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Assessor/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -564,6 +569,11 @@
                         {
                             "title": "County",
                             "path": "/Data/2015/County Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Auditor/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -576,6 +586,11 @@
                             "title": "County",
                             "path": "/Data/2015/County Clerk/County.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Clerk/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -586,6 +601,11 @@
                         {
                             "title": "County",
                             "path": "/Data/2015/County Executive/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Executive/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -598,6 +618,11 @@
                             "title": "County",
                             "path": "/Data/2015/County Sheriff/County.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Sheriff/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -609,6 +634,11 @@
                             "title": "County",
                             "path": "/Data/2015/County Treasurer/County.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Treasurer/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -619,6 +649,11 @@
                         {
                             "title": "Municipality",
                             "path": "/Data/2015/Mayor/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/Mayor/Precinct.geojson",
                             "items": null
                         }
                     ]
