@@ -68,6 +68,27 @@
                     ]
                 },
                 {
+                    "title": "Initiative 502 (Cannabis Legalization)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Initiative 502 (Cannabis Legalization)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Initiative 502 (Cannabis Legalization)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Initiative 502 (Cannabis Legalization)/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Insurance Commissioner",
                     "path": null,
                     "items": [
@@ -126,6 +147,27 @@
                         {
                             "title": "State",
                             "path": "/Data/2012/President and Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Referendum 74 (Marriage Equality)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/Referendum 74 (Marriage Equality)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/Referendum 74 (Marriage Equality)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/Referendum 74 (Marriage Equality)/State.geojson",
                             "items": null
                         }
                     ]
@@ -456,6 +498,27 @@
                     ]
                 },
                 {
+                    "title": "Initiative 594 (Background Checks)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2014/Initiative 594 (Background Checks)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2014/Initiative 594 (Background Checks)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2014/Initiative 594 (Background Checks)/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "State Representative Pos. 1",
                     "path": null,
                     "items": [
@@ -734,6 +797,27 @@
                         {
                             "title": "State",
                             "path": "/Data/2016/Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 1433 (Minimum Wage)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/State.geojson",
                             "items": null
                         }
                     ]
@@ -1218,6 +1302,48 @@
                     ]
                 },
                 {
+                    "title": "Initiative 1631 (Carbon Fee)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 940 (Police Training)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "State Representative Pos. 1",
                     "path": null,
                     "items": [
@@ -1437,6 +1563,27 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2019/Mayor/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Referendum 88 (Affirmative Action)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2019/Referendum 88 (Affirmative Action)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/Referendum 88 (Affirmative Action)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2019/Referendum 88 (Affirmative Action)/State.geojson",
                             "items": null
                         }
                     ]

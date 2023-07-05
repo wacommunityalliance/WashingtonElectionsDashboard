@@ -111,11 +111,11 @@ function createTableRow(candidate, party, votes, percent) {
         'Democratic': '#4f93ba',
         'Republican': '#cf635d',
         'Independent': '#fac566',
-        'None': '#fac566',
+        'None': '#119f92',
         'Democratic2': '#868fba',
         'Republican2': '#f68f3e',
         'Independent2': '#119f92',
-        'None2': '#119f92',
+        'None2': '#fac566',
         'None3': '#999999'
     };
 
@@ -294,7 +294,7 @@ function layerSelected(path) {
                     'step',
                     ['get', 'TurnoutRelative'],
                     0.8, -101,
-                    0.7, -20,
+                    0.7, -20, 
                     0.6, -15,
                     0.5, -10,
                     0.4, -7.5,
@@ -324,11 +324,11 @@ function layerSelected(path) {
                     'Democratic', '#4f93ba',
                     'Republican', '#cf635d',
                     'Independent', '#fac566',
-                    'None', '#fac566',
+                    'None', '#119f92',
                     'Democratic2', '#868fba',
                     'Republican2', '#f68f3e',
                     'Independent2', '#119f92',
-                    'None2', '#119f92',
+                    'None2', '#fac566',
                     'transparent'
                 ],
                 'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates
