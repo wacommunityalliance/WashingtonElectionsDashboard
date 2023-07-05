@@ -77,7 +77,7 @@ table.table2 th {
 .dropdown {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: 1em;
+    font-size: .9em;
     border: 1.5px solid;
     border-collapse: separate;
     border-radius: 5px;
@@ -129,7 +129,7 @@ p {
 
 .mapboxgl-popup-content {
     padding: 5px;
-    width: 360;
+    width: 400;
     border-radius: .5em;
     border: solid black 1.5px;
 }
