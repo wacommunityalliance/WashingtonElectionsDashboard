@@ -32,12 +32,12 @@
     left: 0;
     width: 300px;
     top: 200px;
-    height: 420px;
+    height: 440px;
     border-right: solid black;
 }
 
 #menu-top {
-    height: 100px;
+    height: 120px;
     padding: 0px 0px 5px 2px;
 }
 
