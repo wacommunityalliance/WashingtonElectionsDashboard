@@ -1456,6 +1456,150 @@
             "path": null,
             "items": [
                 {
+                    "title": "City Councilor At-Large District A",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor At-Large District A/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor At-Large District A/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 1/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 2/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 3/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 4/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 4/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 5/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 6/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 6/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 7/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 7/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Councilor District 8/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Councilor District 8/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "County Assessor",
                     "path": null,
                     "items": [
@@ -1928,6 +2072,182 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2021/City Attorney/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor At-Large District A",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor At-Large District A/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor At-Large District A/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor At-Large District B",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor At-Large District B/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor At-Large District B/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 1/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 2/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 3/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 4/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 4/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 5/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 6/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 6/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 7/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 7/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 8/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 8/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2021/City Councilor District 9/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/City Councilor District 9/Precinct.geojson",
                             "items": null
                         }
                     ]
