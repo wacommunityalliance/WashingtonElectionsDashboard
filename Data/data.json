@@ -1797,6 +1797,72 @@
                     ]
                 },
                 {
+                    "title": "School Board Director District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2019/School Board Director District 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2019/School Board Director District 2/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2019/School Board Director District 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2019/School Board Director District 4/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2019/School Board Director District 5/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2019/School Board Director District 6/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Voter Turnout",
                     "path": null,
                     "items": [
@@ -2461,6 +2527,72 @@
                     ]
                 },
                 {
+                    "title": "School Board Director District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2021/School Board Director District 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2021/School Board Director District 2/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2021/School Board Director District 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2021/School Board Director District 4/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2021/School Board Director District 5/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director District 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2021/School Board Director District 7/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Voter Turnout",
                     "path": null,
                     "items": [
@@ -2470,11 +2602,6 @@
                             "items": null
                         }
                     ]
-                },
-                {
-                    "title": "untitled folder",
-                    "path": null,
-                    "items": null
                 }
             ]
         },
