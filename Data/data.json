@@ -1804,6 +1804,11 @@
                             "title": "District",
                             "path": "/Data/2019/School Board Director District 1/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/School Board Director District 1/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -1814,6 +1819,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2019/School Board Director District 2/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/School Board Director District 2/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -1826,6 +1836,11 @@
                             "title": "District",
                             "path": "/Data/2019/School Board Director District 3/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/School Board Director District 3/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -1836,6 +1851,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2019/School Board Director District 4/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/School Board Director District 4/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -1848,6 +1868,11 @@
                             "title": "District",
                             "path": "/Data/2019/School Board Director District 5/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/School Board Director District 5/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -1858,6 +1883,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2019/School Board Director District 6/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/School Board Director District 6/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -2534,6 +2564,11 @@
                             "title": "District",
                             "path": "/Data/2021/School Board Director District 1/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/School Board Director District 1/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -2544,6 +2579,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2021/School Board Director District 2/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/School Board Director District 2/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -2556,6 +2596,11 @@
                             "title": "District",
                             "path": "/Data/2021/School Board Director District 3/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/School Board Director District 3/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -2566,6 +2611,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2021/School Board Director District 4/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/School Board Director District 4/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -2578,6 +2628,11 @@
                             "title": "District",
                             "path": "/Data/2021/School Board Director District 5/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/School Board Director District 5/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -2588,6 +2643,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2021/School Board Director District 7/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2021/School Board Director District 7/Precinct.geojson",
                             "items": null
                         }
                     ]
