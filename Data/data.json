@@ -135,8 +135,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "CD",
+                            "path": "/Data/2012/President and Vice President/CD.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2012/President and Vice President/LD.geojson",
                             "items": null
                         },
                         {
@@ -325,8 +335,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "CD",
+                            "path": "/Data/2012/U.S. Senator/CD.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2012/U.S. Senator/LD.geojson",
                             "items": null
                         },
                         {
@@ -869,8 +889,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "CD",
+                            "path": "/Data/2016/President and Vice President/CD.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2016/President and Vice President/LD.geojson",
                             "items": null
                         },
                         {

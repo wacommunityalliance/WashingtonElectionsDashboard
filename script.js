@@ -274,7 +274,7 @@ function layerSelected(path) {
             'line-width': 1.25
         }
     });
-
+4
 
     if (path.includes('Voter Turnout')) {
         map.addLayer({
