@@ -1982,6 +1982,17 @@
                     ]
                 },
                 {
+                    "title": "County Councilor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2020/County Councilor/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Governor",
                     "path": null,
                     "items": [
@@ -2770,11 +2781,6 @@
                         {
                             "title": "District",
                             "path": "/Data/2022/County Councilor/District.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2022/County Councilor/Precinct.geojson",
                             "items": null
                         }
                     ]
