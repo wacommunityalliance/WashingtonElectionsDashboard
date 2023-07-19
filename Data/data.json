@@ -678,6 +678,54 @@
                     ]
                 },
                 {
+                    "title": "County Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2015/County Councilor District 1/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Councilor District 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2015/County Councilor District 2/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Councilor District 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2015/County Councilor District 3/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2015/County Councilor District 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "County Executive",
                     "path": null,
                     "items": [
@@ -796,6 +844,102 @@
                         {
                             "title": "State",
                             "path": "/Data/2016/Commissioner of Public Lands/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2016/County Councilor District 1/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/County Councilor District 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2016/County Councilor District 2/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/County Councilor District 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2016/County Councilor District 3/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/County Councilor District 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2016/County Councilor District 4/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/County Councilor District 4/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2016/County Councilor District 5/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/County Councilor District 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2016/County Councilor District 6/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/County Councilor District 6/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -1139,6 +1283,118 @@
                     ]
                 },
                 {
+                    "title": "County Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2017/County Councilor District 1/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2017/County Councilor District 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2017/County Councilor District 2/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2017/County Councilor District 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2017/County Councilor District 3/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2017/County Councilor District 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2017/County Councilor District 4/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2017/County Councilor District 4/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2017/County Councilor District 5/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2017/County Councilor District 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2017/County Councilor District 7/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2017/County Councilor District 7/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2017/County Councilor District 9/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2017/County Councilor District 9/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "County Executive",
                     "path": null,
                     "items": [
@@ -1279,6 +1535,86 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2018/County Coroner/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2018/County Councilor District 1/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Councilor District 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2018/County Councilor District 2/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Councilor District 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2018/County Councilor District 3/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Councilor District 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2018/County Councilor District 5/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Councilor District 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2018/County Councilor District 7/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/County Councilor District 7/Precinct.geojson",
                             "items": null
                         }
                     ]
