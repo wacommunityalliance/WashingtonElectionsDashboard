@@ -260,7 +260,7 @@ function layerSelected(path) {
 
     map.addSource('selectedLayer', {
         type: 'geojson',
-        data: '/ElectionMapsWA/Data/' + path + '.geojson'  // uncomment to publish
+        data: '/WashingtonElectionsDashboard/Data/' + path + '.geojson'  // uncomment to publish
         // data: '/Data/' + path + '.geojson'               // uncomment to debug
     });
 
