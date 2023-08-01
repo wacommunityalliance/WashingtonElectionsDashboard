@@ -21,6 +21,7 @@ h2 {
     font-size: 1.7em;
     margin: 5px 0 3px 0;
     text-align: center;
+    white-space: nowrap;
 }
 
 h3 {
@@ -57,12 +58,12 @@ h3 {
 
 .mapboxgl-popup-content {
     padding: 5px;
-    width: 400;
     border-radius: .5em;
+    width: 300px;
     border: solid black 1.5px;
 }
 
-.mapboxgl-popup-content p{
+.mapboxgl-popup-content p {
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: .8em;
