@@ -11,14 +11,14 @@ h1 {
     font-family: 'Montserrat';
     font-weight: 900;
     font-size: 2em;
-    line-height: 32px;
+    line-height: 30px;
     text-align: left;
 }
 
 h2 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 5px 0 3px 0;
     text-align: center;
 }
