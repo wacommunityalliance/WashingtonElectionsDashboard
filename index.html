@@ -175,13 +175,24 @@
     </nav>
 
     <div id="welcome-message" title="Welcome!">
-        <p>This resource is a project of the <a href="https://wacommunityalliance.org/" target="_blank">Washington Community Alliance</a> Data Hub, developed to increase accessibility and clarity of election results. All data included in this resource is publicly available from the <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.<br><br>
-            To get started, choose an election cycle and position, then select a layer for visualization. Once data is displayed, click anywhere to see a popup of results.
-            Layers are colored by party preference of the candidate who won that area, with all parties other than "Democratic" or "Republican" grouped together as "Independent" or "None" (non-partisan races) for simplicity.
-            Voter turnout data is visualized as turnout relative to the statewide average for that year (e.g., statewide turnout in 2022 was 63.8% and turnout in Whitman County was 68.8%, so relative turnout for Whitman County is +5.0%).<br><br>
-            If you enjoy this resource, <a href="https://secure.actblue.com/donate/wca-action-fund" target="_blank">donate today</a> to support the work we're doing to make data and research as accessible as possible. 
-            This new dashboard was developed fully in-house by Senior Research Analyst <a href="mailto:tim@wacommunityalliance.org">Tim O'Neal, PhD</a>. Shapefiles and enhanced precinct data were created, maintained, and provided by <a href="mailto:ben@progressivestrategiesnw.com">Ben Anderstone</a> of Progressive Strategies NW. Thank you for your support, and please reach out with any questions or feedback.<br><br>
+        <p>This resource is a project of the <a href="https://wacommunityalliance.org/" target="_blank">Washington Community Alliance</a> Data Hub, 
+            developed to increase accessibility and clarity of election results. All data are publicly available from the website of Washington's <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.<br><br>
+            Preliminary results for the 2023 General Election will be added on election night (November 7th), and results will be updated daily until certification day (November 28th).<br><br>
+            If you enjoy this resource, please consider <a href="https://secure.actblue.com/donate/wca-action-fund" target="_blank">donating today</a> to support the work we do to make election data as accessible as possible. 
         </p>
+    </div>
+
+    <div id="about-icon">
+        <div id="about-questionmark">?</div>
+        <div id="about-popup" title="Getting started">
+            <p>This dashboard includes election results from 2012-2023, with options to view results at multiple levels. To get started, choose (1) the election cycle you're interested in, 
+                (2) the position you would like to explore, and (3) the level you would like to see results shown for. While data is visualized, you can click on any boundary to see a popup of results.
+                Boundaries are colored by party preference of the candidate who won that area, with all parties other than "Democratic" or "Republican" grouped together 
+                as "Independent" (partisan races) or "None" (non-partisan races) for simplicity.<br><br>
+                Data on voter turnout is visualized relative to the statewide average for that year, with deeper greens indicating greater-than-average turnout and deeper purples indicating lower-than-average turnout.<br><br>
+                This resource was developed fully in-house at the Washington Community Alliance by Senior Research Analyst <a href="mailto:tim@wacommunityalliance.org">Tim O'Neal, PhD</a>. Shapefiles and enhanced precinct data were created, maintained, 
+                and provided by <a href="mailto:ben@progressivestrategiesnw.com">Ben Anderstone</a> of Progressive Strategies NW.</p>
+        </div>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
@@ -192,7 +203,7 @@
                 autoOpen: false,
                 modal: true,
                 buttons: {
-                    "Explore some data!": function() {
+                    "Explore some data": function() {
                         $(this).dialog("close");
                     }
                 }
@@ -202,6 +213,20 @@
             $("#welcome-message").dialog("open");
         });
     </script>
+
+    <script>
+        const aboutIcon = document.getElementById('about-icon');
+        const aboutPopup = document.getElementById('about-popup');
+
+        aboutIcon.addEventListener('click', () => {
+            if (aboutPopup.style.display === 'block') {
+                aboutPopup.style.display = 'none';
+            } else {
+                aboutPopup.style.display = 'block';
+            }
+        });
+    </script>
+
 </body>
 
 </html>

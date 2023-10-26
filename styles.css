@@ -7,6 +7,40 @@
     border-radius: 5px;
 }
 
+#about-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #119f92;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#about-popup {
+    border: solid black;
+    border-radius: 5%;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    bottom: 50px;
+    right: 20px;
+    width: 300px;
+    z-index: 1;
+}
+
+#about-questionmark {
+    font-size: 24px;
+}
+
 h1 {
     font-family: 'Montserrat';
     font-weight: 900;
@@ -159,7 +193,7 @@ table.table2 th {
 
 #welcome-message {
     display: None;
-    width: 400px;
+    width: 300px;
 }
 
 #welcome-message a {
