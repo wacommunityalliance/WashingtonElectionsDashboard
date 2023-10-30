@@ -110,15 +110,17 @@ function createTableRow(candidate, party, votes, percent) {
     const partyColors = {
         'Democratic': '#4f93ba',
         'Republican': '#cf635d',
-        'Independent': '#fac566',
-        'None': '#119f92',
+        'Independent': '#f68f3e',
+        'None': '#f68f3e',
         'Democratic2': '#868fba',
-        'Republican2': '#f68f3e',
+        'Republican2': '#fac566',
         'Independent2': '#119f92',
-        'None2': '#fac566',
+        'None2': '#119f92',
         'None3': '#999999'
     };
 
+
+    
     const partyColor = partyColors[party] || '#999999'; // Default color if party is not found in the mapping
 
     return '<tr>'
