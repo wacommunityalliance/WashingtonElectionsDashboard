@@ -1822,209 +1822,497 @@
             "path": null,
             "items": [
                 {
-                    "title": "City Councilor At-Large District A",
+                    "title": "City Council At-Large",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor At-Large District A/Municipality.geojson",
+                            "path": "/Data/2019/City Council At-Large/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor At-Large District A/Precinct.geojson",
+                            "path": "/Data/2019/City Council At-Large/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 1",
+                    "title": "City Council District 1",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 1/Municipality.geojson",
+                            "path": "/Data/2019/City Council District 1/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 1/Precinct.geojson",
+                            "path": "/Data/2019/City Council District 1/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 2",
+                    "title": "City Council District 2",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 2/Municipality.geojson",
+                            "path": "/Data/2019/City Council District 2/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 2/Precinct.geojson",
+                            "path": "/Data/2019/City Council District 2/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 3",
+                    "title": "City Council District 3",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 3/Municipality.geojson",
+                            "path": "/Data/2019/City Council District 3/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 3/Precinct.geojson",
+                            "path": "/Data/2019/City Council District 3/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 4",
+                    "title": "City Council District 4",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 4/Municipality.geojson",
+                            "path": "/Data/2019/City Council District 4/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 4/Precinct.geojson",
+                            "path": "/Data/2019/City Council District 4/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 5",
+                    "title": "City Council District 5",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 5/Municipality.geojson",
+                            "path": "/Data/2019/City Council District 5/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 5/Precinct.geojson",
+                            "path": "/Data/2019/City Council District 5/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 6",
+                    "title": "City Council District 6",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 6/Municipality.geojson",
+                            "path": "/Data/2019/City Council District 6/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 6/Precinct.geojson",
+                            "path": "/Data/2019/City Council District 6/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 7",
+                    "title": "City Council District 7",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 7/Municipality.geojson",
+                            "path": "/Data/2019/City Council District 7/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 7/Precinct.geojson",
+                            "path": "/Data/2019/City Council District 7/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor District 8",
+                    "title": "City Council Position 1",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor District 8/Municipality.geojson",
+                            "path": "/Data/2019/City Council Position 1/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor District 8/Precinct.geojson",
+                            "path": "/Data/2019/City Council Position 1/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor Ward 1 Pos. 1",
+                    "title": "City Council Position 2",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor Ward 1 Pos. 1/Municipality.geojson",
+                            "path": "/Data/2019/City Council Position 2/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor Ward 1 Pos. 1/Precinct.geojson",
+                            "path": "/Data/2019/City Council Position 2/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor Ward 2 Pos. 1",
+                    "title": "City Council Position 3",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor Ward 2 Pos. 1/Municipality.geojson",
+                            "path": "/Data/2019/City Council Position 3/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor Ward 2 Pos. 1/Precinct.geojson",
+                            "path": "/Data/2019/City Council Position 3/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor Ward 3 Pos. 1",
+                    "title": "City Council Position 4",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor Ward 3 Pos. 1/Municipality.geojson",
+                            "path": "/Data/2019/City Council Position 4/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor Ward 3 Pos. 1/Precinct.geojson",
+                            "path": "/Data/2019/City Council Position 4/Precinct.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "City Councilor Ward 3 Pos. 2",
+                    "title": "City Council Position 5",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2019/City Councilor Ward 3 Pos. 2/Municipality.geojson",
+                            "path": "/Data/2019/City Council Position 5/Municipality.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2019/City Councilor Ward 3 Pos. 2/Precinct.geojson",
+                            "path": "/Data/2019/City Council Position 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Position 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Position 6/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Position 6/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Position 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Position 7/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Position 7/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Position 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Position 8/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Position 8/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council President/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council President/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 1/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 1 Position 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 1 Position 1/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 1 Position 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 2/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 2 Position 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 2 Position 3/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 2 Position 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 2 Position 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 2 Position 5/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 2 Position 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 3 Position 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 3 Position 2/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 3 Position 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 3 Position 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 3 Position 5/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 3 Position 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 3 Position 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 3 Position 6/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 3 Position 6/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 4/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 4/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 4 Position 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 4 Position 8/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 4 Position 8/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 5/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 5 Position 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 5 Position 9/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 5 Position 9/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 6 Position 11",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 6 Position 11/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 6 Position 11/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Council Ward 6 Position 12",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2019/City Council Ward 6 Position 12/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2019/City Council Ward 6 Position 12/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -3688,6 +3976,312 @@
                             "items": null
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "title": "2023",
+            "path": null,
+            "items": [
+                {
+                    "title": "City Council At-Large",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council District 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council District 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council District 3",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council District 4",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council District 5",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council District 6",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council District 7",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 3",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 4",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 5",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 6",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 7",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Position 8",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council President",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 1 Position 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 1 Position 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 2 Position 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 2 Position 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 2 Position 3",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 2 Position 5",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 3",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 3 Position 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 3 Position 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 3 Position 5",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 3 Position 6",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 4",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 4 Position 7",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 4 Position 8",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 5",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 5 Position 9",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 6 Position 11",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Council Ward 6 Position 12",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "City Treasurer",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Auditor",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor At-Large",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 3",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 4",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 5",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 6",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 8",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Director of Elections",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Executive",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "Mayor",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "School Board Director District 1",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "School Board Director District 2",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "School Board Director District 3",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "School Board Director District 4",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "School Board Director District 5",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "School Board Director District 6",
+                    "path": null,
+                    "items": null
                 }
             ]
         }

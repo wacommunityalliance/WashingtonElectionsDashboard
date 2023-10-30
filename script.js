@@ -323,12 +323,12 @@ function layerSelected(path) {
                     ['get', 'Party_1'],
                     'Democratic', '#4f93ba',
                     'Republican', '#cf635d',
-                    'Independent', '#fac566',
-                    'None', '#119f92',
+                    'Independent', '#f68f3e',
+                    'None', '#f68f3e',
                     'Democratic2', '#868fba',
-                    'Republican2', '#f68f3e',
+                    'Republican2', '#fac566',
                     'Independent2', '#119f92',
-                    'None2', '#fac566',
+                    'None2', '#119f92',
                     'transparent'
                 ],
                 'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates
