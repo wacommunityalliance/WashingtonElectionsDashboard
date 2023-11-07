@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 </head>
@@ -29,9 +29,11 @@
         <div id="title">
             <h1>General Elections Dashboard</h1>
         </div>
-        <div id="menu-toggle">
-            <i class="fas fa-minus"></i>
-          </div>
+        <div class="mobile-only">
+            <div id="menu-toggle">
+                <i class="fas fa-minus"></i>
+            </div>
+        </div>
     </div>
     
     <nav class="menu">
