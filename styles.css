@@ -22,7 +22,6 @@
     align-items: center;
 }
 
-
 #about-popup {
     border: solid black;
     border-radius: 5%;
@@ -117,6 +116,8 @@ h3 {
     top: 180px;
     height: 400px;
     border-right: solid black;
+    border-bottom: solid black;
+
 }
 
 #menu-top {
@@ -219,7 +220,7 @@ table.table2 th {
       position: absolute;
       top: 10px;
       right: 10px;
-      background-color: white;
+      background-color: #ecab73;
       border: 1px solid #000;
       border-radius: 50%;
       padding: 5px;

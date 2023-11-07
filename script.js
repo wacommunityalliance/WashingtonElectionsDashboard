@@ -448,3 +448,16 @@ function loadGeoJSONLayer(url) {
     var selectedLayer = layerDropdown.value;
     loadGeoJSONLayer(selectedLayer);
   });
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', function () {
+    menu.classList.toggle('menu-visible');
+
+    // Toggle the "plus" and "minus" icons
+    const icon = menuToggle.querySelector('i');
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-minus');
+});
