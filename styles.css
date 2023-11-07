@@ -110,6 +110,11 @@ h3 {
     font-size: .8em;
 }
 
+.mapboxgl-popup-close-button {
+    padding: 7px; 
+    font-size: 17px; 
+}
+
 .menu {
     position: absolute;
     background-color: white;
