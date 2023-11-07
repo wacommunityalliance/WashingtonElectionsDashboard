@@ -38,55 +38,111 @@ map.on('click', 'selectedLayer', (e) => {
         popup = null;
     }
 
-    const label = e.features[0].properties.Title;
+    const location = e.features[0].properties.Title;
+    const position = e.features[0].properties.Position;
     const turnout = e.features[0].properties.Turnout;
     const turnoutRelative = e.features[0].properties.TurnoutRelative;
+    const precinct = e.features[0].properties.Precinct;
+    const precinctInfo = e.features[0].properties.PREC_DESCR;
+
+    const totalVotes = e.features[0].properties.Votes_total;
+
+    const candidate1 = e.features[0].properties.Name_1;
+    const party1 = e.features[0].properties.Party_1;
+    const votes1 = e.features[0].properties.Votes_1;
+    const pct1 = Math.round(e.features[0].properties.Pct_1 * 100) / 100;
+
+    const candidate2 = e.features[0].properties.Name_2;
+    const party2 = e.features[0].properties.Party_2;
+    const votes2 = e.features[0].properties.Votes_2;
+    const pct2 = Math.round(e.features[0].properties.Pct_2 * 100) / 100;
+
+    const candidate3 = e.features[0].properties.Name_3;
+    const party3 = e.features[0].properties.Party_3;
+    const votes3 = e.features[0].properties.Votes_3;
+    const pct3 = Math.round(e.features[0].properties.Pct_3 * 100) / 100;
+
+    const candidate4 = e.features[0].properties.Name_4;
+    const party4 = e.features[0].properties.Party_4;
+    const votes4 = e.features[0].properties.Votes_4;
+    const pct4 = Math.round(e.features[0].properties.Pct_4 * 100) / 100;
+
+    const candidate5 = e.features[0].properties.Name_5;
+    const party5 = e.features[0].properties.Party_5;
+    const votes5 = e.features[0].properties.Votes_5;
+    const pct5 = Math.round(e.features[0].properties.Pct_5 * 100) / 100;
 
     let message;
 
     if (turnout !== undefined) {
         message =
-            '<h2>' + label + '</h2>'
+            '<h1>' + location + '</h1>'
+            + '<h1>' + position + '</h1>'
             + '<p> Voter turnout (absolute): ' + turnout + '%</p>'
             + '<p> Voter turnout (relative): ' + turnoutRelative + '%</p>';
-    } else {
-        const totalVotes = e.features[0].properties.Votes_total;
-
-        const candidate1 = e.features[0].properties.Name_1;
-        const party1 = e.features[0].properties.Party_1;
-        const votes1 = e.features[0].properties.Votes_1;
-        const pct1 = Math.round(e.features[0].properties.Pct_1 * 100) / 100;
-
-        const candidate2 = e.features[0].properties.Name_2;
-        const party2 = e.features[0].properties.Party_2;
-        const votes2 = e.features[0].properties.Votes_2;
-        const pct2 = Math.round(e.features[0].properties.Pct_2 * 100) / 100;
-
-        const candidate3 = e.features[0].properties.Name_3;
-        const party3 = e.features[0].properties.Party_3;
-        const votes3 = e.features[0].properties.Votes_3;
-        const pct3 = Math.round(e.features[0].properties.Pct_3 * 100) / 100;
-
-        const candidate4 = e.features[0].properties.Name_4;
-        const party4 = e.features[0].properties.Party_4;
-        const votes4 = e.features[0].properties.Votes_4;
-        const pct4 = Math.round(e.features[0].properties.Pct_4 * 100) / 100;
-
-        const candidate5 = e.features[0].properties.Name_5;
-        const party5 = e.features[0].properties.Party_5;
-        const votes5 = e.features[0].properties.Votes_5;
-        const pct5 = Math.round(e.features[0].properties.Pct_5 * 100) / 100;
-
-
+    } else if (precinct !== undefined) {
         if (candidate1 == null) {
             message =
-                '<h2>' + label + '</h2>'
+                '<h1>' + location + '</h1>'
+                + '<h1>' + position + '</h1>'
+                + '<p>No data available</p>';
+        } else if (precinctInfo !== undefined) {
+            message =
+                '<h1>' + location + '</h1>'
+                + '<h2>' + position + '</h2>'
+                + '<p>' + precinctInfo + '<p>'
+                + '<table class="table1">'
+                + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
+                + createTableRow(candidate1, party1, votes1, pct1)
+                + createTableRow(candidate2, party2, votes2, pct2)
+                + createTableRow(candidate3, party3, votes3, pct3)
+                + createTableRow(candidate4, party4, votes4, pct4)
+                + createTableRow(candidate5, party5, votes5, pct5)
+                + '</table>'
+                + '<p>  Total votes: ' + totalVotes + '</p>';
+        } else {
+            message =
+                '<h1>' + location + '</h1>'
+                + '<table class="table1">'
+                + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
+                + createTableRow(candidate1, party1, votes1, pct1)
+                + createTableRow(candidate2, party2, votes2, pct2)
+                + createTableRow(candidate3, party3, votes3, pct3)
+                + createTableRow(candidate4, party4, votes4, pct4)
+                + createTableRow(candidate5, party5, votes5, pct5)
+                + '</table>'
+                + '<p>  Total votes: ' + totalVotes + '</p>';
+        }
+    } else if (position !== undefined) {
+        if (candidate1 == null) {
+            message =
+                '<h1>' + location + '</h1>'
+                + '<h1>' + position + '</h1>'
                 + '<p>No data available</p>';
         } else {
             message =
-                '<h2>' + label + '</h2>'
+                '<h1>' + location + '</h1>'
+                + '<h2>' + position + '</h2>'
                 + '<table class="table1">'
-                + '<tr><th>LABEL</th><th>CANDIDATE</th><th>PARTY</th><th>VOTES</th><th>PERCENT</th></tr>'
+                + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
+                + createTableRow(candidate1, party1, votes1, pct1)
+                + createTableRow(candidate2, party2, votes2, pct2)
+                + createTableRow(candidate3, party3, votes3, pct3)
+                + createTableRow(candidate4, party4, votes4, pct4)
+                + createTableRow(candidate5, party5, votes5, pct5)
+                + '</table>'
+                + '<p>  Total votes: ' + totalVotes + '</p>';
+        }
+    } else {
+        if (candidate1 == null) {
+            message =
+                '<h1>' + location + '</h1>'
+                + '<p>No data available</p>';
+        } else {
+            message =
+                '<h1>' + location + '</h1>'
+                + '<table class="table1">'
+                + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
                 + createTableRow(candidate1, party1, votes1, pct1)
                 + createTableRow(candidate2, party2, votes2, pct2)
                 + createTableRow(candidate3, party3, votes3, pct3)
@@ -126,7 +182,7 @@ function createTableRow(candidate, party, votes, percent) {
     return '<tr>'
         + '<td>' + '  ' + '<div class="party-square" style="background-color:' + partyColor + '"></div>' + '</td>'
         + '<td>' + candidate + '</td>'
-        + '<td>' + party.charAt(0) + '</td>'
+        // + '<td>' + party.charAt(0) + '</td>'
         + '<td>' + votes + '</td>'
         + '<td>' + percent + '%</td>'
         + '</tr>';

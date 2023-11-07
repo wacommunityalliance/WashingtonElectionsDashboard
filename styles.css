@@ -51,10 +51,9 @@ h1 {
 
 h2 {
     font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 1.7em;
-    margin: 5px 0 3px 0;
-    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: left;
     white-space: nowrap;
 }
 
@@ -91,10 +90,17 @@ h3 {
 }
 
 .mapboxgl-popup-content {
-    padding: 5px;
-    border-radius: .5em;
-    width: 410px;
+    padding: 6px;
+    border-radius: .7em;
+    width: 270px;
     border: solid black 1.5px;
+}
+
+
+.mapboxgl-popup-content h1 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.7em;
 }
 
 .mapboxgl-popup-content p {
@@ -129,37 +135,38 @@ p {
     font-weight: 300;
     font-size: 0.7em;
     display: block;
-    margin: 5px 0 5px 0;
     line-height: 15px;
+    padding-bottom: 2px; 
 }
 
 .party-square {
-    margin-left: 35px;
-    width: 15px;
-    height: 15px;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
 }
 
 table.table1 {
-    border-collapse: separate;
-    border-radius: 5px;
-    padding: 2px 2px 2px 2px;
+    /* border-collapse: separate; */
+    /* border-radius: 5px; */
+    /* padding: 2px 2px 2px 2px; */
     width: 100%;
 }
 
 table.table1 td {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: .8em;
-    text-align: center;
+    font-size: .85em;
+    text-align: left;
+    padding-right: 1px;
     white-space: nowrap;
 }
 
 table.table1 th {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: .7em;
-    text-align: center;
-    border-bottom: 1.5px solid black;
+    font-size: .8em;
+    text-align: left;
+    border-bottom: .75px solid black;
 }
 
 table.table2 {
