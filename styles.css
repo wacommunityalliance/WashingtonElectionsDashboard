@@ -207,3 +207,27 @@ table.table2 th {
     font-family: 'Montserrat';
     font-weight: 700;
 }
+
+@media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    /* Style the toggle button */
+    #menu-toggle {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+      border: 1px solid #000;
+      border-radius: 50%;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+
+/* Add this to your CSS to control menu visibility */
+.menu.menu-visible {
+    display: block;
+  }

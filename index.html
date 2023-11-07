@@ -28,6 +28,9 @@
         <div id="title">
             <h1>General Elections Dashboard</h1>
         </div>
+        <button id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
     </div>
     
     <nav class="menu">
@@ -227,6 +230,15 @@
         });
     </script>
 
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu');
+      
+        menuToggle.addEventListener('click', function () {
+          menu.classList.toggle('menu-visible');
+        });
+      </script>
+      
 </body>
 
 </html>
