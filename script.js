@@ -33,6 +33,8 @@ map.on('mouseleave', 'selectedLayer', function () {
 map.on('click', 'selectedLayer', (e) => {
     _log(e);
 
+    map.flyTo({center: e.lngLat, zoom:10});
+
     if (popup !== null) {
         popup.remove();
         popup = null;
