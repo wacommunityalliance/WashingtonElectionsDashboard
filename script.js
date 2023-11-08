@@ -175,7 +175,9 @@ function createTableRow(candidate, party, votes, percent) {
         'Republican2': '#fac566',
         'Independent2': '#119f92',
         'None2': '#119f92',
-        'None3': '#999999'
+        'None3': '#999999',
+        'Yes': '#119f92',
+        'No': '#868fba'
     };
 
 
@@ -390,6 +392,8 @@ function layerSelected(path) {
                     'Republican2', '#fac566',
                     'Independent2', '#119f92',
                     'None2', '#119f92',
+                    'Yes', '#119f92',
+                    'No', '#868fba', 
                     'transparent'
                 ],
                 'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates

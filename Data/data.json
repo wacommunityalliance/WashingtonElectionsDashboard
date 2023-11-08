@@ -2322,11 +2322,6 @@
                     "path": null,
                     "items": [
                         {
-                            "title": ".ipynb_checkpoints",
-                            "path": null,
-                            "items": null
-                        },
-                        {
                             "title": "County",
                             "path": "/Data/2019/County Assessor/County.geojson",
                             "items": null
@@ -2390,11 +2385,6 @@
                     "title": "County Councilor District 2",
                     "path": null,
                     "items": [
-                        {
-                            "title": ".ipynb_checkpoints",
-                            "path": null,
-                            "items": null
-                        },
                         {
                             "title": "District",
                             "path": "/Data/2019/County Councilor District 2/District.geojson",
@@ -2491,11 +2481,6 @@
                     "title": "County Executive",
                     "path": null,
                     "items": [
-                        {
-                            "title": ".ipynb_checkpoints",
-                            "path": null,
-                            "items": null
-                        },
                         {
                             "title": "County",
                             "path": "/Data/2019/County Executive/County.geojson",
@@ -3999,6 +3984,28 @@
             "path": null,
             "items": [
                 {
+                    "title": "Bellingham Measure No. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2023/Bellingham Measure No. 1/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Bellingham Measure No. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2023/Bellingham Measure No. 2/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "City Council At-Large",
                     "path": null,
                     "items": [
@@ -4596,11 +4603,6 @@
                     "path": null,
                     "items": [
                         {
-                            "title": ".ipynb_checkpoints",
-                            "path": null,
-                            "items": null
-                        },
-                        {
                             "title": "County",
                             "path": "/Data/2023/County Assessor/County.geojson",
                             "items": null
@@ -4924,6 +4926,22 @@
                         {
                             "title": "District",
                             "path": "/Data/2023/School Board District 6/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Spokane Measure No. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2023/Spokane Measure No. 1/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Spokane Measure No. 1/Precinct.geojson",
                             "items": null
                         }
                     ]
