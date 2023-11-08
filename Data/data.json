@@ -3984,23 +3984,23 @@
             "path": null,
             "items": [
                 {
-                    "title": "Bellingham Measure No. 1",
+                    "title": "Bellingham Measure 1",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2023/Bellingham Measure No. 1/Municipality.geojson",
+                            "path": "/Data/2023/Bellingham Measure 1/Municipality.geojson",
                             "items": null
                         }
                     ]
                 },
                 {
-                    "title": "Bellingham Measure No. 2",
+                    "title": "Bellingham Measure 2",
                     "path": null,
                     "items": [
                         {
                             "title": "Municipality",
-                            "path": "/Data/2023/Bellingham Measure No. 2/Municipality.geojson",
+                            "path": "/Data/2023/Bellingham Measure 2/Municipality.geojson",
                             "items": null
                         }
                     ]
@@ -4840,6 +4840,17 @@
                     ]
                 },
                 {
+                    "title": "Puyallup Prop 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2023/Puyallup Prop 1/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "School Board District 1",
                     "path": null,
                     "items": [
@@ -4931,17 +4942,55 @@
                     ]
                 },
                 {
-                    "title": "Spokane Measure No. 1",
+                    "title": "Seattle Prop 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2023/Seattle Prop 1/Municipality.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Spokane Measure 1",
                     "path": null,
                     "items": [
                         {
                             "title": "County",
-                            "path": "/Data/2023/Spokane Measure No. 1/County.geojson",
+                            "path": "/Data/2023/Spokane Measure 1/County.geojson",
                             "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2023/Spokane Measure No. 1/Precinct.geojson",
+                            "path": "/Data/2023/Spokane Measure 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Spokane Prop 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2023/Spokane Prop 1/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Spokane Prop 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Tacoma Measure 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2023/Tacoma Measure 1/Municipality.geojson",
                             "items": null
                         }
                     ]
