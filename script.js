@@ -47,6 +47,8 @@ map.on('click', 'selectedLayer', (e) => {
     const turnoutRelative = e.features[0].properties.TurnoutRelative;
     const precinct = e.features[0].properties.Precinct;
     const precinctInfo = e.features[0].properties.PREC_DESCR;
+    const voters = e.features[0].properties.TotalVoters;
+    const votes = e.features[0].properties.TotalVotes;
 
     const totalVotes = e.features[0].properties.Votes_total;
 
@@ -78,11 +80,21 @@ map.on('click', 'selectedLayer', (e) => {
     let message;
 
     if (turnout !== undefined) {
-        message =
-            '<h1>' + location + '</h1>'
-            + '<h1>' + position + '</h1>'
-            + '<p> Voter turnout (absolute): ' + turnout + '%</p>'
-            + '<p> Voter turnout (relative): ' + turnoutRelative + '%</p>';
+        if (precinct !== undefined) {
+            message =
+            '<h1>' + precinct + '</h1>'
+            + '<p>' + precinctInfo + '</p>'
+            + '<p> Registered voters: ' + voters + '</p/>'
+            + '<p> Total votes: ' + votes + '</p>'
+            + '<p> Voter turnout: ' + turnout + '%</p>'
+            // + '<p> Voter turnout (relative): ' + turnoutRelative + '%</p>';
+        } else {
+            message =
+                '<h1>' + location + '</h1>'
+                + '<p> Registered voters: ' + voters + '</p/>'
+                + '<p> Total votes: ' + votes + '</p>'
+                + '<p> Voter turnout: ' + turnout + '%</p>';
+        }
     } else if (precinct !== undefined) {
         if (candidate1 == null) {
             message =
