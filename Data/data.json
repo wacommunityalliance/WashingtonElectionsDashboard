@@ -4761,11 +4761,6 @@
                             "title": "District",
                             "path": "/Data/2023/County Council District 8/District.geojson",
                             "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/County Council District 8/Precinct.geojson",
-                            "items": null
                         }
                     ]
                 },
