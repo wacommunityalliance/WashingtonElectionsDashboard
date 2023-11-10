@@ -3991,6 +3991,11 @@
                             "title": "Municipality",
                             "path": "/Data/2023/Bellingham Measure 1/Municipality.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Bellingham Measure 1/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -4001,6 +4006,11 @@
                         {
                             "title": "Municipality",
                             "path": "/Data/2023/Bellingham Measure 2/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Bellingham Measure 2/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -4333,6 +4343,11 @@
                             "title": "Municipality",
                             "path": "/Data/2023/City Council Ward 2/Municipality.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Council Ward 2/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -4359,6 +4374,11 @@
                         {
                             "title": "Municipality",
                             "path": "/Data/2023/City Council Ward 2 Position 2/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Council Ward 2 Position 2/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -4482,6 +4502,11 @@
                         {
                             "title": "Municipality",
                             "path": "/Data/2023/City Council Ward 4/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Council Ward 4/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -4761,6 +4786,11 @@
                             "title": "District",
                             "path": "/Data/2023/County Council District 8/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/County Council District 8/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -4846,6 +4876,11 @@
                         {
                             "title": "Municipality",
                             "path": "/Data/2023/Puyallup Prop 1/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Puyallup Prop 1/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -4996,6 +5031,11 @@
                         {
                             "title": "Municipality",
                             "path": "/Data/2023/Tacoma Measure 1/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Tacoma Measure 1/Precinct.geojson",
                             "items": null
                         }
                     ]
