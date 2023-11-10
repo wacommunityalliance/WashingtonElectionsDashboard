@@ -393,24 +393,25 @@ function layerSelected(path) {
             source: 'selectedLayer',
             layout: {},
             paint: {
-                'fill-color': [         // fill polygon based on 1st place candidate's party
-                    'match',
-                    ['get', 'Party_1'],
-                    'Democratic', '#4f93ba',
-                    'Republican', '#cf635d',
-                    'Independent', '#f68f3e',
-                    'None', '#f68f3e',
-                    'Democratic2', '#868fba',
-                    'Republican2', '#fac566',
-                    'Independent2', '#119f92',
-                    'None2', '#119f92',
-                    'Yes', '#119f92',
-                    'No', '#868fba', 
-                    'transparent'
+                'fill-color': [
+                    'case',
+                    ['==', ['get', 'Margin'], 0], 'transparent',
+                    ['==', ['get', 'Party_1'], 'Democratic'], '#4f93ba',
+                    ['==', ['get', 'Party_1'], 'Republican'], '#cf635d',
+                    ['==', ['get', 'Party_1'], 'Independent'], '#f68f3e',
+                    ['==', ['get', 'Party_1'], 'None'], '#f68f3e',
+                    ['==', ['get', 'Party_1'], 'Democratic2'], '#868fba',
+                    ['==', ['get', 'Party_1'], 'Republican2'], '#fac566',
+                    ['==', ['get', 'Party_1'], 'Independent2'], '#119f92',
+                    ['==', ['get', 'Party_1'], 'None2'], '#119f92',
+                    ['==', ['get', 'Party_1'], 'Yes'], '#119f92',
+                    ['==', ['get', 'Party_1'], 'No'], '#868fba',
+                    'transparent' // Default case
                 ],
-                'fill-opacity': [       // set fill opacity to margin b/w 1st and 2nd place candidates
+                'fill-opacity': [
                     'step',
                     ['get', 'Margin'],
+                    0, 0,
                     0.2, 5,
                     0.3, 10,
                     0.4, 15,
@@ -418,9 +419,9 @@ function layerSelected(path) {
                     0.6, 25,
                     0.7, 30,
                     0.8, 101,
-                    0
+                    1
                 ]
-            }
+            }            
         },
         firstSymbolId);
     }
