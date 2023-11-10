@@ -4775,6 +4775,11 @@
                             "title": "District",
                             "path": "/Data/2023/County Council District 6/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/County Council District 6/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -4801,6 +4806,11 @@
                         {
                             "title": "County",
                             "path": "/Data/2023/County Director of Elections/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/County Director of Elections/Precinct.geojson",
                             "items": null
                         }
                     ]
