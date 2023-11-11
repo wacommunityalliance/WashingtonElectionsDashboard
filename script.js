@@ -34,8 +34,6 @@ map.on('click', 'selectedLayer', (e) => {
     _log(e);
 
     // zoom to click
-    map.flyTo({center: e.lngLat, zoom:10});
-
     if (popup !== null) {
         popup.remove();
         popup = null;
@@ -166,6 +164,12 @@ map.on('click', 'selectedLayer', (e) => {
                 + '</table>'
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         }
+    }
+
+    if (precinct !== undefined) {
+        map.flyTo({center: e.lngLat, zoom:13})
+    } else {
+        map.flyTo({center: e.lngLat, zoom:10})
     }
 
     // Create popup
