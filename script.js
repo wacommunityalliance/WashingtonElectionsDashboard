@@ -399,7 +399,7 @@ function layerSelected(path) {
             paint: {
                 'fill-color': [
                     'case',
-                    ['==', ['get', 'Margin'], 0], 'transparent',
+                    ['==', ['get', 'Margin'], 0], '#999999',
                     ['==', ['get', 'Party_1'], 'Democratic'], '#4f93ba',
                     ['==', ['get', 'Party_1'], 'Republican'], '#cf635d',
                     ['==', ['get', 'Party_1'], 'Independent'], '#f68f3e',
