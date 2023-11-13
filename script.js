@@ -479,6 +479,6 @@ menuToggle.addEventListener('click', function () {
 
     // Toggle the "plus" and "minus" icons
     const icon = menuToggle.querySelector('i');
-    icon.classList.toggle('fa-plus');
     icon.classList.toggle('fa-minus');
+    icon.classList.toggle('fa-plus');
 });
