@@ -5049,6 +5049,22 @@
                             "items": null
                         }
                     ]
+                },
+                {
+                    "title": "Whatcom Prop 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2023/Whatcom Prop 4/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Whatcom Prop 4/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
                 }
             ]
         }
