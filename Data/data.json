@@ -596,6 +596,11 @@
                             "items": null
                         },
                         {
+                            "title": "LD",
+                            "path": "/Data/2014/U.S. Representative/LD.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "Precinct",
                             "path": "/Data/2014/U.S. Representative/Precinct.geojson",
                             "items": null
@@ -1201,6 +1206,11 @@
                             "items": null
                         },
                         {
+                            "title": "LD",
+                            "path": "/Data/2016/U.S. Representative/LD.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "Precinct",
                             "path": "/Data/2016/U.S. Representative/Precinct.geojson",
                             "items": null
@@ -1764,6 +1774,11 @@
                         {
                             "title": "CD",
                             "path": "/Data/2018/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2018/U.S. Representative/LD.geojson",
                             "items": null
                         },
                         {
@@ -3033,6 +3048,11 @@
                             "items": null
                         },
                         {
+                            "title": "LD",
+                            "path": "/Data/2020/U.S. Representative/LD.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "Precinct",
                             "path": "/Data/2020/U.S. Representative/Precinct.geojson",
                             "items": null
@@ -3911,6 +3931,11 @@
                         {
                             "title": "CD",
                             "path": "/Data/2022/U.S. Representative/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2022/U.S. Representative/LD.geojson",
                             "items": null
                         },
                         {
