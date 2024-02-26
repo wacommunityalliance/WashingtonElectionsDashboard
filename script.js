@@ -39,7 +39,7 @@ map.on('click', 'selectedLayer', (e) => {
         popup = null;
     }
 
-    const location = e.features[0].properties.Title;
+    const location = e.features[0].properties.Location;
     const position = e.features[0].properties.Position;
     const turnout = e.features[0].properties.Turnout;
     const turnoutRelative = e.features[0].properties.TurnoutRelative;
