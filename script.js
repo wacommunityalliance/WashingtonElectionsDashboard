@@ -75,6 +75,16 @@ map.on('click', 'selectedLayer', (e) => {
     const votes5 = e.features[0].properties.Votes_5;
     const pct5 = Math.round(e.features[0].properties.Pct_5 * 100) / 100;
 
+    const candidate6 = e.features[0].properties.Name_6;
+    const party6 = e.features[0].properties.Party_6;
+    const votes6 = e.features[0].properties.Votes_6;
+    const pct6 = Math.round(e.features[0].properties.Pct_6 * 100) / 100;
+
+    const candidate7 = e.features[0].properties.Name_7;
+    const party7 = e.features[0].properties.Party_7;
+    const votes7 = e.features[0].properties.Votes_7;
+    const pct7 = Math.round(e.features[0].properties.Pct_7 * 100) / 100;
+
     let message;
 
     if (turnout !== undefined) {
@@ -111,6 +121,23 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate3, party3, votes3, pct3)
                 + createTableRow(candidate4, party4, votes4, pct4)
                 + createTableRow(candidate5, party5, votes5, pct5)
+                + createTableRow(candidate6, party6, votes6, pct6)
+                + createTableRow(candidate7, party7, votes7, pct7)
+                + '</table>'
+                + '<p>  Total votes: ' + totalVotes + '</p>';
+        } else if (position !== undefined) {
+            message =
+                '<h1>' + location + '</h1>'
+                + '<h2>' + position + '</h2>'
+                + '<table class="table1">'
+                + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
+                + createTableRow(candidate1, party1, votes1, pct1)
+                + createTableRow(candidate2, party2, votes2, pct2)
+                + createTableRow(candidate3, party3, votes3, pct3)
+                + createTableRow(candidate4, party4, votes4, pct4)
+                + createTableRow(candidate5, party5, votes5, pct5)
+                + createTableRow(candidate6, party6, votes6, pct6)
+                + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         } else {
@@ -123,6 +150,8 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate3, party3, votes3, pct3)
                 + createTableRow(candidate4, party4, votes4, pct4)
                 + createTableRow(candidate5, party5, votes5, pct5)
+                + createTableRow(candidate6, party6, votes6, pct6)
+                + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         }
@@ -143,6 +172,8 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate3, party3, votes3, pct3)
                 + createTableRow(candidate4, party4, votes4, pct4)
                 + createTableRow(candidate5, party5, votes5, pct5)
+                + createTableRow(candidate6, party6, votes6, pct6)
+                + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         }
@@ -161,6 +192,8 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate3, party3, votes3, pct3)
                 + createTableRow(candidate4, party4, votes4, pct4)
                 + createTableRow(candidate5, party5, votes5, pct5)
+                + createTableRow(candidate6, party6, votes6, pct6)
+                + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         }
@@ -180,12 +213,15 @@ function createTableRow(candidate, party, votes, percent) {
 
     const partyColors = {
         'Democratic': '#4f93ba',
-        'Republican': '#cf635d',
-        'Independent': '#f68f3e',
-        'None': '#f68f3e',
         'Democratic2': '#868fba',
+        'Republican': '#cf635d',
         'Republican2': '#fac566',
+        'Independent': '#f68f3e',
         'Independent2': '#119f92',
+        'Independent3': '#fac566',
+        'Independent4': '#868fba',
+        'Independent5': '#999999',
+        'None': '#f68f3e',
         'None2': '#119f92',
         'None3': '#999999',
         'Yes': '#fac566',
@@ -335,8 +371,8 @@ function layerSelected(path) {
 
     map.addSource('selectedLayer', {
         type: 'geojson',
-        data: '/WashingtonElectionsDashboard/Data/' + path + '.geojson'  // uncomment to publish
-        // data: '/Data/' + path + '.geojson'               // uncomment to debug
+        // data: '/WashingtonElectionsDashboard/Data/' + path + '.geojson'  // uncomment to publish
+        data: '/Data/' + path + '.geojson'               // uncomment to debug
     });
 
     map.addLayer({
@@ -397,12 +433,15 @@ function layerSelected(path) {
                     'case',
                     ['==', ['get', 'Margin'], 0], '#999999',
                     ['==', ['get', 'Party_1'], 'Democratic'], '#4f93ba',
-                    ['==', ['get', 'Party_1'], 'Republican'], '#cf635d',
-                    ['==', ['get', 'Party_1'], 'Independent'], '#f68f3e',
-                    ['==', ['get', 'Party_1'], 'None'], '#f68f3e',
                     ['==', ['get', 'Party_1'], 'Democratic2'], '#868fba',
+                    ['==', ['get', 'Party_1'], 'Republican'], '#cf635d',
                     ['==', ['get', 'Party_1'], 'Republican2'], '#fac566',
+                    ['==', ['get', 'Party_1'], 'Independent'], '#f68f3e',
                     ['==', ['get', 'Party_1'], 'Independent2'], '#119f92',
+                    ['==', ['get', 'Party_1'], 'Independent3'], '#fac566',
+                    ['==', ['get', 'Party_1'], 'Independent4'], '#868fba',
+                    ['==', ['get', 'Party_1'], 'Independent5'], '#999999',
+                    ['==', ['get', 'Party_1'], 'None'], '#f68f3e',
                     ['==', ['get', 'Party_1'], 'None2'], '#119f92',
                     ['==', ['get', 'Party_1'], 'Yes'], '#fac566',
                     ['==', ['get', 'Party_1'], 'No'], '#868fba',
