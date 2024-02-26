@@ -166,11 +166,7 @@ map.on('click', 'selectedLayer', (e) => {
         }
     }
 
-    if (precinct !== undefined) {
-        map.flyTo({center: e.lngLat, zoom:13})
-    } else {
-        map.flyTo({center: e.lngLat, zoom:10})
-    }
+   
 
     // Create popup
     popup = new mapboxgl.Popup()
