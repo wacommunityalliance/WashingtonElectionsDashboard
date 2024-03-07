@@ -1302,6 +1302,27 @@
                     ]
                 },
                 {
+                    "title": "Ranked Choice Voting",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2022/Ranked Choice Voting/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Municipality",
+                            "path": "/Data/2022/Ranked Choice Voting/Municipality.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2022/Ranked Choice Voting/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Secretary of State",
                     "path": null,
                     "items": [
