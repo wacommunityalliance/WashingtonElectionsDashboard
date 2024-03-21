@@ -3514,18 +3514,28 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "State",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/State.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2018/Initiative 1631 (Carbon Fee)/County.geojson",
                             "items": null
                         },
                         {
-                            "title": "Precinct",
-                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/Precinct.geojson",
+                            "title": "CD",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/Cd.geojson",
                             "items": null
                         },
                         {
-                            "title": "State",
-                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/State.geojson",
+                            "title": "LD",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -3535,18 +3545,28 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "State",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/State.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2018/Initiative 940 (Police Training)/County.geojson",
                             "items": null
                         },
                         {
-                            "title": "Precinct",
-                            "path": "/Data/2018/Initiative 940 (Police Training)/Precinct.geojson",
+                            "title": "CD",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/CD.geojson",
                             "items": null
                         },
                         {
-                            "title": "State",
-                            "path": "/Data/2018/Initiative 940 (Police Training)/State.geojson",
+                            "title": "LD",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -4073,18 +4093,28 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "State",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/State.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/Initiative 1433 (Minimum Wage)/County.geojson",
                             "items": null
                         },
                         {
-                            "title": "Precinct",
-                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/Precinct.geojson",
+                            "title": "CD",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/CD.geojson",
                             "items": null
                         },
                         {
-                            "title": "State",
-                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/State.geojson",
+                            "title": "LD",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/Precinct.geojson",
                             "items": null
                         }
                     ]
