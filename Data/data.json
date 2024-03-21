@@ -2253,6 +2253,37 @@
                     ]
                 },
                 {
+                    "title": "Referendum 90 (Sex Education)",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "CD",
+                            "path": "/Data/2020/Referendum 90 (Sex Education)/CD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2020/Referendum 90 (Sex Education)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "LD",
+                            "path": "/Data/2020/Referendum 90 (Sex Education)/LD.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2020/Referendum 90 (Sex Education)/Precinct.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2020/Referendum 90 (Sex Education)/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Secretary of State",
                     "path": null,
                     "items": [
