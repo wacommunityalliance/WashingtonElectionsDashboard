@@ -5174,6 +5174,481 @@
                     ]
                 }
             ]
+        },
+        {
+            "title": "2010",
+            "path": null,
+            "items": [
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2010/County Assessor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2010/County Auditor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2010/County Clerk/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Prosecutor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2010/County Prosecutor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2010/County Sheriff/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2010/County Treasurer/County.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2008",
+            "path": null,
+            "items": [
+                {
+                    "title": "President & Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2008/President & Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2008/President & Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2006",
+            "path": null,
+            "items": [
+                {
+                    "title": "U.S. Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "State",
+                            "path": "/Data/2006/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2004",
+            "path": null,
+            "items": [
+                {
+                    "title": "Attorney General",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/Attorney General/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Commissioner of Public Lands",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/Commissioner of Public Lands/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Insurance Commissioner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/Insurance Commissioner/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Lt. Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/Lt. Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "President & Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/President & Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/President & Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Secretary of State",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/Secretary of State/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/State Auditor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/State Treasurer/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superintendent of Public Instruction",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/Superintendent of Public Instruction/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2004/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2004/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2000",
+            "path": null,
+            "items": [
+                {
+                    "title": "Attorney General",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/Attorney General/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Commissioner of Public Lands",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/Commissioner of Public Lands/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Insurance Commissioner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/Insurance Commissioner/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Lt. Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/Lt. Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "President & Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/President & Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/President & Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Secretary of State",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/Secretary of State/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/State Auditor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/State Treasurer/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superintendent of Public Instruction",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/Superintendent of Public Instruction/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2000/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2000/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
