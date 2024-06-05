@@ -25,7 +25,7 @@
     <div id="map"></div>
 
     <div class="header">
-        <img id="logo" src="Assets/wca c4 color horizontal.png" alt="Logo">
+        <img id="logo" src="Assets/wca c3 color horizontal.png" alt="Logo">
         <div id="title">
             <h1>General Elections Dashboard</h1>
         </div>
@@ -38,17 +38,29 @@
     
     <nav class="menu">
         <div id="menu-top">
-            <h3>#1 <select class="dropdown" id="first-dropdown"></select></h3>
-            <h3>#2 <select class="dropdown" id="second-dropdown"></select></h3>
-            <h3>#3 <select class="dropdown" id="third-dropdown"></select></h3>
-            <h3>Add-ons <select class='dropdown' id="extras-dropdown">
-                <option value="">None</option>
-                <option value="Data/Add-ons/Congressional Districts.geojson">Congressional Districts</option>
-                <option value="Data/Add-ons/Counties.geojson">Counties</option>
+            <h3>#1 <select class="dropdown" id="first-dropdown">
+                <option value="">Year</option>
+            </select></h3>
+            <h3>#2 <select class="dropdown" id="second-dropdown">
+                <option value="">Position</option>
+            </select></h3>
+            <h3>#3 <select class="dropdown" id="third-dropdown">
+                <option value="">Layer</option>
+            </select></h3>
+            <h3><select class='dropdown' id="extras-dropdown">
+                <option value="">Add-ons</option>
+                <option value="Data/Add-ons/Appeals Court.geojson">Appeals Court Divisions</option>
+                <option value="Data/Add-ons/City Council.geojson">City Council</option>
+                <option value="Data/Add-ons/Congressional Districts (2012-2021).geojson">Congressional Districts (2012-2021)</option>
+                <option value="Data/Add-ons/Congressional Districts (2022-present).geojson">Congressional Districts (2022-present)</option>
+                <option value="Data/Add-ons/County.geojson">Counties</option>
                 <option value="Data/Add-ons/County Council.geojson">County Council Districts</option>
-                <option value="Data/Add-ons/Legislative Districts.geojson">Legislative Districts</option>
-                <option value="Data/Add-ons/Municipalities.geojson">Municipalities</option>
+                <option value="Data/Add-ons/Legislative Districts (2012-2021).geojson">Legislative Districts (2012-2021)</option>
+                <option value="Data/Add-ons/Legislative Districts (2022-2023).geojson">Legislative Districts (2022-2023)</option>
+                <option value="Data/Add-ons/Legislative Districts (2024-present).geojson">Legislative Districts (2024-present)</option>
+                <option value="Data/Add-ons/Municipal.geojson">Cities & Towns</option>
                 <option value="Data/Add-ons/School Districts.geojson">School Districts</option>
+                <option value="Data/Add-ons/Superior Court.geojson">Superior Court Districts</option>
                 <option value="Data/Add-ons/Tribal Lands.geojson">Tribal Lands</option>
             </select></h3>
         </div>
@@ -176,20 +188,11 @@
                     <td>30%</td>
                     <td>>30%</td>
                 </tr>
-                <!-- <tr>
-                    <td>±2.5%</td>
-                    <td>±5%</td>
-                    <td>±7.5%</td>
-                    <td>±10%</td>
-                    <td>±15%</td>
-                    <td>±20%</td>
-                    <td>±25%</td>
-                </tr> -->
             </table>
         </div>
     </nav>
 
-    <div id="welcome-message" title="Welcome!">
+    <!-- <div id="welcome-message" title="Welcome!">
         <p>This resource is a project of the <a href="https://wacommunityalliance.org/" target="_blank">Washington Community Alliance</a> Data Hub, 
             developed to increase accessibility and clarity of election results. All data are publicly available from the website of Washington's <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.
             <br><br>
@@ -199,17 +202,28 @@
             <br><br>
             Last updated at 12pm on March 29th, 2024
         </p>
-    </div>
+    </div> -->
 
     <div id="about-icon">
         <div id="about-questionmark">?</div>
         <div id="about-popup" title="Getting started">
-            <p>This dashboard includes election results from 2012-2023, with options to view results at multiple levels. To get started, choose (1) the election cycle you're interested in, 
-                (2) the position you would like to explore, and (3) the level you would like to see results shown for. While data is visualized, you can click on any boundary to see a popup of results.
+            <p>This resource is a project of the <a href="https://wacommunityalliance.org/datahub/" target="_blank">Washington Community Alliance Data Hub</a>, 
+                developed to increase accessibility and clarity of election results. All data were downloaded directly from Washington's <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.
+                Be sure to check out our companion resource, the <a href="https://wacommunityalliance.github.io/WashingtonPrimaryDashboard/" target="_blank">Primary Elections Dashboard</a>, to explore results from Washington's Primary elections.
+                <br><br>
+                This dashboard includes General Election results from 2000-2023, with options to view results at multiple levels. 
+                To get started, choose (1) the election cycle you're interested in,(2) the position you would like to explore, and (3) the level you would like to see results shown for. 
+                Additional boundaries and districts can be added to the map using the "Add-ons" dropdown.
+                While data is visualized, you can click on any boundary to see a popup of results.
                 Boundaries are colored by party preference of the candidate who won that area, with all parties other than "Democratic" or "Republican" grouped together 
-                as "Independent" (partisan races) or "None" (non-partisan races) for simplicity.<br><br>
-                Data on voter turnout is visualized relative to the statewide average for that year, with deeper greens indicating greater-than-average turnout and deeper purples indicating lower-than-average turnout.<br><br>
-                Mobile users: clicking on the orange button in the upper-left will collapse/expand the menu bar. 
+                as "Independent" (partisan races) or "None" (non-partisan races) for simplicity.
+                Note that clicking the orange (+) button in the upper-left will collapse/expand the menu bar (mobile users only). 
+                <br><br>
+                Data processing and web development were led by <a href="mailto:tim@wacommunityalliance.org">Tim O'Neal, PhD</a>, Senior Research Analyst at Washington Community Alliance.
+                Shapefiles and precinct descriptions were created, maintained, and provided by <a href="mailto:ben@progressivestrategiesnw.com">Ben Anderstone</a> of <a href="http://progressivestrategiesnw.com/" target="_blank">Progressive Strategies NW</a>.
+                If you enjoy this resource, please consider <a href="https://secure.actblue.com/donate/wca-action-fund" target="_blank">donating </a> to support our work of increasing accessibility of election data.                 
+                <br><br>
+                Last update: 10:30am on June 5th, 2024
         </div>
     </div>
 

@@ -39,11 +39,14 @@ map.on('click', 'selectedLayer', (e) => {
         popup = null;
     }
 
-    const location = e.features[0].properties.Location;
-    const position = e.features[0].properties.Position;
+    // const location = e.features[0].properties.DISTRICT;
+    // const position = e.features[0].properties.OFFICE;
+    const location = e.features[0].properties.DISTRICT || e.features[0].properties.Location;
+    const position = e.features[0].properties.OFFICE || e.features[0].properties.Position;
+
     const turnout = e.features[0].properties.Turnout;
     const turnoutRelative = e.features[0].properties.TurnoutRelative;
-    const precinct = e.features[0].properties.Precinct;
+    const precinct = e.features[0].properties.PRECINCT;
     const precinctInfo = e.features[0].properties.PREC_DESCR;
     const voters = e.features[0].properties.TotalVoters;
     const votes = e.features[0].properties.TotalVotes;
@@ -106,13 +109,13 @@ map.on('click', 'selectedLayer', (e) => {
     } else if (precinct !== undefined) {
         if (candidate1 == null) {
             message =
-                '<h1>' + location + '</h1>'
+                '<h2>' + precinct + '</h2>'
                 + '<h1>' + position + '</h1>'
                 + '<p>No data available</p>';
         } else if (precinctInfo !== undefined) {
             message =
-                '<h1>' + location + '</h1>'
-                + '<h2>' + position + '</h2>'
+                '<h2>' + precinct + '</h2>'
+                + '<h1>' + position + '</h1>'
                 + '<p>' + precinctInfo + '<p>'
                 + '<table class="table1">'
                 + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
@@ -127,8 +130,8 @@ map.on('click', 'selectedLayer', (e) => {
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         } else if (position !== undefined) {
             message =
-                '<h1>' + location + '</h1>'
-                + '<h2>' + position + '</h2>'
+                '<h2>' + precinct + '</h2>'
+                + '<h1>' + position + '</h1>'
                 + '<table class="table1">'
                 + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
                 + createTableRow(candidate1, party1, votes1, pct1)
@@ -142,7 +145,8 @@ map.on('click', 'selectedLayer', (e) => {
                 + '<p>  Total votes: ' + totalVotes + '</p>';
         } else {
             message =
-                '<h1>' + location + '</h1>'
+                '<h2>' + precinct + '</h2>'
+                + '<h1>' + position + '</h2>'
                 + '<table class="table1">'
                 + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
                 + createTableRow(candidate1, party1, votes1, pct1)
@@ -158,13 +162,13 @@ map.on('click', 'selectedLayer', (e) => {
     } else if (position !== undefined) {
         if (candidate1 == null) {
             message =
-                '<h1>' + location + '</h1>'
+                '<h2>' + location + '</h2>'
                 + '<h1>' + position + '</h1>'
                 + '<p>No data available</p>';
         } else {
             message =
-                '<h1>' + location + '</h1>'
-                + '<h2>' + position + '</h2>'
+                '<h2>' + location + '</h2>'
+                + '<h1>' + position + '</h1>'
                 + '<table class="table1">'
                 + '<tr><th></th><th>candidate</th><th>votes</th><th>percent</th></tr>'
                 + createTableRow(candidate1, party1, votes1, pct1)
@@ -371,8 +375,8 @@ function layerSelected(path) {
 
     map.addSource('selectedLayer', {
         type: 'geojson',
-        data: '/WashingtonElectionsDashboard/Data/' + path + '.geojson'  // uncomment to publish
-        // data: '/Data/' + path + '.geojson'               // uncomment to debug
+        // data: '/WashingtonElectionsDashboard/Data/' + path + '.geojson'  // uncomment to publish
+        data: '/Data/' + path + '.geojson'               // uncomment to debug
     });
 
     map.addLayer({
@@ -487,7 +491,7 @@ function loadGeoJSONLayer(url) {
         source: 'dynamic-layer',
         paint: {
           'line-color': 'black',
-          'line-width': 2
+          'line-width': 1.75
         }
       });
   
