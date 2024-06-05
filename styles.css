@@ -74,7 +74,7 @@ h3 {
     position: absolute;
     background-color: white;
     opacity: 100%;
-    width: 225px;
+    width: 240px;
     z-index: 100;
     height: 180px;
     border-right: solid black 1.5px;
@@ -126,7 +126,7 @@ h3 {
     position: absolute;
     background-color: white;
     left: 0;
-    width: 225px;
+    width: 240px;
     top: 180px;
     height: 407px;
     padding-top: 7px;
