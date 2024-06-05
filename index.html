@@ -192,17 +192,16 @@
         </div>
     </nav>
 
-    <!-- <div id="welcome-message" title="Welcome!">
-        <p>This resource is a project of the <a href="https://wacommunityalliance.org/" target="_blank">Washington Community Alliance</a> Data Hub, 
-            developed to increase accessibility and clarity of election results. All data are publicly available from the website of Washington's <a href="https://www.sos.wa.gov/elections/" target="_blank">Secretary of State</a>.
+    <div id="welcome-message" title="Welcome!">
+        <p>This resource is a project of the <a href="https://wacommunityalliance.org/datahub/" target="_blank">Washington Community Alliance Data Hub</a>, 
+            developed to increase accessibility of election results.
             <br><br>
-            This resource was developed by <a href="mailto:tim@wacommunityalliance.org">Tim O'Neal, PhD</a>, Senior Research Analyst at WCA, and
-            shapefiles and precinct descriptions were created, maintained, and provided by <a href="mailto:ben@progressivestrategiesnw.com">Ben Anderstone</a> of <a href="http://progressivestrategiesnw.com/" target="_blank">Progressive Strategies NW</a>.
-            If you enjoy this resource, please consider <a href="https://secure.actblue.com/donate/wca-action-fund" target="_blank">donating today</a> to support the work we do to make election data as accessible as possible. 
+            To get started, select: <a>#1</a> the election year, <a>#2</a> the position, and <a>#3</a> the layer you would like to see results for. 
+            Additional boundaries and districts can be added to the map using the <a>Add-ons</a> dropdown. For more information, click the help icon in the bottom-right corner.
             <br><br>
-            Last updated at 12pm on March 29th, 2024
+            Last update: 10:30am on June 5th, 2024
         </p>
-    </div> -->
+    </div>
 
     <div id="about-icon">
         <div id="about-questionmark">?</div>
@@ -234,11 +233,6 @@
             $("#welcome-message").dialog({
                 autoOpen: false,
                 modal: true,
-                buttons: {
-                    "Explore some data!": function() {
-                        $(this).dialog("close");
-                    }
-                }
             });
 
             // show the welcome message
