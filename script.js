@@ -477,6 +477,7 @@ function loadGeoJSONLayer(url) {
     if (currentLayer) {
       map.removeLayer(currentLayer);
       map.removeSource(currentLayer);
+      currentLayer = null;
     }
   
     if (url) {
