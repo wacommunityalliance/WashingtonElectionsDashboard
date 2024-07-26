@@ -48,8 +48,9 @@
 h1 {
     font-family: 'Montserrat';
     font-weight: 900;
-    font-size: 2em;
-    line-height: 30px;
+    font-size: 1.95em;
+    color: #232323;
+    line-height: 27px;
     text-align: left;
 }
 
@@ -76,15 +77,15 @@ h3 {
     opacity: 100%;
     width: 240px;
     z-index: 100;
-    height: 180px;
-    border-right: solid black 1.5px;
-
+    height: 150px;
+    border-right: solid #006c63 1.5px;
+    border-bottom: solid #006c63 1.5px;
 }
 
 #logo {
     position: absolute;
-    height: 90px;
-    padding: 10px 0 15px 15px;
+    /* height: 90px; */
+    padding: 5px 0 0 5px;
 }
 
 #map {
@@ -126,10 +127,10 @@ h3 {
     background-color: white;
     left: 0;
     width: 240px;
-    top: 180px;
+    top: 150px;
     height: 449px;
     padding-top: 7px;
-    border-right: solid black 1.5px;
+    border-right: solid #006c63 1.5px;
 }
 
 #menu-top {
@@ -140,7 +141,7 @@ h3 {
 #menu-middle {
     height: 292px;
     padding: 0 10px 0 10px;
-    border-bottom: solid black 1.5px;
+    border-bottom: solid #006c63 1.5px;
 }
 
 p {
@@ -207,7 +208,7 @@ table.table2 th {
 }
 
 #title {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-left: 10px;
 }
 
