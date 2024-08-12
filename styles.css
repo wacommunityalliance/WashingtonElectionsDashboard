@@ -209,7 +209,7 @@ table.table2 th {
 
 #title {
     padding-top: 60px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 #welcome-message {
@@ -235,7 +235,7 @@ table.table2 th {
         cursor: pointer;
         width: 20px;
         height: 20px;
-        top: 150px;
+        top: 58px;
         right: 10px;
         background-color: #f68f3e;
         color: #fff;
