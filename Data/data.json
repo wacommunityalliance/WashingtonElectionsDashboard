@@ -1822,8 +1822,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2022/Secretary of State/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2022/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2022/Secretary of State/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -1991,8 +2001,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2022/U.S. Senator/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2022/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2022/U.S. Senator/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -2959,8 +2979,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/Attorney General/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/Attorney General/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -2995,6 +3025,11 @@
                             "items": null
                         }
                     ]
+                },
+                {
+                    "title": "Congressional",
+                    "path": "/Data/2020/Congressional.geojson",
+                    "items": null
                 },
                 {
                     "title": "County Auditor",
@@ -3193,8 +3228,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/Governor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/Governor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3214,8 +3259,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/Insurance Commissioner/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/Insurance Commissioner/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3231,12 +3286,27 @@
                     ]
                 },
                 {
+                    "title": "Legislative",
+                    "path": "/Data/2020/Legislative.geojson",
+                    "items": null
+                },
+                {
                     "title": "Lt. Governor",
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/Lt. Governor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/Lt. Governor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3320,8 +3390,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/President and Vice President/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/President and Vice President/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3341,8 +3421,8 @@
                     "path": null,
                     "items": [
                         {
-                            "title": "CD",
-                            "path": "/Data/2020/Referendum 90 (Sex Education)/CD.geojson",
+                            "title": "Congressional",
+                            "path": "/Data/2020/Referendum 90 (Sex Education)/Congressional.geojson",
                             "items": null
                         },
                         {
@@ -3351,8 +3431,8 @@
                             "items": null
                         },
                         {
-                            "title": "LD",
-                            "path": "/Data/2020/Referendum 90 (Sex Education)/LD.geojson",
+                            "title": "Legislative",
+                            "path": "/Data/2020/Referendum 90 (Sex Education)/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3372,8 +3452,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/Secretary of State/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/Secretary of State/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3393,8 +3483,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/State Auditor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/State Auditor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3462,8 +3562,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/State Treasurer/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/State Treasurer/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -3483,8 +3593,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2020/Superintendent of Public Instruction/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2020/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2020/Superintendent of Public Instruction/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -5125,8 +5245,8 @@
                     "path": null,
                     "items": [
                         {
-                            "title": "CD",
-                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/CD.geojson",
+                            "title": "Congressional",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/Congressional.geojson",
                             "items": null
                         },
                         {
@@ -5135,8 +5255,8 @@
                             "items": null
                         },
                         {
-                            "title": "LD",
-                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/LD.geojson",
+                            "title": "Legislative",
+                            "path": "/Data/2018/Initiative 1631 (Carbon Fee)/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -5156,8 +5276,8 @@
                     "path": null,
                     "items": [
                         {
-                            "title": "CD",
-                            "path": "/Data/2018/Initiative 940 (Police Training)/CD.geojson",
+                            "title": "Congressional",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/Congressional.geojson",
                             "items": null
                         },
                         {
@@ -5166,8 +5286,8 @@
                             "items": null
                         },
                         {
-                            "title": "LD",
-                            "path": "/Data/2018/Initiative 940 (Police Training)/LD.geojson",
+                            "title": "Legislative",
+                            "path": "/Data/2018/Initiative 940 (Police Training)/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -5527,8 +5647,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2018/U.S. Senator/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2018/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2018/U.S. Senator/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6457,8 +6587,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/Attorney General/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/Attorney General/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6478,8 +6618,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/Commissioner of Public Lands/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/Commissioner of Public Lands/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6803,8 +6953,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/Governor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/Governor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6824,8 +6984,8 @@
                     "path": null,
                     "items": [
                         {
-                            "title": "CD",
-                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/CD.geojson",
+                            "title": "Congressional",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/Congressional.geojson",
                             "items": null
                         },
                         {
@@ -6834,8 +6994,8 @@
                             "items": null
                         },
                         {
-                            "title": "LD",
-                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/LD.geojson",
+                            "title": "Legislative",
+                            "path": "/Data/2016/Initiative 1433 (Minimum Wage)/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6855,8 +7015,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/Insurance Commissioner/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/Insurance Commissioner/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6875,6 +7045,16 @@
                     "title": "Lt. Governor",
                     "path": null,
                     "items": [
+                        {
+                            "title": "Congressional",
+                            "path": "/Data/2016/Lt. Governor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/Lt. Governor/Legislative.geojson",
+                            "items": null
+                        },
                         {
                             "title": "Precinct",
                             "path": "/Data/2016/Lt. Governor/Precinct.geojson",
@@ -6956,8 +7136,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/President and Vice President/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/President and Vice President/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6977,8 +7167,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/Secretary of State/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/Secretary of State/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -6998,8 +7198,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/State Auditor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/State Auditor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -7067,8 +7277,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/State Treasurer/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/State Treasurer/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -7088,8 +7308,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/Superintendent of Public Instruction/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/Superintendent of Public Instruction/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -7482,8 +7712,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2016/U.S. Senator/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2016/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/U.S. Senator/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -8648,8 +8888,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2014/Initiative 594 (Background Checks)/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2014/Initiative 594 (Background Checks)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2014/Initiative 594 (Background Checks)/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -9595,8 +9845,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Attorney General/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Attorney General/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -9634,6 +9894,11 @@
                         {
                             "title": "County",
                             "path": "/Data/2012/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Commissioner of Public Lands/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -9861,8 +10126,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Governor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Governor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -9882,8 +10157,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Initiative 502 (Cannabis Legalization)/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Initiative 502 (Cannabis Legalization)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Initiative 502 (Cannabis Legalization)/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -9903,8 +10188,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Insurance Commissioner/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Insurance Commissioner/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -9924,8 +10219,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Lt. Governor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Lt. Governor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -10009,6 +10314,16 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/President and Vice President/Congressional.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/President and Vice President/Legislative.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "Precinct",
                             "path": "/Data/2012/President and Vice President/Precinct.geojson",
                             "items": null
@@ -10025,8 +10340,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Referendum 74 (Marriage Equality)/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Referendum 74 (Marriage Equality)/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Referendum 74 (Marriage Equality)/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -10046,8 +10371,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Secretary of State/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Secretary of State/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -10067,8 +10402,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/State Auditor/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/State Auditor/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -10136,8 +10481,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/State Treasurer/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/State Treasurer/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -10157,8 +10512,18 @@
                     "path": null,
                     "items": [
                         {
+                            "title": "Congressional",
+                            "path": "/Data/2012/Superintendent of Public Instruction/Congressional.geojson",
+                            "items": null
+                        },
+                        {
                             "title": "County",
                             "path": "/Data/2012/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/Superintendent of Public Instruction/Legislative.geojson",
                             "items": null
                         },
                         {
@@ -10289,6 +10654,16 @@
                     "title": "U.S. Senator",
                     "path": null,
                     "items": [
+                        {
+                            "title": "Congressional",
+                            "path": "/Data/2012/U.S. Senator/Congressional.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/U.S. Senator/Legislative.geojson",
+                            "items": null
+                        },
                         {
                             "title": "Precinct",
                             "path": "/Data/2012/U.S. Senator/Precinct.geojson",
