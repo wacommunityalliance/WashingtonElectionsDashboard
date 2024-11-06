@@ -468,22 +468,6 @@
                     ]
                 },
                 {
-                    "title": "President and Vice President",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2024/President and Vice President/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "State",
-                            "path": "/Data/2024/President and Vice President/State.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "Proposition 1",
                     "path": null,
                     "items": [
@@ -865,6 +849,22 @@
                         {
                             "title": "State",
                             "path": "/Data/2024/Supreme Court Justice Pos. 9/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. President & Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/U.S. President & Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/U.S. President & Vice President/State.geojson",
                             "items": null
                         }
                     ]
