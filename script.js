@@ -228,8 +228,20 @@ function createTableRow(candidate, party, votes, percent) {
         'None': '#f68f3e',
         'None2': '#119f92',
         'None3': '#999999',
-        'Yes': '#fac566',
-        'No': '#868fba'
+        'Democratic_1': '#4f93ba',
+        'Democratic_2': '#868fba',
+        'Republican_1': '#cf635d',
+        'Republican_2': '#fac566',
+        'Independent_1': '#f68f3e',
+        'Independent_2': '#119f92',
+        'Independent_3': '#fac566',
+        'Independent_4': '#868fba',
+        'Independent_5': '#999999',
+        'None_1': '#f68f3e',
+        'None_2': '#119f92',
+        'None_3': '#999999',
+        'Yes_1': '#fac566',
+        'No_1': '#868fba'
     };
 
 
@@ -447,8 +459,19 @@ function layerSelected(path) {
                     ['==', ['get', 'Party_1'], 'Independent5'], '#999999',
                     ['==', ['get', 'Party_1'], 'None'], '#f68f3e',
                     ['==', ['get', 'Party_1'], 'None2'], '#119f92',
-                    ['==', ['get', 'Party_1'], 'Yes'], '#fac566',
-                    ['==', ['get', 'Party_1'], 'No'], '#868fba',
+                    ['==', ['get', 'Party_1'], 'Democratic_1'], '#4f93ba',
+                    ['==', ['get', 'Party_1'], 'Democratic_2'], '#868fba',
+                    ['==', ['get', 'Party_1'], 'Republican_1'], '#cf635d',
+                    ['==', ['get', 'Party_1'], 'Republican_2'], '#fac566',
+                    ['==', ['get', 'Party_1'], 'Independent_1'], '#f68f3e',
+                    ['==', ['get', 'Party_1'], 'Independent_2'], '#119f92',
+                    ['==', ['get', 'Party_1'], 'Independent_3'], '#fac566',
+                    ['==', ['get', 'Party_1'], 'Independent_4'], '#868fba',
+                    ['==', ['get', 'Party_1'], 'Independent_5'], '#999999',
+                    ['==', ['get', 'Party_1'], 'None_1'], '#f68f3e',
+                    ['==', ['get', 'Party_1'], 'None_2'], '#119f92',
+                    ['==', ['get', 'Party_1'], 'Yes_1'], '#fac566',
+                    ['==', ['get', 'Party_1'], 'No_1'], '#868fba',
                     'transparent' // Default case
                 ],
                 'fill-opacity': [

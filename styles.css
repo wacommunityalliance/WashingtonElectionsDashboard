@@ -224,7 +224,7 @@ table.table2 th {
 
 @media (max-width: 768px) {
     .menu {
-      display: none;
+      display: block;
     }
   
     /* Style the toggle button */
@@ -247,7 +247,7 @@ table.table2 th {
 
     /* Add this to your CSS to control menu visibility */
     .menu.menu-visible {
-        display: block;
+        display: none;
     }
   }
 

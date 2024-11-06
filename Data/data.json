@@ -1,6 +1,909 @@
 {
     "items": [
         {
+            "title": "2024",
+            "path": null,
+            "items": [
+                {
+                    "title": "Appeals Court Judge Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Appeals Court Judge Pos. 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Appeals Court Judge Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Appeals Court Judge Pos. 2/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Appeals Court Judge Pos. 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Appeals Court Judge Pos. 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Appeals Court Judge Pos. 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Appeals Court Judge Pos. 4/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Appeals Court Judge Pos. 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Appeals Court Judge Pos. 7/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Attorney General",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Attorney General/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Attorney General/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2024/City Councilor Pos. 8/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Commissioner of Public Lands",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Commissioner of Public Lands/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Commissioner of Public Lands/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Commissioner District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Commissioner District 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Commissioner District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Commissioner District 2/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Commissioner District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Commissioner District 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Commissioner District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Commissioner District 4/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Commissioner District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Commissioner District 5/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Commissioner District s",
+                    "path": null,
+                    "items": null
+                },
+                {
+                    "title": "County Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Councilor District 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Councilor District 2/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Councilor District 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Councilor District 4/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/County Councilor District 6/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Executive",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/County Executive/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Prosecutor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/County Prosecutor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/County Sheriff/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/County Treasurer/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "District Court Judge At-Large",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/District Court Judge At-Large/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "District Court Judge Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/District Court Judge Pos. 2/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 2066",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Initiative 2066/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Initiative 2066/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 2109",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Initiative 2109/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Initiative 2109/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 2117",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Initiative 2117/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Initiative 2117/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 2124",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Initiative 2124/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Initiative 2124/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 2401",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2024/Initiative 2401/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 2402",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2024/Initiative 2402/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Initiative 2403",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2024/Initiative 2403/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Insurance Commissioner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Insurance Commissioner/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Insurance Commissioner/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Lt. Governor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Lt. Governor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Lt. Governor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "PUD Commissioner At-Large",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/PUD Commissioner At-Large/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "PUD Commissioner District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/PUD Commissioner District 1/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "PUD Commissioner District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/PUD Commissioner District 2/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "PUD Commissioner District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/PUD Commissioner District 3/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "President and Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/President and Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/President and Vice President/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Proposition 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2024/Proposition 1/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Proposition 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2024/Proposition 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Proposition 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2024/Proposition 4/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Secretary of State",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Secretary of State/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Secretary of State/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Auditor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/State Auditor/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/State Auditor/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2024/State Representative Pos. 1/Legislative.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2024/State Representative Pos. 2/Legislative.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2024/State Senator/Legislative.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/State Treasurer/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/State Treasurer/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superintendent of Public Instruction",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superintendent of Public Instruction/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Superintendent of Public Instruction/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 1/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 10",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 10/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 10/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 11",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 11/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 11/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 12",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 12/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 12/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 15",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 15/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 15/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 2/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 2/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 3/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 4/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 4/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 41",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 41/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 41/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 5/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 5/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 8/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 8/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 9/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 9/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Supreme Court Justice Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Supreme Court Justice Pos. 2/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Supreme Court Justice Pos. 2/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Supreme Court Justice Pos. 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Supreme Court Justice Pos. 8/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Supreme Court Justice Pos. 8/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Supreme Court Justice Pos. 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Supreme Court Justice Pos. 9/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/Supreme Court Justice Pos. 9/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Representative",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Congressional",
+                            "path": "/Data/2024/U.S. Representative/Congressional.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/U.S. Senator/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2024/U.S. Senator/State.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "2023",
             "path": null,
             "items": [
