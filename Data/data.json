@@ -103,6 +103,11 @@
                             "title": "Municipal",
                             "path": "/Data/2024/City Councilor Pos. 8/Municipal.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/City Councilor Pos. 8/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
