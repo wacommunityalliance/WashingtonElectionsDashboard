@@ -60,6 +60,11 @@
                             "title": "District",
                             "path": "/Data/2024/Appeals Court Judge Pos. 4/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Appeals Court Judge Pos. 4/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -70,6 +75,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2024/Appeals Court Judge Pos. 7/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Appeals Court Judge Pos. 7/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -870,6 +880,132 @@
                     ]
                 },
                 {
+                    "title": "Superior Court Judge Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 2/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 2/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Superior Court Judge Pos. 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 3/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 3/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Superior Court Judge Pos. 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 4/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 4/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Superior Court Judge Pos. 4/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 5/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 5/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Superior Court Judge Pos. 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 8/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 8/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Superior Court Judge Pos. 8/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Superior Court Judge Pos. 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2024/Superior Court Judge Pos. 9/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "District",
+                            "path": "/Data/2024/Superior Court Judge Pos. 9/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2024/Superior Court Judge Pos. 9/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "Superior Court Judge Pos. 10",
                     "path": null,
                     "items": [
@@ -954,69 +1090,6 @@
                     ]
                 },
                 {
-                    "title": "Superior Court Judge Pos. 2",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2024/Superior Court Judge Pos. 2/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "District",
-                            "path": "/Data/2024/Superior Court Judge Pos. 2/District.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2024/Superior Court Judge Pos. 2/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Superior Court Judge Pos. 3",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2024/Superior Court Judge Pos. 3/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "District",
-                            "path": "/Data/2024/Superior Court Judge Pos. 3/District.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2024/Superior Court Judge Pos. 3/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Superior Court Judge Pos. 4",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2024/Superior Court Judge Pos. 4/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "District",
-                            "path": "/Data/2024/Superior Court Judge Pos. 4/District.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2024/Superior Court Judge Pos. 4/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "Superior Court Judge Pos. 41",
                     "path": null,
                     "items": [
@@ -1029,68 +1102,10 @@
                             "title": "District",
                             "path": "/Data/2024/Superior Court Judge Pos. 41/District.geojson",
                             "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Superior Court Judge Pos. 5",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2024/Superior Court Judge Pos. 5/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "District",
-                            "path": "/Data/2024/Superior Court Judge Pos. 5/District.geojson",
-                            "items": null
                         },
                         {
                             "title": "Precinct",
-                            "path": "/Data/2024/Superior Court Judge Pos. 5/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Superior Court Judge Pos. 8",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2024/Superior Court Judge Pos. 8/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "District",
-                            "path": "/Data/2024/Superior Court Judge Pos. 8/District.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2024/Superior Court Judge Pos. 8/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Superior Court Judge Pos. 9",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2024/Superior Court Judge Pos. 9/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "District",
-                            "path": "/Data/2024/Superior Court Judge Pos. 9/District.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2024/Superior Court Judge Pos. 9/Precinct.geojson",
+                            "path": "/Data/2024/Superior Court Judge Pos. 41/Precinct.geojson",
                             "items": null
                         }
                     ]
