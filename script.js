@@ -387,8 +387,8 @@ function layerSelected(path) {
 
     map.addSource('selectedLayer', {
         type: 'geojson',
-        // data: '/WashingtonElectionsDashboard/Data/' + path + '.geojson'  // uncomment to publish
-        data: '/Data/' + path + '.geojson'               // uncomment to debug
+        data: '/WashingtonElectionsDashboard/Data/' + path + '.geojson'  // uncomment to publish
+        // data: '/Data/' + path + '.geojson'               // uncomment to debug
     });
 
     map.addLayer({
