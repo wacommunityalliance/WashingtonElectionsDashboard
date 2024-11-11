@@ -107,14 +107,16 @@ h3 {
 .mapboxgl-popup-content h1 {
     font-family: 'Montserrat';
     font-weight: 900;
-    font-size: 1.3em;
+    font-size: 1.5em;
     line-height: 20px;
 }
 
 .mapboxgl-popup-content p {
     font-family: 'Montserrat';
+    padding-top: 5px;
+    padding-bottom: 0px;
     font-weight: 300;
-    font-size: .8em;
+    font-size: .85em;
 }
 
 .mapboxgl-popup-close-button {
@@ -169,7 +171,7 @@ table.table1 {
 table.table1 td {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: .85em;
+    font-size: 1em;
     text-align: left;
     padding-right: 10px;
     white-space: nowrap;
@@ -178,7 +180,7 @@ table.table1 td {
 table.table1 th {
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: .85em;
+    font-size: .9em;
     text-align: left;
     border-bottom: 1px solid black;
 }

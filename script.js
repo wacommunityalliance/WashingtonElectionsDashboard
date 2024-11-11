@@ -88,6 +88,8 @@ map.on('click', 'selectedLayer', (e) => {
     const votes7 = e.features[0].properties.Votes_7;
     const pct7 = Math.round(e.features[0].properties.Pct_7 * 100) / 100;
 
+    const margin = e.features[0].properties.Margin;
+
     let message;
 
     if (turnout !== undefined) {
@@ -127,7 +129,7 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate6, party6, votes6, pct6)
                 + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
-                + '<p>  Total votes: ' + totalVotes + '</p>';
+                + '<p>  Total votes: ' + totalVotes + ';  margin: ' + margin + '%</p>';
         } else if (position !== undefined) {
             message =
                 '<h2>' + precinct + '</h2>'
@@ -142,7 +144,7 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate6, party6, votes6, pct6)
                 + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
-                + '<p>  Total votes: ' + totalVotes + '</p>';
+                + '<p>  Total votes: ' + totalVotes + ';  margin: ' + margin + '%</p>';
         } else {
             message =
                 '<h2>' + precinct + '</h2>'
@@ -157,7 +159,7 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate6, party6, votes6, pct6)
                 + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
-                + '<p>  Total votes: ' + totalVotes + '</p>';
+                + '<p>  Total votes: ' + totalVotes + ';  margin: ' + margin + '%</p>';
         }
     } else if (position !== undefined) {
         if (candidate1 == null) {
@@ -179,7 +181,7 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate6, party6, votes6, pct6)
                 + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
-                + '<p>  Total votes: ' + totalVotes + '</p>';
+                + '<p>  Total votes: ' + totalVotes + ';  margin: ' + margin + '%</p>';
         }
     } else {
         if (candidate1 == null) {
@@ -199,7 +201,7 @@ map.on('click', 'selectedLayer', (e) => {
                 + createTableRow(candidate6, party6, votes6, pct6)
                 + createTableRow(candidate7, party7, votes7, pct7)
                 + '</table>'
-                + '<p>  Total votes: ' + totalVotes + '</p>';
+                + '<p>  Total votes: ' + totalVotes + ';  margin: ' + margin + '%</p>';
         }
     }
 
@@ -225,7 +227,7 @@ function createTableRow(candidate, party, votes, percent) {
         'Independent3': '#fac566',
         'Independent4': '#868fba',
         'Independent5': '#999999',
-        'None': '#f68f3e',
+        'None': '#999999',
         'None2': '#119f92',
         'None3': '#999999',
         'Democratic_1': '#4f93ba',
