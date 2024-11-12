@@ -8360,37 +8360,6 @@
                     ]
                 },
                 {
-                    "title": "President and Vice President",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Congressional",
-                            "path": "/Data/2016/President and Vice President/Congressional.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "County",
-                            "path": "/Data/2016/President and Vice President/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Legislative",
-                            "path": "/Data/2016/President and Vice President/Legislative.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2016/President and Vice President/Precinct.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "State",
-                            "path": "/Data/2016/President and Vice President/State.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "Secretary of State",
                     "path": null,
                     "items": [
@@ -8915,6 +8884,37 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2016/Superior Court Judge Pos. 8/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. President & Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "State",
+                            "path": "/Data/2016/U.S. President & Vice President/State.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2016/U.S. President & Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Congressional",
+                            "path": "/Data/2016/U.S. President & Vice President/Congressional.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2016/U.S. President & Vice President/Legislative.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2016/U.S. President & Vice President/Precinct.geojson",
                             "items": null
                         }
                     ]
