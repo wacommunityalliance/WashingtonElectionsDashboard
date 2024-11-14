@@ -11543,32 +11543,6 @@
                     ]
                 },
                 {
-                    "title": "President and Vice President",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Congressional",
-                            "path": "/Data/2012/President and Vice President/Congressional.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Legislative",
-                            "path": "/Data/2012/President and Vice President/Legislative.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2012/President and Vice President/Precinct.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "State",
-                            "path": "/Data/2012/President and Vice President/State.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "Referendum 74 (Marriage Equality)",
                     "path": null,
                     "items": [
@@ -11863,6 +11837,37 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2012/Superior Court Judge Pos. 7/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "U.S. President & Vice President",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "State",
+                            "path": "/Data/2012/U.S. President & Vice President/State.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "County",
+                            "path": "/Data/2012/U.S. President & Vice President/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Congressional",
+                            "path": "/Data/2012/U.S. President & Vice President/Congressional.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2012/U.S. President & Vice President/Legislative.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2012/U.S. President & Vice President/Precinct.geojson",
                             "items": null
                         }
                     ]
