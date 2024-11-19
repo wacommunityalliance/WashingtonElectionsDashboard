@@ -243,7 +243,9 @@ function createTableRow(candidate, party, votes, percent) {
         'None_2': '#119f92',
         'None_3': '#999999',
         'Yes_1': '#fac566',
-        'No_1': '#868fba'
+        'No_1': '#868fba',
+        'Yes': '#fac566',
+        'No': '#868fba'
     };
 
 
@@ -473,7 +475,9 @@ function layerSelected(path) {
                     ['==', ['get', 'Party_1'], 'None_1'], '#f68f3e',
                     ['==', ['get', 'Party_1'], 'None_2'], '#119f92',
                     ['==', ['get', 'Party_1'], 'Yes_1'], '#fac566',
+                    ['==', ['get', 'Party_1'], 'Yes'], '#fac566',
                     ['==', ['get', 'Party_1'], 'No_1'], '#868fba',
+                    ['==', ['get', 'Party_1'], 'No'], '#868fba',
                     'transparent' // Default case
                 ],
                 'fill-opacity': [
