@@ -1377,11 +1377,6 @@
                             "items": null
                         },
                         {
-                            "title": "Legislative",
-                            "path": "/Data/2024/U.S. Representative/Legislative.geojson",
-                            "items": null
-                        },
-                        {
                             "title": "Precinct",
                             "path": "/Data/2024/U.S. Representative/Precinct.geojson",
                             "items": null
