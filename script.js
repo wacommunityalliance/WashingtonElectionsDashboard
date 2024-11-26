@@ -227,7 +227,7 @@ function createTableRow(candidate, party, votes, percent) {
         'Independent3': '#fac566',
         'Independent4': '#868fba',
         'Independent5': '#999999',
-        'None': '#999999',
+        'None': '#f68f3e',
         'None2': '#119f92',
         'None3': '#999999',
         'Democratic_1': '#4f93ba',
