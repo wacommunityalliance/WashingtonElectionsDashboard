@@ -402,7 +402,7 @@ function layerSelected(path) {
         layout: {},
         paint: {
             'line-color': '#595959',
-            'line-width': 1.25
+            'line-width': 0
         }
     });
 4
@@ -522,7 +522,7 @@ function loadGeoJSONLayer(url) {
         source: 'dynamic-layer',
         paint: {
           'line-color': 'black',
-          'line-width': 1.75
+          'line-width': 1.25
         }
       });
   
