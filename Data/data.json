@@ -1,6 +1,919 @@
 {
     "items": [
         {
+            "title": "2025",
+            "path": null,
+            "items": [
+                {
+                    "title": "Appeals Court Judge Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/Appeals Court Judge Pos. 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Attorney",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Attorney/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor At-Large",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor At-Large/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor District 1/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor District 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 1/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 10",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 10/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 11",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 11/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 12",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 12/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 3/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 4/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 5/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 6/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 7/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 8/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 9/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. B",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. B/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 1/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 1 Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 1 Pos. 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 2 Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 2 Pos. 1/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 2 Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 2 Pos. 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 2 Pos. 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 2 Pos. 4/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 3/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 3 Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 3 Pos. 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 3 Pos. 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 3 Pos. 6/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 4/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 5/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Ward 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Ward 6/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Assessor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Assessor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Clerk",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Clerk/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Commissioner District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Commissioner District 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Coroner",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Coroner/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor At-Large",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Councilor At-Large/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Councilor District 1/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Councilor District 2/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Councilor District 3/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Councilor District 4/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Councilor District 5/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Councilor District 7/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Councilor District 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "District",
+                            "path": "/Data/2025/County Councilor District 9/District.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Executive",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Executive/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 1/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 10",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 10/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 11",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 11/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 12",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 12/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 2/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 3/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 4/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 5/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 6",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 6/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 7/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 8",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 8/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 9",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 9/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Prosecutor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Prosecutor/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Sheriff",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Sheriff/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Treasurer",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Treasurer/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Mayor",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Mayor/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Court Judge",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Court Judge/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Court Judge Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Court Judge Pos. 1/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Court Judge Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Court Judge Pos. 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Initiative 2501",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Initiative 2501/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Initiative 2503",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Initiative 2503/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Proposition 1/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Proposition 2/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 202507",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Proposition 202507/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Proposition 5/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "PUD Commissioner District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/PUD Commissioner District 1/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Board Director Pos. 1/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director Pos. 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Board Director Pos. 2/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director Pos. 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Board Director Pos. 3/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director Pos. 4",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Board Director Pos. 4/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director Pos. 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Board Director Pos. 5/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Board Director Pos. 7",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Board Director Pos. 7/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Levy",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Levy/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Levy 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Levy 1/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "School Levy 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "School",
+                            "path": "/Data/2025/School Levy 2/School.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Representative Pos. 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2025/State Representative Pos. 1/Legislative.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Resolution 8201",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/State Resolution 8201/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "State",
+                            "path": "/Data/2025/State Resolution 8201/State.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "State Senator",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Legislative",
+                            "path": "/Data/2025/State Senator/Legislative.geojson",
+                            "items": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "title": "2024",
             "path": null,
             "items": [
@@ -447,7 +1360,6 @@
                             "path": "/Data/2024/Governor/Precinct.geojson",
                             "items": null
                         }
-                        
                     ]
                 },
                 {
@@ -510,7 +1422,6 @@
                             "path": "/Data/2024/Initiative 2109/Precinct.geojson",
                             "items": null
                         }
-                        
                     ]
                 },
                 {
@@ -1271,7 +2182,6 @@
                             "path": "/Data/2024/Supreme Court Justice Pos. 2/Precinct.geojson",
                             "items": null
                         }
-                        
                     ]
                 },
                 {
@@ -12574,6 +13484,5 @@
                 }
             ]
         }
-        
     ]
 }
