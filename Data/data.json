@@ -82,39 +82,6 @@
                     ]
                 },
                 {
-                    "title": "City Councilor Pos. 10",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipal",
-                            "path": "/Data/2025/City Councilor Pos. 10/Municipal.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "City Councilor Pos. 11",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipal",
-                            "path": "/Data/2025/City Councilor Pos. 11/Municipal.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "City Councilor Pos. 12",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipal",
-                            "path": "/Data/2025/City Councilor Pos. 12/Municipal.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "City Councilor Pos. 2",
                     "path": null,
                     "items": [
@@ -198,6 +165,39 @@
                         {
                             "title": "Municipal",
                             "path": "/Data/2025/City Councilor Pos. 9/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 10",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 10/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 11",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 11/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 12",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/City Councilor Pos. 12/Municipal.geojson",
                             "items": null
                         }
                     ]
@@ -500,39 +500,6 @@
                     ]
                 },
                 {
-                    "title": "County Proposition 10",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2025/County Proposition 10/County.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "County Proposition 11",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2025/County Proposition 11/County.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "County Proposition 12",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2025/County Proposition 12/County.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "County Proposition 2",
                     "path": null,
                     "items": [
@@ -616,6 +583,39 @@
                         {
                             "title": "County",
                             "path": "/Data/2025/County Proposition 9/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 10",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 10/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 11",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 11/County.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "County Proposition 12",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2025/County Proposition 12/County.geojson",
                             "items": null
                         }
                     ]
@@ -715,6 +715,17 @@
                         {
                             "title": "Municipal",
                             "path": "/Data/2025/Municipal Initiative 2503/Municipal.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Measure 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2025/Municipal Measure 1/Municipal.geojson",
                             "items": null
                         }
                     ]
