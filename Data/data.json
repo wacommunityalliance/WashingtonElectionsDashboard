@@ -258,17 +258,6 @@
                     ]
                 },
                 {
-                    "title": "City Councilor Pos. B",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipal",
-                            "path": "/Data/2025/City Councilor Pos. B/Municipal.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "City Councilor Ward 1",
                     "path": null,
                     "items": [
