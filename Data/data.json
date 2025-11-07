@@ -452,6 +452,11 @@
                             "title": "District",
                             "path": "/Data/2025/County Councilor District 1/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2025/County Councilor District 1/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -473,6 +478,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2025/County Councilor District 3/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2025/County Councilor District 3/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -496,6 +506,11 @@
                             "title": "District",
                             "path": "/Data/2025/County Councilor District 5/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2025/County Councilor District 5/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -507,6 +522,11 @@
                             "title": "District",
                             "path": "/Data/2025/County Councilor District 7/District.geojson",
                             "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2025/County Councilor District 7/Precinct.geojson",
+                            "items": null
                         }
                     ]
                 },
@@ -517,6 +537,11 @@
                         {
                             "title": "District",
                             "path": "/Data/2025/County Councilor District 9/District.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2025/County Councilor District 9/Precinct.geojson",
                             "items": null
                         }
                     ]
