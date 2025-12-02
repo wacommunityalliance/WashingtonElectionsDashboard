@@ -2772,38 +2772,6 @@
                     ]
                 },
                 {
-                    "title": "Bellingham Measure 1",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipality",
-                            "path": "/Data/2023/Bellingham Measure 1/Municipality.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/Bellingham Measure 1/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Bellingham Measure 2",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipality",
-                            "path": "/Data/2023/Bellingham Measure 2/Municipality.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/Bellingham Measure 2/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
                     "title": "City Council President",
                     "path": null,
                     "items": [
@@ -2852,6 +2820,54 @@
                     ]
                 },
                 {
+                    "title": "City Councilor District 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/City Councilor District 1/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Councilor District 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/City Councilor District 2/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Councilor District 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor District 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/City Councilor District 3/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Councilor District 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "City Councilor Pos. 1",
                     "path": null,
                     "items": [
@@ -2863,38 +2879,6 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2023/City Councilor Pos. 1/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "City Councilor Pos. 11",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipal",
-                            "path": "/Data/2023/City Councilor Pos. 11/Municipal.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/City Councilor Pos. 11/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "City Councilor Pos. 12",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipal",
-                            "path": "/Data/2023/City Councilor Pos. 12/Municipal.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/City Councilor Pos. 12/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -3023,6 +3007,38 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2023/City Councilor Pos. 9/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 11",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/City Councilor Pos. 11/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Councilor Pos. 11/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "City Councilor Pos. 12",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/City Councilor Pos. 12/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/City Councilor Pos. 12/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -3423,6 +3439,22 @@
                     ]
                 },
                 {
+                    "title": "County Proposition 202304",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "County",
+                            "path": "/Data/2023/County Proposition 202304/County.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/County Proposition 202304/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "County Sheriff",
                     "path": null,
                     "items": [
@@ -3503,6 +3535,118 @@
                     ]
                 },
                 {
+                    "title": "Municipal Initiative 202301",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/Municipal Initiative 202301/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Municipal Initiative 202301/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Initiative 202302",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/Municipal Initiative 202302/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Municipal Initiative 202302/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Measure 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/Municipal Measure 1/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Municipal Measure 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 1",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/Municipal Proposition 1/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Municipal Proposition 1/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 2",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/Municipal Proposition 2/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Municipal Proposition 2/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 3",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/Municipal Proposition 3/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Municipal Proposition 3/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
+                    "title": "Municipal Proposition 5",
+                    "path": null,
+                    "items": [
+                        {
+                            "title": "Municipal",
+                            "path": "/Data/2023/Municipal Proposition 5/Municipal.geojson",
+                            "items": null
+                        },
+                        {
+                            "title": "Precinct",
+                            "path": "/Data/2023/Municipal Proposition 5/Precinct.geojson",
+                            "items": null
+                        }
+                    ]
+                },
+                {
                     "title": "PUD Commissioner District 2",
                     "path": null,
                     "items": [
@@ -3514,22 +3658,6 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2023/PUD Commissioner District 2/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Puyallup Prop 1",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipality",
-                            "path": "/Data/2023/Puyallup Prop 1/Municipality.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/Puyallup Prop 1/Precinct.geojson",
                             "items": null
                         }
                     ]
@@ -3753,38 +3881,6 @@
                         {
                             "title": "Precinct",
                             "path": "/Data/2023/Superior Court Judge Pos. 3/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Tacoma Measure 1",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "Municipality",
-                            "path": "/Data/2023/Tacoma Measure 1/Municipality.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/Tacoma Measure 1/Precinct.geojson",
-                            "items": null
-                        }
-                    ]
-                },
-                {
-                    "title": "Whatcom Prop 4",
-                    "path": null,
-                    "items": [
-                        {
-                            "title": "County",
-                            "path": "/Data/2023/Whatcom Prop 4/County.geojson",
-                            "items": null
-                        },
-                        {
-                            "title": "Precinct",
-                            "path": "/Data/2023/Whatcom Prop 4/Precinct.geojson",
                             "items": null
                         }
                     ]
